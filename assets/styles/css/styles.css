@@ -128,7 +128,11 @@ table {
   color: #FFF; }
   @media (min-width: 949px) {
     .headeruser {
-      background: black; } }
+      position: absolute;
+      z-index: 1;
+      background: black;
+      width: 20%;
+      height: 100vh; } }
   .headeruser__inner {
     width: 90%;
     margin: auto;
@@ -194,6 +198,10 @@ table {
   height: 100vh;
   width: 100vw;
   font-family: "nunito",sans-serif; }
+  @media (min-width: 949px) {
+    .suivi {
+      width: 80%;
+      left: 20%; } }
   .suivi__inner {
     width: 90%;
     margin: auto; }
