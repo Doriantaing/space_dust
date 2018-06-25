@@ -1,10 +1,9 @@
-// Forsize
-@import "./mixins/forsize";
-
 // Global
 @import "./global/reset";
 @import "./global/variables";
 
+// Forsize
+@import "./mixins/forsize";
 
 // Components
 @import "./components/header";

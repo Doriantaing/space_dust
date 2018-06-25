@@ -126,6 +126,9 @@ table {
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
   color: #FFF; }
+  @media (min-width: 949px) {
+    .headeruser {
+      background: black; } }
   .headeruser__inner {
     width: 90%;
     margin: auto;

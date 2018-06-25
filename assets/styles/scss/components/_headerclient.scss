@@ -4,6 +4,11 @@
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
   color: #FFF;
+
+
+  @include for-size(tablet-landscape-up){
+    background: black;
+  }
   &__inner{
     width: 90%;
     margin: auto;
