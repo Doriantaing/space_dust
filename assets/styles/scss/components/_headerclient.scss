@@ -7,7 +7,7 @@
   @include for-size(tablet-landscape-up){
     position: absolute;
     z-index: 1;
-    width: 25%;
+    width: 20%;
     height: 100vh;
   }
   &__inner{
@@ -34,6 +34,7 @@
     }
   }
   &__logout{
+    cursor: pointer;
     @include for-size(tablet-landscape-up){
       position: fixed;
       right: 5%;
@@ -111,6 +112,10 @@
         padding: 20px 0;
         cursor: pointer;
         width: 100%;
+        &:hover{
+          background: #45618C;
+          width: 111%;
+        }
       }
     }
   }
@@ -136,6 +141,13 @@
     left: 0;
   }
 }
+.activeHeaderUser{
+  @include for-size(tablet-landscape-up){
+    background: #45618C;
+    width: 111%;
+  }
+
+}
 .contentClient{
   position: relative;
   height: 100vh;
@@ -144,7 +156,7 @@
   background: -o-linear-gradient(bottom left, #354158 0%, #3d5b89 100%);
   background: linear-gradient(to top right, #354158 0%, #3d5b89 100%);
   @include for-size(tablet-landscape-up){
-    width: 75%;
-    left: 25%;
+    width: 80%;
+    left: 20%;
   }
 }

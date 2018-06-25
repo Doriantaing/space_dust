@@ -303,7 +303,7 @@ html {
     .headeruser {
       position: absolute;
       z-index: 1;
-      width: 25%;
+      width: 20%;
       height: 100vh; } }
   .headeruser__inner {
     width: 90%;
@@ -324,19 +324,21 @@ html {
       text-align: center;
       margin-top: 130px;
       font-size: 18px; } }
-  @media (min-width: 949px) {
-    .headeruser__logout {
-      position: fixed;
-      right: 5%;
-      top: 30px;
-      border: 1px solid #49B6CE;
-      background: #FFF;
-      width: 100px;
-      border-radius: 50px;
-      color: #49B6CE;
-      padding: 10px 0;
-      font-size: 12px;
-      text-align: center; } }
+  .headeruser__logout {
+    cursor: pointer; }
+    @media (min-width: 949px) {
+      .headeruser__logout {
+        position: fixed;
+        right: 5%;
+        top: 30px;
+        border: 1px solid #49B6CE;
+        background: #FFF;
+        width: 100px;
+        border-radius: 50px;
+        color: #49B6CE;
+        padding: 10px 0;
+        font-size: 12px;
+        text-align: center; } }
   .headeruser__logo-imgContainer {
     width: 60px;
     margin: auto;
@@ -394,7 +396,10 @@ html {
         .headeruser__tabs-item {
           padding: 20px 0;
           cursor: pointer;
-          width: 100%; } }
+          width: 100%; }
+          .headeruser__tabs-item:hover {
+            background: #45618C;
+            width: 111%; } }
 
 .line1 {
   left: 0; }
@@ -417,6 +422,11 @@ html {
       top: 104px;
       left: 0; } }
 
+@media (min-width: 949px) {
+  .activeHeaderUser {
+    background: #45618C;
+    width: 111%; } }
+
 .contentClient {
   position: relative;
   height: 100vh;
@@ -426,8 +436,8 @@ html {
   background: linear-gradient(to top right, #354158 0%, #3d5b89 100%); }
   @media (min-width: 949px) {
     .contentClient {
-      width: 75%;
-      left: 25%; } }
+      width: 80%;
+      left: 20%; } }
 
 .suivi {
   overflow-x: hidden;
@@ -441,6 +451,7 @@ html {
     .suivi {
       width: 100%; } }
   .suivi__inner {
+    padding-bottom: 50px;
     width: 90%;
     margin: auto; }
     @media (min-width: 949px) {
@@ -449,16 +460,46 @@ html {
         top: 50%;
         transform: translateY(-50%);
         left: 0;
-        right: 0; } }
+        right: 0;
+        padding: 0; } }
   @media (min-width: 949px) {
     .suivi__desktop-flex {
       align-items: center;
       display: flex;
       width: 100%;
-      justify-content: space-between; } }
+      justify-content: space-between;
+      position: relative;
+      margin-top: 20px; } }
   @media (min-width: 949px) {
     .suivi__desktop-leftContent {
       width: 50%; } }
+  .suivi__percentage {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #45618C;
+    border-radius: 8px;
+    padding: 30px 0;
+    position: relative; }
+    @media (min-width: 949px) {
+      .suivi__percentage {
+        margin-top: 0;
+        padding: 40px 0; } }
+    .suivi__percentage-inner {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      border-radius: 8px;
+      height: 100%;
+      width: 30%;
+      top: 0;
+      left: 0;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 24px;
+      font-weight: lighter;
+      background: linear-gradient(to right, #55b8f1 0%, #1177fc 100%); }
+    .suivi__percentage-text {
+      display: block;
+      margin: auto; }
   .suivi__estimatedTime {
     width: 100%;
     background-color: #45618C;
@@ -471,24 +512,32 @@ html {
     color: #FFF; }
     @media (min-width: 949px) {
       .suivi__estimatedTime {
-        width: 50%;
-        height: 20%;
+        width: 47%;
+        height: 15%;
         position: absolute;
         top: 0;
         left: 0;
         padding: 20px;
         display: flex;
         align-items: center; } }
+    @media (min-width: 1200px) {
+      .suivi__estimatedTime {
+        width: 50%;
+        height: 20%; } }
   @media (min-width: 949px) {
     .suivi__desktop-waste {
       display: block;
       margin: 0;
-      width: 40%;
-      height: 45vh;
+      width: 37%;
+      height: 35vh;
       padding: 20px;
       background-color: #45618C;
       border-radius: 8px;
       position: relative; } }
+  @media (min-width: 1200px) {
+    .suivi__desktop-waste {
+      width: 40%;
+      height: 45vh; } }
   .suivi__waste {
     margin-top: 50px;
     position: relative;
@@ -514,15 +563,23 @@ html {
         padding: 20px;
         border-radius: 8px;
         position: absolute;
-        width: 50%;
+        width: 47%;
         bottom: 0;
-        height: 59%;
+        height: 55%;
         display: flex;
         align-items: center; } }
+    @media (min-width: 1200px) {
+      .suivi__stats {
+        width: 50%;
+        height: 59%; } }
     .suivi__stats-circle {
-      width: 250px;
-      height: 250px;
+      width: 50%;
+      height: 50%;
       position: relative; }
+      @media (min-width: 1200px) {
+        .suivi__stats-circle {
+          width: 75%;
+          height: 75%; } }
       .suivi__stats-circle #circleCharts {
         width: auto !important;
         height: 100% !important;
@@ -534,6 +591,9 @@ html {
     font-family: "nunito",sans-serif;
     font-size: 8px;
     font-weight: lighter; }
+    @media (min-width: 1200px) {
+      .suivi__legends {
+        font-size: 14px; } }
     .suivi__legends-round {
       display: block;
       width: 25px;
@@ -580,15 +640,35 @@ html {
   top: 0;
   height: 100vh;
   width: 100vw; }
+  @media (min-width: 949px) {
+    .devis {
+      width: 100%; } }
   .devis__inner {
     width: 90%;
     margin: auto; }
+    @media (min-width: 949px) {
+      .devis__inner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px; } }
+    @media (min-width: 1200px) {
+      .devis__inner {
+        width: 90%;
+        flex-wrap: wrap;
+        flex-direction: row; } }
   .devis__cards {
     position: relative;
     margin: 30px 0;
     width: 100%;
     background: #45618C;
     border-radius: 8px; }
+    @media (min-width: 949px) {
+      .devis__cards {
+        margin: 5px auto;
+        width: calc(350px); } }
+    @media (min-width: 1200px) {
+      .devis__cards {
+        margin: 5px; } }
     .devis__cards-inner {
       padding: 10px;
       color: #FFF;
@@ -624,47 +704,67 @@ html {
   width: 100vw;
   font-family: "nunito",sans-serif;
   color: #FFF; }
+  @media (min-width: 949px) {
+    .profil {
+      width: 100%; } }
   .profil__inner {
     width: 90%;
     margin: 30px auto 0;
     text-align: center; }
+    @media (min-width: 949px) {
+      .profil__inner {
+        margin: 150px auto 0; } }
   .profil__username {
     font-size: 24px;
-    font-weight: bolder; }
-  .profil__company {
-    margin-top: 5px;
-    font-size: 18px;
-    font-weight: 100; }
-  .profil__form-inner {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    font-weight: bolder;
+    text-align: center; }
+    @media (min-width: 949px) {
+      .profil__username {
+        text-align: left; } }
+  @media (min-width: 949px) {
+    .profil__form {
+      width: 100%; } }
+  @media (min-width: 1200px) {
+    .profil__form {
+      display: flex;
+      justify-content: space-between;
+      width: 90%; } }
+  @media (min-width: 1200px) {
+    .profil__form-flex {
+      width: 49%;
+      position: relative; } }
   .profil__form-text {
-    width: 40%;
+    width: 100%;
     text-align: left; }
   .profil__form-items {
-    position: relative;
-    width: 100%;
-    background: #45618C;
-    border-radius: 8px;
     margin: 30px 0; }
-    .profil__form-items input {
-      display: block;
-      background-color: transparent;
-      border: none;
-      font-size: 14px;
-      padding: 5px 0;
+  .profil__inputContainer {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 5px;
+    background: #45618C;
+    display: block;
+    position: relative; }
+    .profil__inputContainer input {
       color: #FFF;
       font-weight: 100;
-      width: 60%; }
+      font-size: 14px;
+      width: calc(100% - 30px);
+      padding: 15px;
+      background: transparent;
+      border: none; }
   .profil input[type="submit"] {
-    border: 1px solid #49B6CE;
-    background: #FFF;
+    border: 0;
+    background: #49B6CE;
     width: 100px;
     border-radius: 50px;
-    color: #49B6CE;
+    color: #FFF;
     padding: 10px 0;
-    font-size: 12px; }
+    font-size: 12px;
+    cursor: pointer; }
+    @media (min-width: 1200px) {
+      .profil input[type="submit"] {
+        position: absolute;
+        right: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
