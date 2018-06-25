@@ -1,8 +1,8 @@
 @mixin for-size($range) {
-  $phone-upper-boundary: $tp-tablet;
-  $tablet-portrait-upper-boundary: $tp-desktop;
-  $tablet-landscape-upper-boundary: $tp-desktop-large;
-  $desktop-upper-boundary: $tp-desktop-x-large;
+  $phone-upper-boundary: $bp-tablet;
+  $tablet-portrait-upper-boundary: $bp-desktop;
+  $tablet-landscape-upper-boundary: $bp-desktop-large;
+  $desktop-upper-boundary: $bp-desktop-x-large;
 
   @if $range == phone-only {
     @media (max-width: #{$phone-upper-boundary - 1}) {

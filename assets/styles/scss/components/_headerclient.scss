@@ -1,9 +1,14 @@
-.header{
+.headeruser{
   background: $admin-header;
   width: 100vw;
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
   color: #FFF;
+
+
+  @include for-size(tablet-landscape-up){
+    background: black;
+  }
   &__inner{
     width: 90%;
     margin: auto;
@@ -45,6 +50,7 @@
   &__tabs{
     display: flex;
     align-items: center;
+    text-transform: uppercase;
     &-item{
       padding-top: 20px;
       width: 33%;
