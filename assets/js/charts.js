@@ -16,7 +16,7 @@ gradientFill.addColorStop(0, "rgba(85, 183, 241, 0.3)");
 var line = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet"],
+        labels: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet"],
         datasets: [{
             data: [0, 6, 5, 3, 7, 9,10],
             borderColor: gradientStroke,

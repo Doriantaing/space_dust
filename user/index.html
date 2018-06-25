@@ -16,7 +16,7 @@
   <header class="headeruser">
     <div class="headeruser__inner">
       <div class="headeruser__menu">
-        <div class="headeruser__username">Username</div>
+        <div class="headeruser__username">Arnaud Maillard</div>
         <div class="headeruser__logout">Déconnexion</div>
       </div>
       <div class="headeruser__logo-imgContainer">
@@ -41,51 +41,56 @@
     <section id="client1" ontouchstart="p1start(event)" ontouchmove="p1move(event)" ontouchend="p1end(event)" class="page suivi active">
       <div class="suivi__inner">
 
-        <h3 class="suivi__title userTitle">Temps éstimé</h3>
+        <h3 class="suivi__title userTitle">Temps estimé</h3>
 
-        <div class="suivi__estimatedTime">
-          <span class="suivi__estimatedTime-day"></span>
-          <span class="suivi__estimatedTime-separed">J</span>
-          <span class="suivi__estimatedTime-hour"></span>
-          <span class="suivi__estimatedTime-separed">h</span>
-          <span class="suivi__estimatedTime-minute"></span>
-          <span class="suivi__estimatedTime-separed">m</span>
-          <span class="suivi__estimatedTime-second"></span>
-
-        </div>
-
-        <h3 class="suivi__title userTitle">Les déchets collectés</h3>
-
-        <div class="suivi__stats">
-          <canvas id="lineCharts"></canvas>
-        </div>
-
-        <div class="suivi__waste">
-          <div class="suivi__stats-circle">
-            <canvas id="circleCharts"></canvas>
-          </div>
-          <div class="suivi__legends">
-            <div class="suivi__legends-items">
-              <div class="suivi__legends-round outer-yellow">
-                <div class="suivi__legends-roundInner inner-yellow"></div>
-              </div>
-              <p class="suivi__legends-text">Déchets collectés</p>
+        <div class="suivi__desktop-flex">
+          <div class="suivi__desktop-leftContent">
+            <div class="suivi__estimatedTime">
+              <span class="suivi__estimatedTime-day"></span>
+              <span class="suivi__estimatedTime-separed">j</span>
+              <span class="suivi__estimatedTime-hour"></span>
+              <span class="suivi__estimatedTime-separed">h</span>
+              <span class="suivi__estimatedTime-minute"></span>
+              <span class="suivi__estimatedTime-separed">m</span>
+              <span class="suivi__estimatedTime-second"></span>
+              <span class="suivi__estimatedTime-separed">s</span>
             </div>
-            <div class="suivi__legends-items">
-              <div class="suivi__legends-round outer-red">
-                <div class="suivi__legends-roundInner inner-red"></div>
-              </div>
-              <p class="suivi__legends-text">Déchets non-collectés</p>
-            </div>
-            <div class="suivi__legends-items">
-              <div class="suivi__legends-round outer-blue">
-                <div class="suivi__legends-roundInner inner-blue"></div>
-              </div>
-              <p class="suivi__legends-text">Déchets recyclés</p>
+            <h3 class="suivi__title userTitle">Les déchets collectés</h3>
+            <div class="suivi__stats">
+              <canvas id="lineCharts"></canvas>
             </div>
           </div>
-        </div>
 
+          <div class="suivi__desktop-waste">
+            <div class="suivi__waste">
+              <div class="suivi__stats-circle">
+                <canvas id="circleCharts"></canvas>
+              </div>
+              <div class="suivi__legends">
+                <div class="suivi__legends-items">
+                  <div class="suivi__legends-round outer-yellow">
+                    <div class="suivi__legends-roundInner inner-yellow"></div>
+                  </div>
+                  <p class="suivi__legends-text">Déchets collectés</p>
+                </div>
+                <div class="suivi__legends-items">
+                  <div class="suivi__legends-round outer-red">
+                    <div class="suivi__legends-roundInner inner-red"></div>
+                  </div>
+                  <p class="suivi__legends-text">Déchets non-collectés</p>
+                </div>
+                <div class="suivi__legends-items">
+                  <div class="suivi__legends-round outer-blue">
+                    <div class="suivi__legends-roundInner inner-blue"></div>
+                  </div>
+                  <p class="suivi__legends-text">Déchets recyclés</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
 
       </div>
 
