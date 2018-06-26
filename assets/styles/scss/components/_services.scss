@@ -1,12 +1,85 @@
 .services {
   text-align: center;
   height: 80%;
+  &__text-box {
+    text-align: center;
+  }
   &__text {
-    width: 100%;
     margin-bottom: 20px;
     text-align: justify;
+    color: $blue-darken;
+    font-size: 14px;
   }
   .title-3 {
     margin-bottom: 20px;
+  }
+  .title-4 {
+    margin-bottom: 10px;
+  }
+  &__text-container {
+    margin-top: -50px;
+  }
+  &__img-box {
+    width: 120px;
+    height: 120px;
+    margin: 100px auto;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .inline-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & li {
+      display: block;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: $dark-blue;
+      &:last-child {
+        height: 8px;
+        width: 8px;
+        margin-bottom: 10px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.dots {
+  position: relative;
+  &--center {
+    @include on-circle($item-count: 16, $circle-size: 187px, $item-size: 4px);
+    margin: 50px auto 0;
+    border: solid 5px transparent;
+    top: -65%;
+    left: 19%;
+    & .dots--little {
+      position: absolute;
+      border-radius: 50%;
+      background: $bg-dots;
+      transition: 0.15s;
+    }
+  }
+  .dots--bigger {
+    @include on-circle($item-count: 16, $circle-size: 233px, $item-size: 1.5px);
+    margin: 50px auto 0;
+    border: solid 5px transparent;
+    transform: rotate(10deg);
+    & .dots--big {
+      position: absolute;
+      top: 3%;
+      left: 55.5%;
+      border-radius: 50%;
+      background: $bg-dots;
+      transition: 0.15s;
+    }
   }
 }
