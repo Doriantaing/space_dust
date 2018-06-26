@@ -333,12 +333,13 @@ html {
         top: 30px;
         border: 1px solid #49B6CE;
         background: #FFF;
-        width: 100px;
+        width: 118px;
         border-radius: 50px;
         color: #49B6CE;
-        padding: 10px 0;
+        padding: 11px 0;
         font-size: 12px;
-        text-align: center; } }
+        text-align: center;
+        text-transform: uppercase; } }
   .headeruser__logo-imgContainer {
     width: 60px;
     margin: auto;
@@ -670,7 +671,7 @@ html {
       .devis__cards {
         margin: 5px; } }
     .devis__cards-inner {
-      padding: 10px;
+      padding: 20px;
       color: #FFF;
       font-family: "nunito",sans-serif;
       font-size: 12px; }
