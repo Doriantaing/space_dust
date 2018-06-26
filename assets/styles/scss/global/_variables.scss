@@ -1,23 +1,18 @@
-
 $light-blue: #49b6ce;
 $dark-blue: hsl(213, 56%, 22%);
 $color-key: #50b7ce;
 $margin-center: 0 auto;
+$blue-darken: #656e78;
+$admin-header: #395075;
+$bg-join: #f0f1f4;
+$bg-dots: #abbbcb;
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
-
-$light-blue : #49B6CE;
-$dark-blue : #183456;
-$admin-header : #395075;
-
-$gradientBlue : linear-gradient(#55b7f1 0%, #1177fc 100%);
-$gradientYellow : linear-gradient(#fc7411 0%, #f1b555 100%);
-$gradientRed : linear-gradient(#ff3743 0%, #f15555 100%);
-
-
+$gradientBlue: linear-gradient(#55b7f1 0%, #1177fc 100%);
+$gradientYellow: linear-gradient(#fc7411 0%, #f1b555 100%);
+$gradientRed: linear-gradient(#ff3743 0%, #f15555 100%);
 
 $bp-tablet: 600px;
 $bp-desktop: 949px;
 $bp-desktop-large: 1200px;
 $bp-desktop-x-large: 1800px;
-

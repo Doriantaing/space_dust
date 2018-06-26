@@ -1,31 +1,48 @@
 .numbers {
-    &__logo-box {
-        width: 140px;
-        height: 17px;
-        margin: $margin-center;
+  @include for-size(tablet-landscape-up) {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  &__logo-box {
+    width: 140px;
+    height: 17px;
+    margin: $margin-center;
+    margin-bottom: 20px;
+  }
+  &__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .title-3 {
+    margin-bottom: 20px;
+    @include for-size(tablet-landscape-up) {
+      margin-bottom: 50px;
     }
-    &__logo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  }
+  &__datas {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
-    .title-3 {
-        margin-bottom: 20px;
+    &-key {
+      font: {
+        size: 64px;
+        weight: 900;
+      }
+      color: $color-key;
     }
-    &__datas {
-        text-align: center;
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }
-        &-key {
-            font: {
-                size: 64px;
-                weight: 300;
-            }
-            color: #50b7ce;
-        }
-        &-text {
-            font-size: 14px;
-        }
+    &-text {
+      font-size: 14px;
     }
+  }
+  &-box {
+    @include for-size(tablet-landscape-up) {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+  }
 }
