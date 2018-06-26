@@ -204,24 +204,35 @@ html {
     cursor: pointer; }
     @media (min-width: 600px) {
       .devis__stepNext {
-        grid-column: 1/3;
-        align-self: baseline; } }
+        margin: 100px 0 50px 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
   .devis__firstStep {
     border: none;
     font-weight: 200;
     color: #193558; }
+    .devis__firstStepForm {
+      width: 100vw; }
     @media (min-width: 600px) {
-      .devis__firstStepForm {
+      .devis__firstStepFormContainer {
+        position: absolute;
+        top: 55%;
+        left: 51%;
+        transform: translate(-50%, -50%);
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 200px;
-        align-items: center;
-        justify-content: center; } }
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around; } }
     .devis__firstStepTitle {
       margin: 30px 0 35px 0;
       font-size: 18px;
       font-weight: 200; }
+    @media (min-width: 600px) {
+      .devis__firstStepFlex {
+        display: flex;
+        flex-direction: column; } }
     .devis__firstStepSelect {
       border: none;
       font-family: 'Nunito';
@@ -250,8 +261,7 @@ html {
       .devis__firstStepCleaning {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center; } }
+        align-items: center; } }
     .devis__firstStepCleaningContainer {
       display: flex;
       margin-top: 20px;
@@ -274,8 +284,11 @@ html {
     .devis__firstStepCleaningCircle {
       width: 100px;
       height: 100px;
-      background: #193558;
+      background: linear-gradient(#55b7f1 0%, #1177fc 100%);
       border-radius: 50%; }
+      @media (min-width: 600px) {
+        .devis__firstStepCleaningCircle {
+          padding-top: 30px; } }
     .devis__firstStepInputPercent {
       opacity: 0.3;
       border: none;
@@ -286,34 +299,52 @@ html {
       @media (min-width: 600px) {
         .devis__firstStepInputPercent {
           width: 120%; } }
-  .devis__secondStepTitle {
-    font-size: 18px;
-    font-weight: 200;
-    margin: 30px 0 35px 0; }
-  .devis__secondStepLink {
-    text-decoration: none;
-    color: #193558;
-    font-size: 14px; }
-  .devis__secondStepForm {
-    margin: 35Px 0; }
-    @media (min-width: 600px) {
-      .devis__secondStepForm {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 200px;
-        align-content: center;
-        justify-self: center; } }
-  .devis__secondStepInput {
-    border: none;
-    border-bottom: 2px solid #193558;
-    padding: 5px;
-    margin-bottom: 35px;
-    font-size: 14px;
-    font-weight: 200;
-    width: 100%; }
-    @media (min-width: 600px) {
-      .devis__secondStepInput {
-        width: 120%; } }
+  .devis__secondStep {
+    color: #193558; }
+    .devis__secondStepTitle {
+      font-size: 18px;
+      font-weight: 200;
+      margin: 30px 0 35px 0; }
+    .devis__secondStepText {
+      text-decoration: none;
+      color: #193558;
+      font-weight: 200; }
+    .devis__secondStepLink {
+      text-decoration: none;
+      color: #193558;
+      font-size: 14px; }
+    .devis__secondStepForm {
+      margin: 35Px 0; }
+      @media (min-width: 600px) {
+        .devis__secondStepFormContainer {
+          position: absolute;
+          top: 55%;
+          left: 51%;
+          transform: translate(-50%, -50%);
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 100px;
+          align-content: center;
+          justify-content: center; } }
+    .devis__secondStepInput {
+      border: none;
+      border-bottom: 2px solid #193558;
+      padding: 5px;
+      margin-bottom: 35px;
+      font-size: 14px;
+      font-weight: 200;
+      width: 100%; }
+      @media (min-width: 600px) {
+        .devis__secondStepInput {
+          width: 120%; } }
+  @media (min-width: 600px) {
+    .devis__thirdStepContainer {
+      position: absolute;
+      top: 60%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: row-reverse; } }
   .devis__thirdStepTitle {
     font-size: 18px;
     font-weight: 200;
@@ -323,10 +354,10 @@ html {
     font-size: 14px;
     font-weight: bold; }
   .devis__thirdStepInfo {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    margin: 20px 0; }
+    @media (min-width: 600px) {
+      .devis__thirdStepInfoTitle {
+        margin-bottom: 20px; } }
     .devis__thirdStepInfoList {
       background: #193558;
       color: #fff;
@@ -334,17 +365,29 @@ html {
       border-radius: 10px;
       font-weight: 200;
       line-height: 20px; }
+      @media (min-width: 600px) {
+        .devis__thirdStepInfoList {
+          line-height: 40px;
+          width: 20vw; } }
     .devis__thirdStepInfoList > li {
       margin-bottom: 5px; }
     .devis__thirdStepInfoImg {
       width: 50%; }
+      @media (min-width: 600px) {
+        .devis__thirdStepInfoImg {
+          display: none; } }
   .devis__thirdStepSummary {
     margin: 50px 0;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
     padding: 20px; }
+    @media (min-width: 600px) {
+      .devis__thirdStepSummary {
+        margin: 0 50px;
+        width: 100%; } }
     .devis__thirdStepSummaryTitle {
       font-size: 14px;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 5px; }
     .devis__thirdStepSummarySubTitle {
       font-weight: 200;
       margin-bottom: 20px; }
