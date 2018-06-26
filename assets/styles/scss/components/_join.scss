@@ -1,0 +1,58 @@
+.join {
+  width: 100vw;
+  height: 110vh;
+  background-color: $bg-join;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  .title-3 {
+    display: inline-block;
+    margin: 100px auto 50px auto;
+  }
+
+  &__text {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  &__logo-line {
+    position: absolute;
+    top: -3%;
+    right: 5%;
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .join__text-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+      img {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .join-box-title {
+        font: {
+          size: 18px;
+          weight: 300;
+        }
+        margin-bottom: 10px;
+      }
+      .span-dots {
+        height: 8px;
+        width: 8px;
+        background: $dark-blue;
+        border-radius: 50px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

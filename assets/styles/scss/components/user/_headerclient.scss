@@ -1,9 +1,15 @@
-.header{
+.headeruser{
   background: $admin-header;
   width: 100vw;
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
   color: #FFF;
+  @include for-size(tablet-landscape-up){
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    height: 100vh;
+  }
   &__inner{
     width: 90%;
     margin: auto;
@@ -12,11 +18,45 @@
   &__menu{
     display: flex;
     justify-content: space-between;
+    @include for-size(tablet-landscape-up){
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  &__username{
+    @include for-size(tablet-landscape-up){
+      text-align: center;
+      margin-top: 130px;
+      font-size: 18px;
+    }
+  }
+  &__logout{
+    cursor: pointer;
+    @include for-size(tablet-landscape-up){
+      position: fixed;
+      right: 5%;
+      top: 30px;
+      border: 1px solid $light-blue;
+      background: #FFF;
+      width: 118px;
+      border-radius: 50px;
+      color: $light-blue;
+      padding: 11px 0;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
   &__logo-imgContainer{
     width: 60px;
     margin: auto;
     transform: translateY(-50%);
+    @include for-size(tablet-landscape-up){
+      margin-top: 50px;
+    }
   }
   &__companyName-imgContainer{
     width: 82px;
@@ -26,12 +66,21 @@
   &__img{
     width: 100%;
   }
+  &__nav{
+    margin-top: 50px;
+  }
   &__line{
     width: 100%;
     height: 2px;
     background: rgba(73,182,206,.35);
     display: block;
     position: relative;
+    @include for-size(tablet-landscape-up){
+      position: absolute;
+      right: 0;
+      height: calc(52px * 3);
+      width: 2px;
+    }
   }
   &__line-inner{
     width: 33%;
@@ -41,25 +90,64 @@
     position: absolute;
     z-index: 2;
     transition: all .3s;
+    @include for-size(tablet-landscape-up){
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 52px;
+      width: 2px;
+    }
   }
   &__tabs{
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+    @include for-size(tablet-landscape-up){
+      flex-direction: column;
+    }
     &-item{
       padding-top: 20px;
       width: 33%;
       text-align: center;
+      @include for-size(tablet-landscape-up){
+        padding: 20px 0;
+        cursor: pointer;
+        width: 100%;
+        &:hover{
+          background: #45618C;
+          width: 111%;
+        }
+      }
     }
   }
 }
 .line1{
   left: 0;
+  @include for-size(tablet-landscape-up){
+    top: 0;
+    left: 0;
+  }
 }
 .line2{
   left: 33%;
+  @include for-size(tablet-landscape-up){
+    top: 52px;
+    left: 0;
+  }
 }
 .line3{
   left: 66.6%;
+  @include for-size(tablet-landscape-up){
+    top: 104px;
+    left: 0;
+  }
+}
+.activeHeaderUser{
+  @include for-size(tablet-landscape-up){
+    background: #45618C;
+    width: 111%;
+  }
+
 }
 .contentClient{
   position: relative;
@@ -68,4 +156,8 @@
   background: -webkit-linear-gradient(bottom left, #354158 0%, #3d5b89 100%);
   background: -o-linear-gradient(bottom left, #354158 0%, #3d5b89 100%);
   background: linear-gradient(to top right, #354158 0%, #3d5b89 100%);
+  @include for-size(tablet-landscape-up){
+    width: 80%;
+    left: 20%;
+  }
 }
