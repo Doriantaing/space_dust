@@ -1,6 +1,14 @@
 .login{
     color: $dark-blue;
     margin: 50px 20px;
+    font-family: 'Nunito';
+    &__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     &__title{
         font-size: 24px;
         font-weight: bold;
@@ -8,7 +16,7 @@
     &__subTitle{
         font-size: 14px;
         display: flex;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     &__text{
         font-weight: 200;
@@ -18,31 +26,29 @@
         cursor: pointer;
     }
     &__form{
-        margin: 35px 20px;
-        &Container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+        margin: 50px 20px;
         &Input{
             border: none;
             border-bottom: 2px solid $dark-blue;
             padding: 5px;
-            margin-bottom: 35px;
+            margin-bottom: 50px;
             margin-right: 35px;
             font-size: 14px;
             font-weight: 200;
             width: 100%;
         }
         &InputSubmit{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
             background: $light-blue;
             border: 1px solid $light-blue;
             border-radius: 30px;
-            width: 200px;
-            padding: 10px 0;
+            padding: 10px 20px;
             color: #fff;
             cursor: pointer;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
         }
     }    
 }
@@ -51,6 +57,13 @@
     display: none;
     color: $dark-blue;
     margin: 50px 20px;
+    &__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     &__title{
         font-size: 24px;
         font-weight: bold;
@@ -58,7 +71,7 @@
     &__subTitle{
         font-size: 14px;
         display: flex;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     &__text{
         font-weight: 200;
@@ -70,9 +83,9 @@
     &__form{
         margin: 35px 20px;
         &Container{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 40px;
             align-items: center;
         }
         &Input{
@@ -84,8 +97,15 @@
             font-size: 14px;
             font-weight: 200;
             width: 100%;
+            @include for-size(tablet-portrait-up){
+                width: 200px;
+            }
         }
         &InputSubmit{
+            margin-top: 50px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
             background: $light-blue;
             border: 1px solid $light-blue;
             border-radius: 30px;

@@ -3,7 +3,7 @@
 
 
   if (!isset($_GET['id'])) {
-    header("Location: index.php?error=noidtodetails");
+    header("Location: ../index.php?error=noidtodetails");
     exit;
 }
   require_once 'connect.php';

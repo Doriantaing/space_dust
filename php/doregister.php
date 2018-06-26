@@ -45,5 +45,5 @@ $stmt -> bindValue(':adress' , $_POST['adress']);
 $stmt->execute();
 
 
-header('Location: ../checkRegister.html');
+header('Location: ../checkDevis.php');
 

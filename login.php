@@ -13,6 +13,8 @@
 <body>
 
     <section class="login">
+
+    <div class="login__container">
         <h1 class="login__title">Connectez-vous</h1>
 
         <div class="login__subTitle">
@@ -31,11 +33,13 @@
 
                 <input type="submit" value="Connexion" class="login__formInputSubmit">
             </div>
-        </form>
+         </form>
+        </div>
     </section>
 
 
     <section class="register">
+        <div class="register__container">
         <h1 class="register__title">Inscrivez-vous</h1>
         <div class="register__subTitle">
             <p class="register__text"> Déjà inscrit?</p>
@@ -52,16 +56,21 @@
 
                 <!-- <label for="password">Mot de Passe</label> -->
                 <input type="password" name="password" placeholder="Mot de Passe" class="register__formInput">
+                
 
+               
                 <input type="text" name="company" placeholder="Nom de l'entreprise" class="register__formInput">
 
                 <input type="text" name="mail" placeholder="E-mail" class="register__formInput">
                 
                 <input type="text" name="adress" placeholder="Adresse" class="register__formInput">
-
-                <input type="submit" value="S'inscrire" class="register__formInputSubmit">
+                
+                
             </div>
+
+            <input type="submit" value="S'inscrire" class="register__formInputSubmit">
         </form>
+      </div>
     </section>
 
 

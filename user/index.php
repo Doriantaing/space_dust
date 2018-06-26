@@ -1,3 +1,45 @@
+<?php
+session_start();
+
+$_SESSION['user']['id'] = $_GET['id'];
+require_once '../php/connect.php';
+
+// var_dump($_SESSION);
+  if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
+    header('Location: ../index.php?error=FUCKK');
+    exit;
+  }
+
+  $req = "SELECT 
+  `user_id`, 
+  `user_name`, 
+  `user_firstname`,
+  `company`,
+  `user_mail`,
+  `user_password`,
+  `adress`
+   FROM
+   `space_dust` . `user`
+  WHERE 
+   `user_mail` = :mail AND
+   `user_id` = :id
+   LIMIT 1
+   ;";
+
+$stmt = $con->prepare($req);
+$stmt->bindValue(':mail', $_SESSION['user']['mail']);
+$stmt->bindValue(':id', $_GET['id']);
+$stmt->execute();
+$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// var_dump($row);
+if ($row === false) {
+    header("Location: ../index.php?error=nodatatodetails");
+    exit;
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,8 +58,8 @@
   <header class="headeruser">
     <div class="headeruser__inner">
       <div class="headeruser__menu">
-        <div class="headeruser__username">Arnaud Maillard</div>
-        <div class="headeruser__logout">Déconnexion</div>
+        <div class="headeruser__username"><?= $row[0]['user_name'] . ' ' . $row[0]['user_firstname']?></div>
+        <a href="../php/logout.php" class="headeruser__logout">Déconnexion</a>
       </div>
       <div class="headeruser__logo-imgContainer">
         <h1><img class="headeruser__img" src="../assets/img/Illustration-Logo.png" alt="logo" title="Space Dust"></h1>
@@ -150,14 +192,14 @@
     <section id="client3" ontouchstart="p3start(event)" ontouchmove="p3move(event)" ontouchend="p3end(event)" class="page profil">
       <div class="profil__inner">
         <h1 class="profil__username">Modifier votre profil</h1>
-        <form action="" method="POST" class="profil__form">
+        <form action="../php/doupdate.php" method="POST" class="profil__form">
           <div class="profil__form-flex">
             <div class="profil__form-items">
               <div class="profil__form-text">
                 NOM :
               </div>
               <div class="profil__inputContainer">
-                <input type="text" name="nom">
+                <input type="text" name="name" value="<?=$row[0]['user_name']?>">
               </div>
             </div>
             <div class="profil__form-items">
@@ -165,7 +207,7 @@
                 PRENOM :
               </div>
               <div class="profil__inputContainer">
-                <input type="text" name="prenom">
+                <input type="text" name="firstname" value="<?=$row[0]['user_firstname']?>">
               </div>
             </div>
             <div class="profil__form-items">
@@ -173,7 +215,7 @@
                 MOT DE PASSE :
               </div>
               <div class="profil__inputContainer">
-                <input type="password" name="password">
+                <input type="password" name="password" value="<?=$_SESSION['user']['password']?>">
               </div>
             </div>
           </div>
@@ -183,7 +225,7 @@
                 NOM DE L'ENTREPRISE
               </div>
               <div class="profil__inputContainer">
-                <input type="email" name="mail">
+                <input type="text" name="company" value="<?=$row[0]['company']?>" >
               </div>
             </div>
             <div class="profil__form-items">
@@ -191,7 +233,7 @@
                 E-MAIL:
               </div>
               <div class="profil__inputContainer">
-                <input type="mail" name="mail">
+                <input type="mail" name="mail" value="<?=$row[0]['user_mail']?>">
               </div>
             </div>
             <div class="profil__form-items">
@@ -199,7 +241,7 @@
                 ADRESSE :
               </div>
               <div class="profil__inputContainer">
-                <input type="text" name="adress">
+                <input type="text" name="adress" value="<?= $row[0]['adress']?>">
               </div>
             </div>
             <input type="submit" name="submit" value="Valider">

@@ -476,55 +476,67 @@ html {
 
 .login {
   color: #193558;
-  margin: 50px 20px; }
+  margin: 50px 20px;
+  font-family: 'Nunito'; }
+  .login__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .login__title {
     font-size: 24px;
     font-weight: bold; }
   .login__subTitle {
     font-size: 14px;
     display: flex;
-    margin-top: 5px; }
+    margin-top: 10px; }
   .login__text {
     font-weight: 200;
     margin-right: 5px; }
   .login__link {
     cursor: pointer; }
   .login__form {
-    margin: 35px 20px; }
-    .login__formContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+    margin: 50px 20px; }
     .login__formInput {
       border: none;
       border-bottom: 2px solid #193558;
       padding: 5px;
-      margin-bottom: 35px;
+      margin-bottom: 50px;
       margin-right: 35px;
       font-size: 14px;
       font-weight: 200;
       width: 100%; }
     .login__formInputSubmit {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
       background: #49b6ce;
       border: 1px solid #49b6ce;
       border-radius: 30px;
-      width: 200px;
-      padding: 10px 0;
+      padding: 10px 20px;
       color: #fff;
-      cursor: pointer; }
+      cursor: pointer;
+      letter-spacing: 1px;
+      margin-bottom: 40px; }
 
 .register {
   display: none;
   color: #193558;
   margin: 50px 20px; }
+  .register__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .register__title {
     font-size: 24px;
     font-weight: bold; }
   .register__subTitle {
     font-size: 14px;
     display: flex;
-    margin-top: 5px; }
+    margin-top: 10px; }
   .register__text {
     font-weight: 200;
     margin-right: 5px; }
@@ -533,9 +545,9 @@ html {
   .register__form {
     margin: 35px 20px; }
     .register__formContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
       align-items: center; }
     .register__formInput {
       border: none;
@@ -546,7 +558,14 @@ html {
       font-size: 14px;
       font-weight: 200;
       width: 100%; }
+      @media (min-width: 600px) {
+        .register__formInput {
+          width: 200px; } }
     .register__formInputSubmit {
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
       background: #49b6ce;
       border: 1px solid #49b6ce;
       border-radius: 30px;
@@ -827,6 +846,64 @@ html {
         background: #193558;
         border-radius: 50px;
         margin-bottom: 10px; }
+
+.joinForm {
+  color: #193558;
+  margin: 50px 20px; }
+  .joinForm__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .joinForm__title {
+    font-size: 24px;
+    font-weight: bold; }
+  .joinForm__subTitle {
+    font-size: 14px;
+    display: flex;
+    margin-top: 10px; }
+  .joinForm__text {
+    font-weight: 200;
+    margin-right: 5px; }
+  .joinForm__link {
+    cursor: pointer; }
+  .joinForm__form {
+    margin: 35px 20px; }
+    .joinForm__formContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+      align-items: center; }
+    .joinForm__formInput {
+      border: none;
+      border-bottom: 2px solid #193558;
+      padding: 5px;
+      margin-bottom: 35px;
+      margin-right: 35px;
+      font-size: 14px;
+      font-weight: 200;
+      width: 100%; }
+      @media (min-width: 600px) {
+        .joinForm__formInput {
+          width: 200px; } }
+    .joinForm__formInputSubmit {
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      background: #49b6ce;
+      border: 1px solid #49b6ce;
+      border-radius: 30px;
+      width: 200px;
+      padding: 10px 0;
+      color: #fff;
+      cursor: pointer; }
+
+.--message {
+  width: 100%;
+  align-items: center;
+  justify-self: center; }
 
 .footer {
   height: 100vh;

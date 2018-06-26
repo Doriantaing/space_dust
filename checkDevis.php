@@ -11,20 +11,18 @@
 </head>
 
 <body>
-
-
     <section class="sendMail">
-        <div class="sendMail__container">
-            <h1 class="sendMail__title">Vous êtes bien inscrit !</h1>
-            <p class="sendMail__subTitle">Un mail contenant vos identifiants a été envoyé à l’adresse configurée.</p>
-
-
-            <div class="sendMail__imgContainer">
-                <img src="assets/img/Illustration-Logo.png" alt="" class="sendMail__img">
-            </div>
-        </div>
-    </section>
+            <div class="sendMail__container">
+                <h1 class="sendMail__title">Vous êtes bien inscrit !</h1>
+                <p class="sendMail__subTitle">Un mail contenant vos devis et vos identifiants ont été envoyé à l’adresse configurée.</p>
     
+    
+                <div class="sendMail__imgContainer">
+                    <img src="assets/img/Illustration-Logo.png" alt="" class="sendMail__img">
+                </div>
+            </div>
+        </section>
+
 </body>
 
 </html>
