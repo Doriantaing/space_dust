@@ -96,36 +96,37 @@
 
 
     </section>
-    <section id="client2" ontouchstart="p2start(event)" ontouchmove="p2move(event)" ontouchend="p2end(event)" class="page UserDevis">
-      <div class="UserDevis__inner">
-        <h3 class="UserDevis__title userTitle">Tous les devis</h3>
-        <div class="UserDevis__cards">
-          <div class="UserDevis__cards-inner">
-            <div class="UserDevis__mission__principal">
-              <h4 class="UserDevis__mission-title">Mission 1</h4>
-              <p class="UserDevis__mission-date">fait le <span class="UserDevis__mission-date-replaced">00/00/0000</span></p>
+
+    <section id="client2" ontouchstart="p2start(event)" ontouchmove="p2move(event)" ontouchend="p2end(event)" class="page userDevis">
+      <div class="userDevis__inner">
+        <h3 class="userDevis__title userTitle">Tous les devis</h3>
+        <div class="userDevis__cards">
+          <div class="userDevis__cards-inner">
+            <div class="userDevis__mission__principal">
+              <h4 class="userDevis__mission-title">Mission 1</h4>
+              <p class="userDevis__mission-date">fait le <span class="userDevis__mission-date-replaced">00/00/0000</span></p>
             </div>
-            <div class="UserDevis__mission__details">
-              <div class="UserDevis__mission-waste">
-                <p class="UserDevis__details-item">Déchets ramassés : <span class="UserDevis__mission-pickedup">12 333</span></p>
-                <p class="UserDevis__details-item">Déchets recyclés : <span class="UserDevis__mission-recycled">15 987</span></p>
+            <div class="userDevis__mission__details">
+              <div class="userDevis__mission-waste">
+                <p class="userDevis__details-item">Déchets ramassés : <span class="userDevis__mission-pickedup">12 333</span></p>
+                <p class="userDevis__details-item">Déchets recyclés : <span class="userDevis__mission-recycled">15 987</span></p>
               </div>
-              <p class="UserDevis__mission-price">21M</p>
+              <p class="userDevis__mission-price">21M</p>
             </div>
           </div>
         </div>
-        <div class="UserDevis__cards">
-          <div class="UserDevis__cards-inner">
-            <div class="UserDevis__mission__principal">
-              <h4 class="UserDevis__mission-title">Mission 2</h4>
-              <p class="UserDevis__mission-date">fait le <span class="UserDevis__mission-date-replaced">00/00/0000</span></p>
+        <div class="userDevis__cards">
+          <div class="userDevis__cards-inner">
+            <div class="userDevis__mission__principal">
+              <h4 class="userDevis__mission-title">Mission 2</h4>
+              <p class="userDevis__mission-date">fait le <span class="userDevis__mission-date-replaced">00/00/0000</span></p>
             </div>
-            <div class="UserDevis__mission__details">
-              <div class="UserDevis__mission-waste">
-                <p class="UserDevis__details-item">Déchets ramassés : <span class="UserDevis__mission-pickedup">12 333</span></p>
-                <p class="UserDevis__details-item">Déchets recyclés : <span class="UserDevis__mission-recycled">15 987</span></p>
+            <div class="userDevis__mission__details">
+              <div class="userDevis__mission-waste">
+                <p class="userDevis__details-item">Déchets ramassés : <span class="userDevis__mission-pickedup">12 333</span></p>
+                <p class="userDevis__details-item">Déchets recyclés : <span class="userDevis__mission-recycled">15 987</span></p>
               </div>
-              <p class="UserDevis__mission-price">21M</p>
+              <p class="userDevis__mission-price">21M</p>
             </div>
           </div>
         </div>

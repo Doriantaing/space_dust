@@ -173,6 +173,9 @@
             color: $dark-blue;
             font-size: 14px;
         }
+        &Link:hover{
+            border-bottom: 2px solid $dark-blue;
+        }
         &Form {
             margin: 35Px 0;
             &Container {

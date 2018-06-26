@@ -44,5 +44,6 @@ $stmt -> bindValue(':password' , $_SESSION['user']['password']);
 $stmt -> bindValue(':adress' , $_POST['adress']);
 $stmt->execute();
 
-header('Location: ../sendMail.html');
+
+header('Location: ../checkRegister.html');
 

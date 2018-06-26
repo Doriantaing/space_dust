@@ -313,6 +313,8 @@ html {
       text-decoration: none;
       color: #193558;
       font-size: 14px; }
+    .devis__secondStepLink:hover {
+      border-bottom: 2px solid #193558; }
     .devis__secondStepForm {
       margin: 35Px 0; }
       @media (min-width: 600px) {
@@ -441,6 +443,9 @@ html {
   color: #193558; }
   .sendMail__container {
     padding: 50px 20px; }
+    @media (min-width: 600px) {
+      .sendMail__container {
+        padding: 100px 100px; } }
   .sendMail__title {
     font-size: 24px;
     font-weight: bold; }
@@ -448,13 +453,107 @@ html {
     font-size: 14px;
     font-weight: 200;
     margin-top: 10px; }
+    @media (min-width: 600px) {
+      .sendMail__subTitle {
+        margin-top: 30px; } }
   .sendMail__imgContainer {
     max-width: 200px;
     max-height: 200px;
     margin: 50px 0; }
+    @media (min-width: 600px) {
+      .sendMail__imgContainer {
+        max-width: 400px;
+        max-height: 400px; } }
   .sendMail__img {
     width: 100%;
     height: 100%; }
+
+.--devis {
+  display: block; }
+
+.--register {
+  display: none; }
+
+.login {
+  color: #193558;
+  margin: 50px 20px; }
+  .login__title {
+    font-size: 24px;
+    font-weight: bold; }
+  .login__subTitle {
+    font-size: 14px;
+    display: flex;
+    margin-top: 5px; }
+  .login__text {
+    font-weight: 200;
+    margin-right: 5px; }
+  .login__link {
+    cursor: pointer; }
+  .login__form {
+    margin: 35px 20px; }
+    .login__formContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .login__formInput {
+      border: none;
+      border-bottom: 2px solid #193558;
+      padding: 5px;
+      margin-bottom: 35px;
+      margin-right: 35px;
+      font-size: 14px;
+      font-weight: 200;
+      width: 100%; }
+    .login__formInputSubmit {
+      background: #49b6ce;
+      border: 1px solid #49b6ce;
+      border-radius: 30px;
+      width: 200px;
+      padding: 10px 0;
+      color: #fff;
+      cursor: pointer; }
+
+.register {
+  display: none;
+  color: #193558;
+  margin: 50px 20px; }
+  .register__title {
+    font-size: 24px;
+    font-weight: bold; }
+  .register__subTitle {
+    font-size: 14px;
+    display: flex;
+    margin-top: 5px; }
+  .register__text {
+    font-weight: 200;
+    margin-right: 5px; }
+  .register__link {
+    cursor: pointer; }
+  .register__form {
+    margin: 35px 20px; }
+    .register__formContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .register__formInput {
+      border: none;
+      border-bottom: 2px solid #193558;
+      padding: 5px;
+      margin-bottom: 35px;
+      margin-right: 35px;
+      font-size: 14px;
+      font-weight: 200;
+      width: 100%; }
+    .register__formInputSubmit {
+      background: #49b6ce;
+      border: 1px solid #49b6ce;
+      border-radius: 30px;
+      width: 200px;
+      padding: 10px 0;
+      color: #fff;
+      cursor: pointer; }
 
 .home__logo-box {
   width: 140px;

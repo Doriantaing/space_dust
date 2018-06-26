@@ -86,7 +86,7 @@
                     <h4 class="devis__secondStepTitle">Inscrivez-vous</h4>
                     <div class="devis__secondStepLinks">
                         <a href="#" class="devis__secondStepText">Déjà inscrit?</a>
-                        <a href="#" class="devis__secondStepLink">Connectez-vous.</a>
+                        <a href="login.php" class="devis__secondStepLink">Connectez-vous.</a>
                     </div>
 
                     <form action="" method="POST" class="devis__secondStepForm">

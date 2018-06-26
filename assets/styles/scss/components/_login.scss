@@ -1,0 +1,98 @@
+.login{
+    color: $dark-blue;
+    margin: 50px 20px;
+    &__title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__subTitle{
+        font-size: 14px;
+        display: flex;
+        margin-top: 5px;
+    }
+    &__text{
+        font-weight: 200;
+        margin-right: 5px;
+    }
+    &__link{
+        cursor: pointer;
+    }
+    &__form{
+        margin: 35px 20px;
+        &Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &Input{
+            border: none;
+            border-bottom: 2px solid $dark-blue;
+            padding: 5px;
+            margin-bottom: 35px;
+            margin-right: 35px;
+            font-size: 14px;
+            font-weight: 200;
+            width: 100%;
+        }
+        &InputSubmit{
+            background: $light-blue;
+            border: 1px solid $light-blue;
+            border-radius: 30px;
+            width: 200px;
+            padding: 10px 0;
+            color: #fff;
+            cursor: pointer;
+        }
+    }    
+}
+
+.register{
+    display: none;
+    color: $dark-blue;
+    margin: 50px 20px;
+    &__title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__subTitle{
+        font-size: 14px;
+        display: flex;
+        margin-top: 5px;
+    }
+    &__text{
+        font-weight: 200;
+        margin-right: 5px;
+    }
+    &__link{
+        cursor: pointer;
+    }
+    &__form{
+        margin: 35px 20px;
+        &Container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &Input{
+            border: none;
+            border-bottom: 2px solid $dark-blue;
+            padding: 5px;
+            margin-bottom: 35px;
+            margin-right: 35px;
+            font-size: 14px;
+            font-weight: 200;
+            width: 100%;
+        }
+        &InputSubmit{
+            background: $light-blue;
+            border: 1px solid $light-blue;
+            border-radius: 30px;
+            width: 200px;
+            padding: 10px 0;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
