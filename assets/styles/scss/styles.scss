@@ -9,7 +9,8 @@
 
 // Components
 @import "./components/header";
-
+@import "./components/devis";
+@import "./components/sendMail";
 @import "./components/home";
 @import "./components/argument";
 @import "./components/numbers";
@@ -18,8 +19,16 @@
 @import "./components/join";
 @import "./components/footer";
 
-@import "./components/headerclient";
-@import "./components/suivi";
-@import "./components/devis";
-@import "./components/profil";
+
+// Components User
+
+@import "./components/user/headerclient";
+@import "./components/user/suivi";
+@import "./components/user/userDevis";
+@import "./components/user/profil";
+
+
+
+
+
 

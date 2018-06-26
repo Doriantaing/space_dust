@@ -37,15 +37,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-
-
 * {
   box-sizing: border-box; }
 
-
 html {
   font-family: "Nunito", sans-serif;
-  color: #183456; }
+  color: #193558; }
 
 .body__homepage {
   background: #fff;
@@ -71,7 +68,7 @@ html {
   display: inline-block;
   padding: 1em;
   text-decoration: none;
-  background-color: #183456;
+  background-color: #193558;
   border-radius: 100px;
   color: #fff;
   font-size: 12px;
@@ -101,10 +98,7 @@ html {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-
-    background: #183456; }
-
-    }
+    background: #193558; }
 
 .menu {
   opacity: 0;
@@ -123,9 +117,7 @@ html {
     transform: translate(-50%, -50%); }
   .menu__item {
     font-family: "nunito", sans-serif;
-
-    color: #183456;
-
+    color: #193558;
     margin-top: 30px;
     font-size: 24px;
     cursor: pointer;
@@ -166,15 +158,260 @@ html {
   width: 120px;
   text-align: center;
   border-radius: 110px;
-
-  border: 1.5px solid #183456;
+  border: 1.5px solid #193558;
   padding: 10px 0;
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
-  color: #183456;
-
+  color: #193558;
   background-color: #FFF;
   cursor: pointer; }
+
+.devis {
+  height: 100vh;
+  font-family: 'Nunito';
+  color: #193558;
+  font-size: 14px; }
+  .devis__container {
+    padding: 100px 20px; }
+    @media (min-width: 600px) {
+      .devis__container {
+        padding-left: 100px; } }
+  .devis__title {
+    font-size: 24px;
+    font-weight: bold; }
+    @media (min-width: 600px) {
+      .devis__title {
+        font-size: 36px; } }
+  .devis__navSteps {
+    margin-top: 10px;
+    display: flex; }
+  .devis__navStep {
+    margin-right: 10px;
+    font-weight: 400;
+    opacity: 0.3;
+    cursor: pointer; }
+  .devis__stepsForm {
+    display: flex;
+    overflow-x: hidden; }
+  .devis__stepNext {
+    background: #193558;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 12px;
+    margin: 40px 0 50px 0;
+    cursor: pointer; }
+    @media (min-width: 600px) {
+      .devis__stepNext {
+        grid-column: 1/3;
+        align-self: baseline; } }
+  .devis__firstStep {
+    border: none;
+    font-weight: 200;
+    color: #193558; }
+    @media (min-width: 600px) {
+      .devis__firstStepForm {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 200px;
+        align-items: center;
+        justify-content: center; } }
+    .devis__firstStepTitle {
+      margin: 30px 0 35px 0;
+      font-size: 18px;
+      font-weight: 200; }
+    .devis__firstStepSelect {
+      border: none;
+      font-family: 'Nunito';
+      font-weight: 200;
+      color: #193558;
+      font-size: 14px;
+      border-bottom: 2px solid #193558;
+      width: 100%;
+      padding: 5px; }
+    .devis__firstStepInput {
+      margin: 35px 0;
+      font-size: 14px;
+      color: #193558;
+      font-family: 'Nunito';
+      font-weight: 200;
+      border: none;
+      border-bottom: 2px solid #193558;
+      width: 100%;
+      padding: 5px; }
+      @media (min-width: 600px) {
+        .devis__firstStepInput {
+          width: 120%; } }
+    .devis__firstStep input[type="checkbox"] {
+      margin: 35px 0; }
+    @media (min-width: 600px) {
+      .devis__firstStepCleaning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; } }
+    .devis__firstStepCleaningContainer {
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: space-around; }
+      @media (min-width: 600px) {
+        .devis__firstStepCleaningContainer {
+          flex-direction: column;
+          align-items: center; } }
+      .devis__firstStepCleaningContainer > input {
+        margin-right: 20px;
+        width: 20%; }
+        @media (min-width: 600px) {
+          .devis__firstStepCleaningContainer > input {
+            margin-right: 0;
+            width: 50%; } }
+      @media (min-width: 600px) {
+        .devis__firstStepCleaningContainerTitle {
+          text-align: center; } }
+    .devis__firstStepCleaningCircle {
+      width: 100px;
+      height: 100px;
+      background: #193558;
+      border-radius: 50%; }
+    .devis__firstStepInputPercent {
+      opacity: 0.3;
+      border: none;
+      border-bottom: 2px solid #193558;
+      width: 100%;
+      font-size: 14px;
+      padding: 5px; }
+      @media (min-width: 600px) {
+        .devis__firstStepInputPercent {
+          width: 120%; } }
+  .devis__secondStepTitle {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 30px 0 35px 0; }
+  .devis__secondStepLink {
+    text-decoration: none;
+    color: #193558;
+    font-size: 14px; }
+  .devis__secondStepForm {
+    margin: 35Px 0; }
+    @media (min-width: 600px) {
+      .devis__secondStepForm {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 200px;
+        align-content: center;
+        justify-self: center; } }
+  .devis__secondStepInput {
+    border: none;
+    border-bottom: 2px solid #193558;
+    padding: 5px;
+    margin-bottom: 35px;
+    font-size: 14px;
+    font-weight: 200;
+    width: 100%; }
+    @media (min-width: 600px) {
+      .devis__secondStepInput {
+        width: 120%; } }
+  .devis__thirdStepTitle {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 30px 0 35px 0; }
+  .devis__thirdStepSubTitle {
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: bold; }
+  .devis__thirdStepInfo {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .devis__thirdStepInfoList {
+      background: #193558;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: 200;
+      line-height: 20px; }
+    .devis__thirdStepInfoList > li {
+      margin-bottom: 5px; }
+    .devis__thirdStepInfoImg {
+      width: 50%; }
+  .devis__thirdStepSummary {
+    margin: 50px 0;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    padding: 20px; }
+    .devis__thirdStepSummaryTitle {
+      font-size: 14px;
+      font-weight: bold; }
+    .devis__thirdStepSummarySubTitle {
+      font-weight: 200;
+      margin-bottom: 20px; }
+    .devis__thirdStepSummaryList {
+      font-weight: 200; }
+    .devis__thirdStepSummaryItems {
+      margin-bottom: 15px; }
+    .devis__thirdStepSummaryPrice {
+      margin: 40px 0; }
+    .devis__thirdStepSummaryButtons {
+      display: flex;
+      justify-content: end;
+      align-content: flex-end; }
+    .devis__thirdStepSummaryButton {
+      border: none;
+      background: #fff;
+      color: #49b6ce;
+      border: 1px solid #49b6ce;
+      margin-right: 10px;
+      padding: 10px 35px;
+      border-radius: 25px;
+      cursor: pointer; }
+    .devis__thirdStepSummaryButton:hover {
+      transition: 1s;
+      border: 3px solid #49b6ce; }
+    .devis__thirdStepSummaryButtonSend {
+      border: none;
+      background: #49b6ce;
+      color: #fff;
+      border: 1px solid #49b6ce;
+      padding: 10px 35px;
+      border-radius: 25px;
+      cursor: pointer; }
+  .devis #send {
+    display: none; }
+  .devis .--currentStep {
+    opacity: 1; }
+  .devis .--center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+  .devis .--steps {
+    display: none; }
+  .devis .--stepsActive {
+    display: block; }
+
+.sendMail {
+  font-family: 'Nunito';
+  color: #193558; }
+  .sendMail__container {
+    padding: 50px 20px; }
+  .sendMail__title {
+    font-size: 24px;
+    font-weight: bold; }
+  .sendMail__subTitle {
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 10px; }
+  .sendMail__imgContainer {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 50px 0; }
+  .sendMail__img {
+    width: 100%;
+    height: 100%; }
 
 .home__logo-box {
   width: 140px;
@@ -189,9 +426,9 @@ html {
   font-size: 24px;
   text-align: center; }
   .home__title--darken {
-    color: #183456; }
+    color: #193558; }
   .home__title--lighten {
-    color: #49B6CE; }
+    color: #49b6ce; }
 
 .argument {
   position: relative; }
@@ -199,7 +436,7 @@ html {
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    background-color: #49B6CE;
+    background-color: #49b6ce;
     margin-left: -100px;
     z-index: -100;
     overflow: hidden; }
@@ -210,9 +447,7 @@ html {
     top: 20%;
     left: 3%;
     width: 100%;
-
-    background-image: linear-gradient(to right, #fff 18%, #183456 18%, #183456 100%);
-
+    background-image: linear-gradient(to right, #fff 17%, #193558 17%, #193558 100%);
     -webkit-background-clip: text; }
   .argument__text-box {
     text-align: center; }
@@ -522,11 +757,11 @@ html {
         position: fixed;
         right: 5%;
         top: 30px;
-        border: 1px solid #49B6CE;
+        border: 1px solid #49b6ce;
         background: #FFF;
         width: 118px;
         border-radius: 50px;
-        color: #49B6CE;
+        color: #49b6ce;
         padding: 11px 0;
         font-size: 12px;
         text-align: center;
@@ -825,7 +1060,7 @@ html {
     .userTitle {
       display: none; } }
 
-.devis {
+.userDevis {
   display: none;
   position: absolute;
   left: 100%;
@@ -833,57 +1068,57 @@ html {
   height: 100vh;
   width: 100vw; }
   @media (min-width: 949px) {
-    .devis {
+    .userDevis {
       width: 100%; } }
-  .devis__inner {
+  .userDevis__inner {
     width: 90%;
     margin: auto; }
     @media (min-width: 949px) {
-      .devis__inner {
+      .userDevis__inner {
         display: flex;
         flex-direction: column;
         margin-top: 150px; } }
     @media (min-width: 1200px) {
-      .devis__inner {
+      .userDevis__inner {
         width: 90%;
         flex-wrap: wrap;
         flex-direction: row; } }
-  .devis__cards {
+  .userDevis__cards {
     position: relative;
     margin: 30px 0;
     width: 100%;
     background: #45618C;
     border-radius: 8px; }
     @media (min-width: 949px) {
-      .devis__cards {
+      .userDevis__cards {
         margin: 5px auto;
         width: calc(350px); } }
     @media (min-width: 1200px) {
-      .devis__cards {
+      .userDevis__cards {
         margin: 5px; } }
-    .devis__cards-inner {
+    .userDevis__cards-inner {
       padding: 20px;
       color: #FFF;
       font-family: "nunito",sans-serif;
       font-size: 12px; }
-  .devis__mission__principal {
+  .userDevis__mission__principal {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     margin-bottom: 20px; }
-  .devis__mission-title {
+  .userDevis__mission-title {
     font-weight: 400; }
-  .devis__mission-date {
+  .userDevis__mission-date {
     font-weight: lighter; }
-  .devis__mission__details {
+  .userDevis__mission__details {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-  .devis__mission-waste {
+  .userDevis__mission-waste {
     font-weight: lighter; }
-  .devis__details-item {
+  .userDevis__details-item {
     margin-top: 10px; }
-  .devis__mission-price {
+  .userDevis__mission-price {
     font-size: 24px;
     color: #49B6CE; }
 
@@ -946,9 +1181,8 @@ html {
       background: transparent;
       border: none; }
   .profil input[type="submit"] {
-
     border: 0;
-    background: #49B6CE;
+    background: #49b6ce;
     width: 100px;
     border-radius: 50px;
     color: #FFF;
@@ -959,6 +1193,5 @@ html {
       .profil input[type="submit"] {
         position: absolute;
         right: 0; } }
-
 
 /*# sourceMappingURL=styles.css.map */

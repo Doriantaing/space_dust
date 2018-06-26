@@ -1,7 +1,8 @@
+
+// Numbers 
 let numbersBox = document.querySelectorAll(".numbers__datas-key");
 let time = 100;
 
-///NUMBERS
 numbersBox.forEach(numbers => {
   numbs = numbers.textContent;
   var demo = new CountUp(numbersBox, 0, parseInt(numbs), 0, 2.5);
