@@ -4,7 +4,6 @@ session_start();
 $_SESSION['user']['id'] = $_GET['id'];
 require_once '../php/connect.php';
 
-var_dump($_SESSION);
   if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
     header('Location: ../index.php?error=FUCKK');
     exit;
@@ -188,7 +187,12 @@ if ($row === false) {
           </div>
         </div>
       </div>
+      <div class="smBtn --userDevis">Faire un devis</div>
+
     </section>
+
+
+
     <section id="client3" ontouchstart="p3start(event)" ontouchmove="p3move(event)" ontouchend="p3end(event)" class="page profil">
       <div class="profil__inner">
         <h1 class="profil__username">Modifier votre profil</h1>
@@ -249,6 +253,7 @@ if ($row === false) {
         </form>
       </div>
     </section>
+
   </div>
   <script src="../assets/js/countdown.js"></script>
   <script src="../assets/js/charts.js"></script>

@@ -1660,6 +1660,9 @@ html {
     font-size: 24px;
     color: #49B6CE; }
 
+.--userDevis {
+  margin: 50px 60px; }
+
 .profil {
   display: none;
   position: absolute;

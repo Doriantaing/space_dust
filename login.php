@@ -26,7 +26,7 @@
                 <div class="menu__containerItem">
                 <a href="index.php" class="menu__item">Accueil</a>
                     <a href="devis.php" class="menu__item">Devis</a>
-                    <a href="join.php" class="menu__item">Jobs</a>
+                    <a href="join.php" class="menu__item">Recrutement</a>
                     <div class="menu__imgContainer">
                         <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
                     </div>
