@@ -15,7 +15,7 @@
     <div class="body__homepage">
         <header class="header">
             <div class="header__inner">
-                <a href="login.php" class="header__button lgButton">Espace membre</a>
+                <button class="header__button lgButton">Espace membre</button>
                 <div class="header__burger">
                     <div class="header__burger-round round1"></div>
                     <div class="header__burger-round round2"></div>
@@ -25,12 +25,12 @@
             </div>
             <div class="menu">
                 <div class="menu__containerItem">
-                <a href="index.php" class="menu__item">Accueil</a>
+                    <a href="index.php" class="menu__item">Accueil</a>
                     <a href="devis.php" class="menu__item">Devis</a>
                     <a href="join.php" class="menu__item">Jobs</a>
                     <a href="#" class="menu__item">Ma bite</a>
                     <div class="menu__imgContainer">
-                        <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
+                    <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
                     </div>
                 </div>
 
@@ -43,17 +43,17 @@
                     <img src="./assets/img/Logocomplet.png" alt="logo space dust" class="home__logo">
                 </div>
                 <h2 class="home__title">
-                    <span class="home__title--darken">Un slogan de</span>
-                    <span class="home__title--lighten">bonne augure</span>
+                    <span class="home__title--darken">La première agence de nettoyage</span>
+                    <span class="home__title--lighten">de l'espace</span>
                 </h2>
             </section>
             <section class="argument u-bottom-50">
                 <div class="argument__round"></div>
                 <h3 class="argument__slogan">Un titre qui montre qu'on nique la concurrence</h3>
                 <div class="argument__text-box">
-                    <p class="argument__text">argument frais</p>
-                    <p class="argument__text">argument frais</p>
-                    <p class="argument__text">argument frais</p>
+                    <p class="argument__text">Une approche environneentale</p>
+                    <p class="argument__text">Des actions pour la préservation de l’espace</p>
+                    <p class="argument__text">Un travail mené avec les plus grandes industries de l’espace</p>
                 </div>
             </section>
             <section class="numbers u-bottom-50">
@@ -61,17 +61,19 @@
                     <img src="./assets/img/SPACE-DUST-B.png" alt="logo space dust letter" class="numbers__logo">
                 </div>
                 <h3 class="title-3">En quelques chiifres</h3>
-                <div class="numbers__datas">
-                    <p class="numbers__datas-key">300 000</p>
-                    <p class="numbers__datas-text">déchets ramassés</p>
-                </div>
-                <div class="numbers__datas">
-                    <p class="numbers__datas-key">100 000</p>
-                    <p class="numbers__datas-text">déchets recyclés</p>
-                </div>
-                <div class="numbers__datas">
-                    <p class="numbers__datas-key">30</p>
-                    <p class="numbers__datas-text">experts en action</p>
+                <div class="numbers-box">
+                    <div class="numbers__datas">
+                        <p class="numbers__datas-key">300 000</p>
+                        <p class="numbers__datas-text">déchets ramassés</p>
+                    </div>
+                    <div class="numbers__datas">
+                        <p class="numbers__datas-key">30</p>
+                        <p class="numbers__datas-text">experts en action</p>
+                    </div>
+                    <div class="numbers__datas">
+                        <p class="numbers__datas-key">100 000</p>
+                        <p class="numbers__datas-text">déchets recyclés</p>
+                    </div>
                 </div>
             </section>
             <section class="clients u-bottom-50">
@@ -88,7 +90,7 @@
                     <div class="dots--center">
                         <div class="dots--little"></div>
                         <div class="dots--little"></div>
-                        <div class="dots--little"></div>
+                        <div class="dots--little "></div>
                         <div class="dots--little"></div>
                         <div class="dots--little"></div>
                         <div class="dots--little"></div>
@@ -105,19 +107,19 @@
                     </div>
                     <div class="dots--bigger">
                         <div class="dots--big"></div>
+                        <div class="dots--big selected"></div>
+                        <div class="dots--big "></div>
+                        <div class="dots--big "></div>
+                        <div class="dots--big"></div>
+                        <div class="dots--big selected"></div>
                         <div class="dots--big"></div>
                         <div class="dots--big"></div>
                         <div class="dots--big"></div>
+                        <div class="dots--big selected"></div>
                         <div class="dots--big"></div>
                         <div class="dots--big"></div>
                         <div class="dots--big"></div>
-                        <div class="dots--big"></div>
-                        <div class="dots--big"></div>
-                        <div class="dots--big"></div>
-                        <div class="dots--big"></div>
-                        <div class="dots--big"></div>
-                        <div class="dots--big"></div>
-                        <div class="dots--big"></div>
+                        <div class="dots--big selected"></div>
                         <div class="dots--big"></div>
                         <div class="dots--big"></div>
                     </div>
@@ -126,7 +128,7 @@
                     </div>
                 </div>
                 <div class="services__text-container">
-                    <div class="services__text-box">
+                    <div class="services__text-box services__text-box--leftTop">
                         <ul class="inline-dots">
                             <li></li>
                             <li></li>
@@ -136,11 +138,10 @@
                         </ul>
                         <h4 class="title-4">Personnalisation</h4>
                         <p class="services__text">
-                            Poor Cicero’s masterpiece wasn’t manhandled into unintelligible space-filling mumbo-jumbo until sometime in the middle ages
-                            when
+                            Personnalisez votre offre comme bon vous semble selon vos besoins, Space Dust vous offre une expérience unique
                         </p>
                     </div>
-                    <div class="services__text-box">
+                    <div class="services__text-box services__text-box--leftBottom">
                         <ul class="inline-dots">
                             <li></li>
                             <li></li>
@@ -148,13 +149,13 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        <h4 class="title-4">Personnalisation</h4>
+                        <h4 class="title-4">Suivi des données</h4>
                         <p class="services__text">
-                            Poor Cicero’s masterpiece wasn’t manhandled into unintelligible space-filling mumbo-jumbo until sometime in the middle ages
-                            when
+                            Notre interface Espace membre vous permet de suivre l’avancée de votre mission de nettoyage en temps réel, avec des statistiques
+                            concernant les déchets ramassés et recyclés.
                         </p>
                     </div>
-                    <div class="services__text-box">
+                    <div class="services__text-box services__text-box--rightTop">
                         <ul class="inline-dots">
                             <li></li>
                             <li></li>
@@ -162,13 +163,13 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        <h4 class="title-4">Personnalisation</h4>
+                        <h4 class="title-4">Environnement</h4>
                         <p class="services__text">
-                            Poor Cicero’s masterpiece wasn’t manhandled into unintelligible space-filling mumbo-jumbo until sometime in the middle ages
-                            when
+                            Nous avons une approche en faveur de la préservation de l’environnement c’est pourquoi nous mettons en valeur le recyclage
+                            des déchets ramassés.
                         </p>
                     </div>
-                    <div class="services__text-box">
+                    <div class="services__text-box services__text-box--rightBottom">
                         <ul class="inline-dots">
                             <li></li>
                             <li></li>
@@ -176,15 +177,14 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        <h4 class="title-4">Personnalisation</h4>
+                        <h4 class="title-4">Restez informés</h4>
                         <p class="services__text">
-                            Poor Cicero’s masterpiece wasn’t manhandled into unintelligible space-filling mumbo-jumbo until sometime in the middle ages
-                            when
+                            Nous vous tenons informés à toutes les étapes de votre opération.
                         </p>
                     </div>
                 </div>
-                <a href="devis.php" class="smBtn">Faire un devis</a>
-            </section>
+                <a href="#" class="smBtn">Faire un devis</a>
+             </section>
         </div>
         <section class="join">
             <img src="./assets/img/traitlogo.png" alt="petit dessin" class="join__logo-line">
@@ -216,7 +216,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="join.php" class="smBtn">Postuler</a>
+                <a href="#" class="smBtn">Postuler</a>
             </div>
         </section>
 
