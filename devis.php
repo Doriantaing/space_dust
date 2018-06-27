@@ -12,9 +12,30 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header class="header">
+            <div class="header__inner">
+                <a href="login.php" class="header__button lgButton">Espace membre</a>
+                <div class="header__burger">
+                    <div class="header__burger-round round1"></div>
+                    <div class="header__burger-round round2"></div>
+                    <div class="header__burger-round round3"></div>
+                    <div class="header__burger-round round4"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu__containerItem">
+                <a href="index.php" class="menu__item">Accueil</a>
+                    <a href="devis.php" class="menu__item">Devis</a>
+                    <a href="join.php" class="menu__item">Jobs</a>
+                    <a href="#" class="menu__item">Ma bite</a>
+                    <div class="menu__imgContainer">
+                        <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
+                    </div>
+                </div>
 
-    </header>
+            </div>
+        </header>
+
 
     <section class="devis">
         <div class="devis__container">
@@ -168,7 +189,24 @@
         </div>
     </section>
 
+<div class="empty"></div>
+    <footer class="footer">
+        <h3 class="footer__title">Restons en contact</h3>
+        <p class="footer__mail">contact@spacedust.com</p>
+        <p class="footer__adress">27 bis rue du progrès, 93100 Montreuil</p>
+        <div class="footer__logos-box">
+            <img src="./assets/img/facebook.png" alt="footer logo 1" class="footer__logos">
+            <img src="./assets/img/instagram.png" alt="footer logo 2" class="footer__logos">
+            <img src="./assets/img/reddit.png" alt="footer logo 3" class="footer__logos">
+            <img src="./assets/img/twitter.png" alt="footer logo 4" class="footer__logos">
 
+        </div>
+    </footer>
+
+
+    <script src="assets/js/countUp.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="./assets/js/index.js"></script>
     <script src="assets/js/devis.js"></script>
 </body>
 

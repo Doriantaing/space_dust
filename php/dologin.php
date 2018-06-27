@@ -5,8 +5,9 @@ session_start();
 $_SESSION['user']['mail'] = $_POST['mail'];
 $_SESSION['user']['password'] = $_POST['password'];
 
+// var_dump($_POST);
 
-if (!isset($_POST['mail']) || !isset($_POST['password'])) {
+if (empty($_POST['mail']) || empty($_POST['password'])) {
     header('Location: ../index.php');
     exit;
 }

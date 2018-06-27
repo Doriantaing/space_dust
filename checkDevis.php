@@ -11,6 +11,31 @@
 </head>
 
 <body>
+
+ <header class="header">
+            <div class="header__inner">
+                <a href="login.php" class="header__button lgButton">Retour à l'accueil</a>
+                <div class="header__burger">
+                    <div class="header__burger-round round1"></div>
+                    <div class="header__burger-round round2"></div>
+                    <div class="header__burger-round round3"></div>
+                    <div class="header__burger-round round4"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu__containerItem">
+                    <a href="index.php" class="menu__item">Accueil</a>
+                    <a href="devis.php" class="menu__item">Devis</a>
+                    <a href="join.php" class="menu__item">Jobs</a>
+                    <a href="#" class="menu__item">Ma bite</a>
+                    <div class="menu__imgContainer">
+                        <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
     <section class="sendMail">
             <div class="sendMail__container">
                 <h1 class="sendMail__title">Vous êtes bien inscrit !</h1>
@@ -23,6 +48,9 @@
             </div>
         </section>
 
+  <script src="assets/js/countUp.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

@@ -34,7 +34,6 @@ h1{
 </style>
 </head>
 
-<img src="../assets/img/Illustration-Logo.png"a alt="Logo"/>
 <h1>Hello Sir</h1>
 <p>Yo '.$firstname.' '.$name.'</p>
 <p> How is it to work at ' .$company.' ?</p>
@@ -49,4 +48,6 @@ h1{
 $mail->AddAddress(''.$email.'');
 
 $mail->send();
+
+
 ?>
