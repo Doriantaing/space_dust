@@ -1,0 +1,218 @@
+.suivi{
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "nunito",sans-serif;
+  @include for-size(tablet-landscape-up){
+    width: 100%;
+  }
+  &__inner{
+    padding-bottom: 50px;
+    width: 90%;
+    margin: auto;
+    @include for-size(tablet-landscape-up){
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      padding: 0;
+    }
+  }
+  &__desktop-flex{
+    @include for-size(tablet-landscape-up){
+      align-items: center;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: relative;
+      margin-top: 20px;
+    }
+  }
+  &__desktop-leftContent{
+    @include for-size(tablet-landscape-up){
+      width: 50%;
+    }
+  }
+  &__percentage{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #45618C;
+    border-radius: 8px;
+    padding: 30px 0;
+    position: relative;
+    @include for-size(tablet-landscape-up){
+      margin-top: 0;
+      padding: 40px 0;
+    }
+    &-inner{
+      display: flex;
+      align-items: center;
+      position: absolute;
+      border-radius: 8px;
+      height: 100%;
+      width: 30%;
+      top: 0;
+      left: 0;
+      color: rgba(255, 255, 255, .5);
+      font-size: 24px;
+      font-weight: lighter;
+      background: linear-gradient(to right, rgba(85,184,241,1) 0%, rgba(17,119,252,1) 100%);
+    }
+    &-text{
+      display: block;
+      margin: auto;
+    }
+  }
+  &__estimatedTime{
+    width: 100%;
+    background-color: #45618C;
+    border-radius: 8px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    font-size: 32px;
+    color: #FFF;
+    @include for-size(tablet-landscape-up){
+      width: 47%;
+      height: 15%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    @include for-size(desktop-up){
+      width: 50%;
+      height: 20%;
+    }
+  }
+  &__desktop-waste{
+    @include for-size(tablet-landscape-up){
+      display: block;
+      margin: 0;
+      width: 37%;
+      height: 35vh;
+      padding: 20px;
+      background-color: #45618C;
+      border-radius: 8px;
+      position: relative;
+    }
+    @include for-size(desktop-up){
+      width: 40%;
+      height: 45vh;
+    }
+  }
+  &__waste{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-size(tablet-landscape-up){
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 90%;
+    }
+  }
+  &__stats{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    @include for-size(tablet-landscape-up){
+      background-color: #45618C;
+      padding: 20px;
+      border-radius: 8px;
+      position: absolute;
+      width: 47%;
+      bottom: 0;
+      height: 55%;
+      display: flex;
+      align-items: center;
+    }
+    @include for-size(desktop-up){
+      width: 50%;
+      height: 59%;
+    }
+    &-circle{
+      width: 50%;
+      height: 50%;
+      @include for-size(desktop-up){
+        width: 75%;
+        height: 75%;
+      }
+      position: relative;
+      #circleCharts{
+        width: auto !important;
+        height: 100% !important;
+        transform: translateX(-25%);
+      }
+    }
+  }
+  &__legends{
+    width: 20%;
+    text-align: center;
+    color: #FFF;
+    font-family: "nunito",sans-serif;
+    font-size: 8px;
+    font-weight: lighter;
+    @include for-size(desktop-up){
+      font-size: 14px;
+    }
+    &-round{
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid;
+      margin: 10px auto;
+      position: relative;
+    }
+    &-roundInner{
+      display: block;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .outer-yellow{
+    border-color: #f1b555;
+  }
+  .outer-red{
+    border-color: #f15555;
+  }
+  .outer-blue{
+    border-color: #55b7f1;
+  }
+  .inner-yellow{
+    background: $gradientYellow;
+  }
+  .inner-red{
+    background: $gradientRed;
+  }
+  .inner-blue{
+    background: $gradientBlue;
+  }
+}
+.userTitle{
+  font-family: "nunito",sans-serif;
+  font-weight: 400;
+  color: #FFF;
+  margin: 50px 0 30px 0;
+  @include for-size(tablet-landscape-up){
+    display: none;
+  }
+}

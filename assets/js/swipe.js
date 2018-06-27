@@ -6,6 +6,7 @@ var line = document.querySelector(".headeruser__line-inner");
 var tabs = document.querySelectorAll(".headeruser__tabs-item");
 var pages = document.querySelectorAll(".page");
 
+
 var startingX;
 
 function p1start(e){
@@ -121,6 +122,8 @@ function clickTabs(e){
   console.log(num);
   for (var i = 0; i < tabs.length; i++) {
     pages[i].style.display = "none";
+    tabs[i].classList.remove("activeHeaderUser");
+
   }
   if (num == 0) {
     p3.style.left = "200%";
@@ -130,6 +133,9 @@ function clickTabs(e){
     var activeLine = line.className.split(" ")[1];
     line.classList.remove(activeLine);
     line.classList.add("line1");
+    tabs[0].classList.add("activeHeaderUser");
+    // for (var i = 0; i < tabs.length; i++) {
+    // }
   }
   else if (num == 1) {
     p3.style.left = "100%";
@@ -140,6 +146,7 @@ function clickTabs(e){
     var activeLine = line.className.split(" ")[1];
     line.classList.remove(activeLine);
     line.classList.add("line2");
+    tabs[1].classList.add("activeHeaderUser");
   } else {
     p3.style.left = "0";
     p2.style.left = "-100%";
@@ -149,5 +156,6 @@ function clickTabs(e){
     var activeLine = line.className.split(" ")[1];
     line.classList.remove(activeLine);
     line.classList.add("line3");
+    tabs[2].classList.add("activeHeaderUser");
   }
 }
