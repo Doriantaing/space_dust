@@ -1,5 +1,12 @@
 .header{
   background: #fff;
+  @include for-size(tablet-landscape-up){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
   &__inner{
     padding: 21px;
     display: flex;
@@ -11,6 +18,9 @@
     position: relative;
     width: 18px;
     height: 18px;
+    @include for-size(tablet-landscape-up){
+      display: none;
+    }
     &-round{
       position: absolute;
       display: block;
@@ -31,13 +41,21 @@
   top: 0;
   left: 0;
   transition: all .3s;
+  @include for-size(tablet-landscape-up){
+    opacity: 1;
+    z-index: 0;
+    height: 24px;
+    width: auto;
+    position: relative;
+  }
   &__containerItem{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
+    @include for-size(tablet-landscape-up){
+      position: relative;
+    }
   }
   &__item{
     font-family: "nunito", sans-serif;
@@ -47,10 +65,18 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+    @include for-size(tablet-landscape-up){
+      display: inline;
+      margin-right: 20px;
+      font-size: 18px;
+    }
   }
   &__imgContainer{
     width: 100px;
     margin: 50px auto;
+    @include for-size(tablet-landscape-up){
+      display: none;
+    }
     img{
       width: 100%;
     }
@@ -99,3 +125,5 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+

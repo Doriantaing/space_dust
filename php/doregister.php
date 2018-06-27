@@ -6,6 +6,7 @@ $_SESSION['user']['name'] = $_POST['name'];
 $_SESSION['user']['firstname'] = $_POST['firstname'];
 $_SESSION['user']['company'] = $_POST['company'];
 $_SESSION['user']['mail'] = $_POST['mail'];
+$_SESSION['user']['adress'] = $_POST['adress'];
 $_SESSION['user']['password'] = password_hash($_POST['password'] , PASSWORD_DEFAULT);
 
 

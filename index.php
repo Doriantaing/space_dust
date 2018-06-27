@@ -15,7 +15,7 @@
     <div class="body__homepage">
         <header class="header">
             <div class="header__inner">
-                <button class="header__button lgButton">Espace membre</button>
+                <a href="login.php" class="header__button lgButton">Espace membre</a>
                 <div class="header__burger">
                     <div class="header__burger-round round1"></div>
                     <div class="header__burger-round round2"></div>

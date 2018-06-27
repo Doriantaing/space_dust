@@ -59,6 +59,11 @@ html {
   font-size: 24px;
   text-align: center; }
 
+.title-4 {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center; }
+
 .smBtn {
   display: inline-block;
   padding: 1em;
@@ -79,6 +84,13 @@ html {
 
 .header {
   background: #fff; }
+  @media (min-width: 949px) {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto; } }
   .header__inner {
     padding: 21px;
     display: flex;
@@ -89,6 +101,9 @@ html {
     position: relative;
     width: 18px;
     height: 18px; }
+    @media (min-width: 949px) {
+      .header__burger {
+        display: none; } }
     .header__burger-round {
       position: absolute;
       display: block;
@@ -107,13 +122,21 @@ html {
   top: 0;
   left: 0;
   transition: all .3s; }
+  @media (min-width: 949px) {
+    .menu {
+      opacity: 1;
+      z-index: 0;
+      height: 24px;
+      width: auto;
+      position: relative; } }
   .menu__containerItem {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column; }
+    transform: translate(-50%, -50%); }
+    @media (min-width: 949px) {
+      .menu__containerItem {
+        position: relative; } }
   .menu__item {
     font-family: "nunito", sans-serif;
     color: #193558;
@@ -122,9 +145,17 @@ html {
     cursor: pointer;
     text-align: center;
     text-decoration: none; }
+    @media (min-width: 949px) {
+      .menu__item {
+        display: inline;
+        margin-right: 20px;
+        font-size: 18px; } }
   .menu__imgContainer {
     width: 100px;
     margin: 50px auto; }
+    @media (min-width: 949px) {
+      .menu__imgContainer {
+        display: none; } }
     .menu__imgContainer img {
       width: 100%; }
 
@@ -594,59 +625,6 @@ html {
     color: #193558; }
   .home__title--lighten {
     color: #49b6ce; }
-
-.joinForm {
-  color: #193558;
-  margin: 50px 20px; }
-  .joinForm__container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .joinForm__title {
-    font-size: 24px;
-    font-weight: bold; }
-  .joinForm__subTitle {
-    font-size: 14px;
-    display: flex;
-    margin-top: 10px; }
-  .joinForm__text {
-    font-weight: 200;
-    margin-right: 5px; }
-  .joinForm__link {
-    cursor: pointer; }
-  .joinForm__form {
-    margin: 35px 20px; }
-    .joinForm__formContainer {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 80px;
-      align-items: center; }
-    .joinForm__formInput {
-      border: none;
-      border-bottom: 2px solid #193558;
-      padding: 5px;
-      margin-bottom: 35px;
-      margin-right: 35px;
-      font-size: 14px;
-      font-weight: 200;
-      width: 100%; }
-      @media (min-width: 600px) {
-        .joinForm__formInput {
-          width: 200px; } }
-    .joinForm__formInputSubmit {
-      margin-top: 50px;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-      background: #49b6ce;
-      border: 1px solid #49b6ce;
-      border-radius: 30px;
-      width: 200px;
-      padding: 10px 0;
-      color: #fff;
-      cursor: pointer; }
 
 .argument {
   position: relative; }
@@ -1131,6 +1109,59 @@ html {
         background: #193558;
         border-radius: 50%;
         margin-bottom: 10px; }
+
+.joinForm {
+  color: #193558;
+  margin: 50px 20px; }
+  .joinForm__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .joinForm__title {
+    font-size: 24px;
+    font-weight: bold; }
+  .joinForm__subTitle {
+    font-size: 14px;
+    display: flex;
+    margin-top: 10px; }
+  .joinForm__text {
+    font-weight: 200;
+    margin-right: 5px; }
+  .joinForm__link {
+    cursor: pointer; }
+  .joinForm__form {
+    margin: 35px 20px; }
+    .joinForm__formContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 80px;
+      align-items: center; }
+    .joinForm__formInput {
+      border: none;
+      border-bottom: 2px solid #193558;
+      padding: 5px;
+      margin-bottom: 35px;
+      margin-right: 35px;
+      font-size: 14px;
+      font-weight: 200;
+      width: 100%; }
+      @media (min-width: 600px) {
+        .joinForm__formInput {
+          width: 200px; } }
+    .joinForm__formInputSubmit {
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      background: #49b6ce;
+      border: 1px solid #49b6ce;
+      border-radius: 30px;
+      width: 200px;
+      padding: 10px 0;
+      color: #fff;
+      cursor: pointer; }
 
 .footer {
   height: 100vh;
