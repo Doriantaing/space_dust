@@ -5,7 +5,7 @@ $_SESSION['user']['id'] = $_GET['id'];
 require_once '../php/connect.php';
 
   if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
-    header('Location: ../index.php?error=FUCKK');
+    header('Location: ../index.php?error=nodata');
     exit;
   }
 
