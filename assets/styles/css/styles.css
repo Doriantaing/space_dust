@@ -82,23 +82,25 @@ html {
   width: 100vw;
   height: 100vh; }
 
-.header__inner {
-  padding: 21px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-.header__burger {
-  z-index: 2;
-  position: relative;
-  width: 18px;
-  height: 18px; }
-  .header__burger-round {
-    position: absolute;
-    display: block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #193558; }
+.header {
+  background: #fff; }
+  .header__inner {
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__burger {
+    z-index: 2;
+    position: relative;
+    width: 18px;
+    height: 18px; }
+    .header__burger-round {
+      position: absolute;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #193558; }
 
 .menu {
   opacity: 0;
@@ -114,14 +116,17 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; }
   .menu__item {
     font-family: "nunito", sans-serif;
     color: #193558;
     margin-top: 30px;
     font-size: 24px;
     cursor: pointer;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none; }
   .menu__imgContainer {
     width: 100px;
     margin: 50px auto; }
@@ -164,15 +169,17 @@ html {
   font-family: 'Nunito', sans-serif;
   color: #193558;
   background-color: #FFF;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none; }
 
 .devis {
   height: 100vh;
   font-family: 'Nunito';
   color: #193558;
-  font-size: 14px; }
+  font-size: 14px;
+  background: #fff; }
   .devis__container {
-    padding: 100px 20px; }
+    padding: 50px 20px; }
     @media (min-width: 600px) {
       .devis__container {
         padding-left: 100px; } }
@@ -483,7 +490,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 150px; }
   .login__title {
     font-size: 24px;
     font-weight: bold; }
@@ -529,7 +537,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 150px; }
   .register__title {
     font-size: 24px;
     font-weight: bold; }
@@ -873,7 +882,7 @@ html {
     .joinForm__formContainer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 40px;
+      grid-gap: 80px;
       align-items: center; }
     .joinForm__formInput {
       border: none;
@@ -899,11 +908,6 @@ html {
       padding: 10px 0;
       color: #fff;
       cursor: pointer; }
-
-.--message {
-  width: 100%;
-  align-items: center;
-  justify-self: center; }
 
 .footer {
   height: 100vh;
@@ -1412,5 +1416,8 @@ html {
       .profil input[type="submit"] {
         position: absolute;
         right: 0; } }
+
+body {
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=styles.css.map */
