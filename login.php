@@ -1,3 +1,8 @@
+<?php
+
+$error = $_GET['error'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +16,18 @@
 </head>
 
 <body>
+
+
+<?php 
+
+if (isset($error)) {
+?>
+<div class="errorContainer">
+<p class="errorText">Mauvais e-mail ou Mot de passe</p>
+</div>
+<?php
+   }
+  ?>
 
 <header class="header">
             <div class="header__inner">
@@ -36,6 +53,7 @@
         </header>
 
 
+
     <section class="login">
 
     <div class="login__container">
@@ -45,6 +63,7 @@
             <p class="login__text">Pas encore inscrit ?</p>
             <p class="login__link">Inscrivez-vous.</p>
         </div>
+       
 
         <form action="php/dologin.php" method="post" class="login__form">
 
@@ -118,8 +137,6 @@
         </form>
       </div>
     </section>
-
-
 
 
   <script src="assets/js/countUp.js"></script>

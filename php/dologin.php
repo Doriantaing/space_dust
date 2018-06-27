@@ -40,7 +40,7 @@ if(password_verify($_POST['password'], $row[0]['user_password'])){
   header('Location: ../user/index.php?id='.$row[0]['user_id']);
 echo 'ouiiii';
 } else{
-  header('Location: ../index.php?error=nodata');
+  header('Location: ../login.php?error=wrongData');
 echo 'nonnn';
     exit;
 }

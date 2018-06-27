@@ -647,6 +647,15 @@ html {
       color: #fff;
       cursor: pointer; }
 
+.errorContainer {
+  width: 100%;
+  background: #49b6ce; }
+
+.errorText {
+  text-align: center;
+  color: #fff;
+  padding: 10px 0; }
+
 .home__logo-box {
   width: 140px;
   height: 144px;
