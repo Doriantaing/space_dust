@@ -59,10 +59,16 @@ html {
   font-size: 24px;
   text-align: center; }
 
-.title-4 {
-  font-size: 17px;
-  font-weight: 700;
-  text-align: center; }
+.smBtn {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  background-color: #193558;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto; }
 
 .u-bottom-50 {
   margin-bottom: 50px; }

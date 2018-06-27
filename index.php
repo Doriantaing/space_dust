@@ -184,7 +184,7 @@
                     </div>
                 </div>
                 <a href="#" class="smBtn">Faire un devis</a>
-             </section>
+            </section>
         </div>
         <section class="join">
             <img src="./assets/img/traitlogo.png" alt="petit dessin" class="join__logo-line">
