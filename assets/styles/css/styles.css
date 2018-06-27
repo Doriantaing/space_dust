@@ -73,7 +73,8 @@ html {
   color: #fff;
   font-size: 12px;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  cursor: pointer; }
 
 .u-bottom-50 {
   margin-bottom: 50px; }
@@ -89,10 +90,11 @@ html {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 90%;
-      margin: auto; } }
+      width: 100vw;
+      margin: auto;
+      padding: 0px 20px; } }
   .header__inner {
-    padding: 21px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -133,10 +135,14 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     @media (min-width: 949px) {
       .menu__containerItem {
-        position: relative; } }
+        position: relative;
+        display: block; } }
   .menu__item {
     font-family: "nunito", sans-serif;
     color: #193558;
@@ -196,7 +202,12 @@ html {
   color: #193558;
   background-color: #FFF;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.5s; }
+
+.lgButton:hover {
+  background: #193558;
+  color: #fff; }
 
 .devis {
   height: 100vh;
@@ -532,6 +543,8 @@ html {
     cursor: pointer; }
   .login__form {
     margin: 50px 20px; }
+    .login__formInputs {
+      position: relative; }
     .login__formInput {
       border: none;
       border-bottom: 2px solid #193558;
@@ -540,7 +553,20 @@ html {
       margin-right: 35px;
       font-size: 14px;
       font-weight: 200;
-      width: 100%; }
+      width: 100%;
+      color: #173456;
+      letter-spacing: 1px;
+      box-sizing: border-box;
+      background-color: transparent;
+      z-index: 1; }
+      @media (min-width: 600px) {
+        .login__formInput {
+          width: 100%; } }
+    .login__formLabel {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      z-index: -1; }
     .login__formInputSubmit {
       position: absolute;
       left: 50%;
@@ -552,7 +578,7 @@ html {
       color: #fff;
       cursor: pointer;
       letter-spacing: 1px;
-      margin-bottom: 40px; }
+      margin-top: 70px; }
 
 .register {
   display: none;
@@ -584,18 +610,30 @@ html {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 40px;
       align-items: center; }
+    .register__formInputs {
+      position: relative; }
     .register__formInput {
       border: none;
       border-bottom: 2px solid #193558;
       padding: 5px;
-      margin-bottom: 35px;
+      margin-bottom: 50px;
       margin-right: 35px;
       font-size: 14px;
       font-weight: 200;
-      width: 100%; }
+      width: 100%;
+      color: #173456;
+      letter-spacing: 1px;
+      box-sizing: border-box;
+      background-color: transparent;
+      z-index: 1; }
       @media (min-width: 600px) {
         .register__formInput {
-          width: 200px; } }
+          width: 100%; } }
+    .register__formLabel {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      z-index: -1; }
     .register__formInputSubmit {
       margin-top: 50px;
       position: absolute;
@@ -933,7 +971,8 @@ html {
     padding: 0;
     margin: 50px auto 0;
     border: solid 5px transparent;
-    transform: rotate(10deg); }
+    transform: rotate(10deg);
+    z-index: -2; }
     .dots .dots--bigger > * {
       display: block;
       position: absolute;
@@ -1137,7 +1176,10 @@ html {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 80px;
-      align-items: center; }
+      align-items: center;
+      position: relative; }
+    .joinForm__formInputs {
+      position: relative; }
     .joinForm__formInput {
       border: none;
       border-bottom: 2px solid #193558;
@@ -1146,10 +1188,20 @@ html {
       margin-right: 35px;
       font-size: 14px;
       font-weight: 200;
-      width: 100%; }
+      width: 100%;
+      color: #173456;
+      letter-spacing: 1px;
+      box-sizing: border-box;
+      background-color: transparent;
+      z-index: 1; }
       @media (min-width: 600px) {
         .joinForm__formInput {
           width: 200px; } }
+    .joinForm__formLabel {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      z-index: -1; }
     .joinForm__formInputSubmit {
       margin-top: 50px;
       position: absolute;
@@ -1207,6 +1259,7 @@ html {
   width: 100vw;
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.5px;
   color: #FFF; }
   @media (min-width: 949px) {
     .headeruser {
@@ -1234,7 +1287,9 @@ html {
       margin-top: 130px;
       font-size: 18px; } }
   .headeruser__logout {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none; }
     @media (min-width: 949px) {
       .headeruser__logout {
         position: fixed;

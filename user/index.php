@@ -4,7 +4,7 @@ session_start();
 $_SESSION['user']['id'] = $_GET['id'];
 require_once '../php/connect.php';
 
-// var_dump($_SESSION);
+var_dump($_SESSION);
   if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
     header('Location: ../index.php?error=FUCKK');
     exit;

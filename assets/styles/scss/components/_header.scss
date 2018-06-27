@@ -4,11 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100vw;
     margin: auto;
+    padding: 0px 20px;
   }
   &__inner{
-    padding: 21px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,8 +54,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include for-size(tablet-landscape-up){
       position: relative;
+     display: block;
     }
   }
   &__item{
@@ -124,6 +129,11 @@
   background-color: #FFF;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.5s;
+}
+.lgButton:hover{
+  background: $dark-blue;
+  color: #fff;
 }
 
 

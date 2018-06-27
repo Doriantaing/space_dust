@@ -20,9 +20,10 @@ $mail->SetFrom('doriantaing77@hotmail.fr', 'Space Dust');
 
 $mail->Subject = 'Objet de l\'email';
 
-$mail->AddEmbeddedImage('../assets/img/Illustration-Logo.png','mon_logo', 'logo.png');
+// $mail->AddEmbeddedImage('../assets/img/Illustration-Logo.png','mon_logo', 'logo.png');
 
-$mail->Body = ' <head>
+$mail->Body = ' 
+<head>
 <style>
 html,
 body,
@@ -249,6 +250,9 @@ body {
   width: 100%;
 }
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 </head>
 
 <body>
@@ -290,5 +294,3 @@ $mail->AddAddress(''.$email.'');
 
 $mail->send();
 
-
-?>

@@ -1,45 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/styles/css/styles.css">
-    <link rel="stylesheet" href="assets/styles/css/reset.css">
-    <title>Devis</title>
-</head>
+include_once 'php/header.php';
 
-<body>
-    <!-- header -->
-    <header class="header">
-            <div class="header__inner">
-                <a href="login.php" class="header__button lgButton">Espace membre</a>
-                <div class="header__burger">
-                    <div class="header__burger-round round1"></div>
-                    <div class="header__burger-round round2"></div>
-                    <div class="header__burger-round round3"></div>
-                    <div class="header__burger-round round4"></div>
-                </div>
-            </div>
-            <div class="menu">
-                <div class="menu__containerItem">
-                <a href="index.php" class="menu__item">Accueil</a>
-                    <a href="devis.php" class="menu__item">Devis</a>
-                    <a href="join.php" class="menu__item">Jobs</a>
-                    <a href="#" class="menu__item">Ma bite</a>
-                    <div class="menu__imgContainer">
-                        <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
-                    </div>
-                </div>
-
-            </div>
-        </header>
+?>
 
 
     <section class="devis">
         <div class="devis__container">
-            <h4 class="devis__title">Vous y êtes presque</h4>
+            <h4 class="devis__title">Devis</h4>
 
             <ul class="devis__navSteps">
                 <li class="devis__navStep --currentStep">Étape 1</li>
@@ -56,7 +24,7 @@
                 <!-- First Step -->
 
                 <div class="devis__firstStep --stepsActive">
-                    <h4 class="devis__firstStepTitle">Quelles sont les instructions, Arnaud ?</h4>
+                    <h4 class="devis__firstStepTitle">Créer votre devis</h4>
 
 
                     <form action="" method="POST" class="devis__firstStepForm">
@@ -165,7 +133,7 @@
                                 <li class="devis__thirdStepSummaryItems">Recyclage des déchets à : </li>
                             </ul>
 
-                            <p class="devis__thirdStepSummaryPrice">Prix : 10000 ¥</p>
+                            <p class="devis__thirdStepSummaryPrice">Prix : 2 255 000 0000 ¥</p>
 
                             <div class="devis__thirdStepSummaryButtons">
                                 <button class="devis__thirdStepSummaryButton">Modifier</button>
