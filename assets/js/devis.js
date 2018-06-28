@@ -187,8 +187,3 @@ function sendData() {
 
 
 
-// the higher the value is the bigger the circle gets
-
-var cleaningCircle = document.querySelector('.devis__firstStepCleaningCircle');
-var cleaningNumber = document.querySelector('.--cleaningNumber');
-

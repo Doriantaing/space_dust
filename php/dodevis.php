@@ -15,15 +15,7 @@ $_SESSION['user']['recyclable'] = $_POST['recyclable'];
 $_SESSION['user']['password'] = password_hash($_POST['password'] , PASSWORD_DEFAULT);
 
 require_once "connect.php";
-// Check if values are not empty
-if (!isset($_POST['firstname'])||
-    !isset($_POST['company']) ||
-    !isset($_POST['mail']) ||
-    !isset($_POST['adress']) ||
-    !isset($_POST['password'])) {
-    header('Location: ../devis.php?empty=noData');
-    exit;
-}
+
 
 // If there is values from the page devis do this sql request
 if (isset($_POST['structure']) || 

@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['user']['mail'])) {
-    header('Location: ../devis.php?empty=NoData');
+    header('Location: ../devis.php?empty=Caca');
 }
 require_once "php/mail.php";
 
