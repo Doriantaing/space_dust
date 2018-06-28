@@ -20,7 +20,7 @@
     width: 350px;
     margin: 25vh auto;
     background: #fff;
-    z-index: 100;
+    z-index: 100; 
     form * {
       margin-bottom: 20px;
       @include for-size(tablet-landscape-up) {
@@ -56,13 +56,14 @@
 }
 
 .submit_user {
+  border: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 5%;
+  bottom: -5%;
   @include for-size(tablet-landscape-up) {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 17%;
+    bottom: 0%;
   }
 }

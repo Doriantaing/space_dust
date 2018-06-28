@@ -1,42 +1,42 @@
-<?php
-session_start();
+ <?php
+// session_start();
 
- $_SESSION['user']['id'] = $_GET['id'];
-require_once '../php/connect.php';
+//  $_SESSION['user']['id'] = $_GET['id'];
+// require_once '../php/connect.php';
 
-  if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
-    header('Location: ../index.php?error=ErrorData');
+//   if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
+//     header('Location: ../index.php?error=ErrorData');
 
-    exit;
-  }
+//     exit;
+//   }
 
-  $req = "SELECT 
-  `user_id`, 
-  `user_name`, 
-  `user_firstname`,
-  `company`,
-  `user_mail`,
-  `user_password`,
-  `adress`
-   FROM
-   `space_dust` . `user`
-  WHERE 
-   `user_mail` = :mail AND
-   `user_id` = :id
-   LIMIT 1
-   ;";
+//   $req = "SELECT 
+//   `user_id`, 
+//   `user_name`, 
+//   `user_firstname`,
+//   `company`,
+//   `user_mail`,
+//   `user_password`,
+//   `adress`
+//    FROM
+//    `space_dust` . `user`
+//   WHERE 
+//    `user_mail` = :mail AND
+//    `user_id` = :id
+//    LIMIT 1
+//    ;";
 
-$stmt = $con->prepare($req);
-$stmt->bindValue(':mail', $_SESSION['user']['mail']);
-$stmt->bindValue(':id', $_GET['id']);
-$stmt->execute();
-$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $stmt = $con->prepare($req);
+// $stmt->bindValue(':mail', $_SESSION['user']['mail']);
+// $stmt->bindValue(':id', $_GET['id']);
+// $stmt->execute();
+// $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// var_dump($row);
-if ($row === false) {
-    header("Location: ../index.php?error=nodatatodetails");
-    exit;
-}
+// // var_dump($row);
+// if ($row === false) {
+//     header("Location: ../index.php?error=nodatatodetails");
+//     exit;
+// }
 
 
 ?>
@@ -220,7 +220,7 @@ if ($row === false) {
                 </div>
                   <input type="text" id="firstValue" placeholder="Pourcentage de déchets à recycler" class="devis__firstStepInputPercent" disabled>
               </div>              
-              <input type="submit" value="envoyer" class="smBtn submit_user">          
+              <input type="submit" value="Envoyer" class="smBtn submit_user">          
             </form>
           
         </div>
