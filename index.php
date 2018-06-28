@@ -150,7 +150,7 @@ include_once 'php/header.php';
                         </p>
                     </div>
                 </div>
-                <a href="devis.php" class="smBtn">Faire un devis</a>
+                <a href="devis.php" class="smBtn btnHoverDark">Faire un devis</a>
             </section>
         </div>
         <section class="join">
@@ -183,7 +183,7 @@ include_once 'php/header.php';
                         </p>
                     </div>
                 </div>
-                <a href="join.php" class="smBtn">Postuler</a>
+                <a href="join.php" class="smBtn btnHoverDark">Postuler</a>
             </div>
         </section>
 

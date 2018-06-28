@@ -89,6 +89,20 @@ html {
   width: 100vw;
   height: 100vh; }
 
+.btnHoverDark {
+  transition: 0.5s; }
+
+.btnHoverDark:hover {
+  background: #49b6ce;
+  transition: 0.5s; }
+
+.btnHoverLight {
+  transition: 0.5s; }
+
+.btnHoverLight:hover {
+  background: #193558;
+  transition: 0.5s; }
+
 .header {
   background: #fff; }
   @media (min-width: 949px) {
@@ -547,6 +561,16 @@ html {
     display: none; }
   .devis .--stepsActive {
     display: block; }
+  .devis .btnHoverBorder {
+    transition: 0.5s; }
+  .devis .btnHoverBorder:hover {
+    transition: 0.5s;
+    background: #49b6ce; }
+  .devis .btnHoverBackground {
+    transition: 0.5s; }
+  .devis .btnHoverBackground:hover {
+    transition: 0.5s;
+    background: transparent; }
 
 .sendMail {
   font-family: 'Nunito';
@@ -639,7 +663,7 @@ html {
       left: 50%;
       transform: translate(-50%);
       background: #49b6ce;
-      border: 1px solid #49b6ce;
+      border: none;
       border-radius: 30px;
       padding: 10px 20px;
       color: #fff;
@@ -708,7 +732,7 @@ html {
       left: 50%;
       transform: translate(-50%);
       background: #49b6ce;
-      border: 1px solid #49b6ce;
+      border: none;
       border-radius: 30px;
       width: 200px;
       padding: 10px 0;
@@ -1333,6 +1357,15 @@ html {
     font-size: 14px;
     font-weight: 400;
     margin: 20px 0; }
+  .joinOffers__spontaneous {
+    text-align: center;
+    padding-bottom: 20px; }
+    .joinOffers__spontaneous .--spontaneous {
+      border: none; }
+      @media (min-width: 600px) {
+        .joinOffers__spontaneous .--spontaneous {
+          display: inline-block;
+          margin: 20px auto 0 auto; } }
 
 .joinForm {
   color: #193558;
@@ -1538,12 +1571,12 @@ html {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -5%; }
+  bottom: -2%; }
   @media (min-width: 949px) {
     .submit_user {
       left: 50%;
       transform: translateX(-50%);
-      bottom: 0%; } }
+      bottom: 13%; } }
 
 .headeruser {
   background: #395075;

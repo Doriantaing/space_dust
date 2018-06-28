@@ -68,3 +68,19 @@ html {
   width: 100vw;
   height: 100vh;
 }
+
+.btnHoverDark{
+  transition: 0.5s;
+}
+.btnHoverDark:hover{
+   background: $light-blue;
+   transition: 0.5s;
+}
+
+.btnHoverLight{
+  transition: 0.5s;
+}
+.btnHoverLight:hover{
+  background: $dark-blue;
+  transition: 0.5s;
+}

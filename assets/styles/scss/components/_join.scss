@@ -182,6 +182,17 @@
         margin: 20px 0;
        }
    }
+   &__spontaneous{
+       text-align: center;
+       padding-bottom: 20px;
+       .--spontaneous{
+           border: none;
+           @include for-size(tablet-portrait-up){
+            display: inline-block;
+            margin: 20px auto 0 auto;
+           }
+       }
+   }
 }
 
 /////////form
