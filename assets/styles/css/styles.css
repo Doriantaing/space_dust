@@ -1284,6 +1284,15 @@ html {
         background: #193558;
         border-radius: 50%;
         margin-bottom: 10px; }
+  .join__promo {
+    text-align: center;
+    font-size: 18px; }
+    .join__promo a {
+      color: currentColor; }
+  .join__humble {
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 10%; }
 
 .joinOffers {
   color: #193558; }
@@ -1336,17 +1345,8 @@ html {
     margin: 20px 0; }
 
 .joinForm {
-  display: none;
   color: #193558;
   margin: 50px 20px; }
-  .joinForm__return {
-    border: none;
-    background: #fff;
-    cursor: pointer;
-    text-transform: uppercase; }
-    @media (min-width: 600px) {
-      .joinForm__return {
-        margin-left: 20px; } }
   .joinForm__container {
     position: relative;
     display: -webkit-box;
@@ -1385,45 +1385,62 @@ html {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      position: relative; }
-    .joinForm__formInputs {
-      position: relative; }
-    .joinForm__formInput {
-      border: none;
-      border-bottom: 2px solid #193558;
-      padding: 5px;
-      margin-bottom: 35px;
-      margin-right: 35px;
-      font-size: 14px;
-      font-weight: 200;
-      width: 100%;
-      color: #173456;
-      letter-spacing: 1px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      background-color: transparent;
-      z-index: 1; }
-      @media (min-width: 600px) {
-        .joinForm__formInput {
-          width: 200px; } }
-    .joinForm__formLabel {
-      position: absolute;
-      top: 5px;
-      left: 0;
-      z-index: -1; }
-    .joinForm__formInputSubmit {
-      margin-top: 50px;
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translate(-50%);
-      transform: translate(-50%);
-      background: #49b6ce;
-      border: 1px solid #49b6ce;
-      border-radius: 30px;
-      width: 200px;
-      padding: 10px 0;
-      color: #fff;
-      cursor: pointer; }
+      position: relative;
+      display: none;
+      color: #193558;
+      margin: 50px 20px; }
+      .joinForm__formContainer__return {
+        border: none;
+        background: #fff;
+        cursor: pointer;
+        text-transform: uppercase; }
+        @media (min-width: 600px) {
+          .joinForm__formContainer__return {
+            margin-left: 20px; } }
+      .joinForm__formContainer__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .joinForm__formContainerInputs {
+        position: relative; }
+      .joinForm__formContainerInput {
+        border: none;
+        border-bottom: 2px solid #193558;
+        padding: 5px;
+        margin-bottom: 35px;
+        margin-right: 35px;
+        font-size: 14px;
+        font-weight: 200;
+        width: 100%;
+        color: #173456;
+        letter-spacing: 1px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: transparent;
+        z-index: 1; }
+        @media (min-width: 600px) {
+          .joinForm__formContainerInput {
+            width: 200px; } }
+      .joinForm__formContainerLabel {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        z-index: -1; }
+      .joinForm__formContainerInputSubmit {
+        margin-top: 50px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        background: #49b6ce;
+        border: 1px solid #49b6ce;
+        border-radius: 30px;
+        width: 200px;
+        padding: 10px 0;
+        color: #fff;
+        cursor: pointer; }
 
 .footer {
   height: 100vh;

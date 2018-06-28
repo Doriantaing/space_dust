@@ -113,75 +113,83 @@
       }
     }
   }
+  &__promo {
+    text-align: center;
+    font-size: 18px;
+    a {
+      color: currentColor;
+    }
+  }
+  &__humble {
+    display: block;
+    margin: 5px auto 0 auto;
+    width: 10%;
+  }
 }
 
+///////// Page Recrutement
 
+.joinOffers {
+  color: $dark-blue;
 
-
-
-///////// Page Recrutement 
-
-.joinOffers{
-    color: $dark-blue;
-
-   &__title{
-       margin-top: 50px;
-       text-align: center;
-       font-size: 24px;
-       font-weight: bold;
-   }
-   &__box{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       @include for-size(tablet-portrait-up){
-           flex-direction: row;
-       }
-       &Container{
-           width: 300px;
-           height: 400px;
-           margin: 50px 0 30px 0;
-           padding: 20px 20px; 
-           box-shadow: 0 6px 10px rgba(0, 0, 0, .4);
-           @include for-size(tablet-portrait-up){
-               margin: 100px 50px;
-        }
-       }
-       &Title{
-           font-size: 20px;
-           font-weight: 600;
-           text-align: center;
-       }
-   }
-   &__boxSummary{
-       &Container{
-           position: relative;
-           padding: 10px 0;
-       }
-       &Title{
-           font-size: 14px;
-           font-weight: 400;
-           margin: 10px 0;
-       }
-       &Text{
-           font-size: 12px;
-           line-height: 35px;
-       }
-       &Button{
-           position: absolute;
-           left: 50%;
-           transform: translate(-50%);
-           border: none;
-           margin-top: 20px;
-           padding: 10px 20px;
-       }
-       &Availability{
-        font-size: 14px;
-        font-weight: 400;
-        margin: 20px 0;
-       }
-   }
+  &__title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include for-size(tablet-portrait-up) {
+      flex-direction: row;
+    }
+    &Container {
+      width: 300px;
+      height: 400px;
+      margin: 50px 0 30px 0;
+      padding: 20px 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+      @include for-size(tablet-portrait-up) {
+        margin: 100px 50px;
+      }
+    }
+    &Title {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+  &__boxSummary {
+    &Container {
+      position: relative;
+      padding: 10px 0;
+    }
+    &Title {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 10px 0;
+    }
+    &Text {
+      font-size: 12px;
+      line-height: 35px;
+    }
+    &Button {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      border: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+    &Availability {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 20px 0;
+    }
+  }
 }
 
 /////////form
@@ -232,66 +240,67 @@
       -ms-flex-align: center;
       align-items: center;
       position: relative;
-    display: none;
-    color: $dark-blue;
-    margin: 50px 20px;
-    &__return{
+      display: none;
+      color: $dark-blue;
+      margin: 50px 20px;
+      &__return {
         border: none;
         background: #fff;
         cursor: pointer;
         text-transform: uppercase;
-        @include for-size(tablet-portrait-up){
-            margin-left: 20px;
+        @include for-size(tablet-portrait-up) {
+          margin-left: 20px;
         }
-    }
-    &__container {
+      }
+      &__container {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    &Inputs {
-      position: relative;
-    }
-    &Input {
-      border: none;
-      border-bottom: 2px solid $dark-blue;
-      padding: 5px;
-      margin-bottom: 35px;
-      margin-right: 35px;
-      font-size: 14px;
-      font-weight: 200;
-      width: 100%;
-      color: #173456;
-      letter-spacing: 1px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      background-color: transparent;
-      z-index: 1;
-      @include for-size(tablet-portrait-up) {
-        width: 200px;
       }
-    }
-    &Label {
-      position: absolute;
-      top: 5px;
-      left: 0;
-      z-index: -1;
-    }
-    &InputSubmit {
-      margin-top: 50px;
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translate(-50%);
-      transform: translate(-50%);
-      background: $light-blue;
-      border: 1px solid $light-blue;
-      border-radius: 30px;
-      width: 200px;
-      padding: 10px 0;
-      color: #fff;
-      cursor: pointer;
+      &Inputs {
+        position: relative;
+      }
+      &Input {
+        border: none;
+        border-bottom: 2px solid $dark-blue;
+        padding: 5px;
+        margin-bottom: 35px;
+        margin-right: 35px;
+        font-size: 14px;
+        font-weight: 200;
+        width: 100%;
+        color: #173456;
+        letter-spacing: 1px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: transparent;
+        z-index: 1;
+        @include for-size(tablet-portrait-up) {
+          width: 200px;
+        }
+      }
+      &Label {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        z-index: -1;
+      }
+      &InputSubmit {
+        margin-top: 50px;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        background: $light-blue;
+        border: 1px solid $light-blue;
+        border-radius: 30px;
+        width: 200px;
+        padding: 10px 0;
+        color: #fff;
+        cursor: pointer;
+      }
     }
   }
 }

@@ -2,7 +2,8 @@
 $empty = $_GET['empty'];
 
 if (isset($empty)) {
-?> <div class="errorContainer">
+?> 
+<div class="errorContainer">
     <p class="errorText">Vous avez oublié de remplir des champs</p>
     </div>
 <?php
@@ -101,13 +102,16 @@ include_once 'php/header.php';
             <input type="submit" value="Postuler" class="joinForm__formInputSubmit">
         </form>
       </div>
+
+      <p class="join__promo">retrouver toutes nos offres sur <a href="#">wearehumble.space</a></p>
+      <img class="join__humble" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-9/36404742_10156430944744770_762536198903169024_n.png?_nc_cat=0&_nc_eui2=AeH1jD2S4KcTCxEcStHvqqFwXwE9bTe11KvVdiCVh8Und8p37PssqgQulcdlBS5j3jaA5eSno2rlRipPuxIh7ZDL1rNj7Hmn-m4iMiOb12xBnw&oh=4dae9ef1a1415c1f66f89f03c5862f9f&oe=5BB69C3F" alt="logo humble">
     </section>
 
     
   
     <script src="assets/js/menu.js"></script>
-    <script src="./assets/js/index.js"></script>
     <script src="assets/js/input.js"></script>
     <script src="assets/js/join.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
