@@ -7,12 +7,9 @@ $admin-header: #395075;
 $bg-join: #f0f1f4;
 $bg-dots: #abbbcb;
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i");
-$gradientBlue: linear-gradient(#55b7f1 0%,
-#1177fc 100%);
-$gradientYellow: linear-gradient(#fc7411 0%,
-#f1b555 100%);
-$gradientRed: linear-gradient(#ff3743 0%,
-#f15555 100%);
+$gradientBlue: linear-gradient(#55b7f1 0%, #1177fc 100%);
+$gradientYellow: linear-gradient(#fc7411 0%, #f1b555 100%);
+$gradientRed: linear-gradient(#ff3743 0%, #f15555 100%);
 $bp-tablet: 600px;
 $bp-desktop: 949px;
 $bp-desktop-large: 1200px;

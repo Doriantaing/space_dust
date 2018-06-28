@@ -1,69 +1,68 @@
 .modal {
-    z-index: 1000;
-    display: none;
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &__overlay {
     position: fixed;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    &__overlay {
-      position: fixed;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-    }
-    &__content {
-      padding: 50px 30px;
-      width: 350px;
-      margin: 25vh auto;
-      background: #fff;
-      z-index: 100;
-      form * {
-        margin-bottom: 20px;
-        @include for-size(tablet-landscape-up) {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          &:not(:last-child) {
-            margin-bottom: 20px;
-          }
-        }
-      }
-      form .devis__firstStepFlex .devis__firstStepSelect {
-        width: 100%;
-      }
-      form .devis__firstStepFlex .devis__firstStepCheckBox {
-        @include for-size(tablet-landscape-up) {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-betweenz;
-          align-items: baseline;
-          *:not(:last-child) {
-            margin-right: 5px;
-          }
-        }
-      }
+    background: rgba(0, 0, 0, 0.4);
+  }
+  &__content {
+    padding: 50px 30px;
+    width: 350px;
+    margin: 25vh auto;
+    background: #fff;
+    z-index: 100;
+    form * {
+      margin-bottom: 20px;
       @include for-size(tablet-landscape-up) {
-        padding: 30px 100px;
-        width: 500px;
-        margin: 5vh auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
       }
+    }
+    form .devis__firstStepFlex .devis__firstStepSelect {
+      width: 100%;
+    }
+    form .devis__firstStepFlex .devis__firstStepCheckBox {
+      @include for-size(tablet-landscape-up) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-betweenz;
+        align-items: baseline;
+        *:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+    }
+    @include for-size(tablet-landscape-up) {
+      padding: 30px 100px;
+      width: 500px;
+      margin: 5vh auto;
     }
   }
-  
-  .submit_user {
-    border: none;
-    position: absolute;
+}
+
+.submit_user {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  @include for-size(tablet-landscape-up) {
     left: 50%;
     transform: translateX(-50%);
-    bottom: -2%;
-    @include for-size(tablet-landscape-up) {
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 0%;
-    }
+    bottom: 17%;
   }
+}

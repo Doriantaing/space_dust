@@ -26,6 +26,8 @@ $mail->SetFrom('doriantaing77@hotmail.fr', 'Space Dust');
 $mail->Subject = 'Nouvel adhérent';
 
 
+ 
+
 // Depending on where the user is , send him the appropriate mail
 
 

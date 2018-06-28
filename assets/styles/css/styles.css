@@ -795,13 +795,15 @@ html {
     top: 20%;
     left: 3%;
     width: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(17%, #fff), color-stop(17%, #193558), to(#193558));
     background-image: linear-gradient(to right, #fff 17%, #193558 17%, #193558 100%);
     -webkit-background-clip: text; }
     @media (min-width: 949px) {
       .argument__slogan {
         font-size: 45px;
         width: 50%;
-        left: 29.5%; } }
+        left: 29%;
+        top: 25%; } }
   .argument__text-box {
     text-align: center; }
     @media (min-width: 949px) {
@@ -1514,16 +1516,15 @@ html {
         margin: 5vh auto; } }
 
 .submit_user {
-  border: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -2%; }
+  bottom: 5%; }
   @media (min-width: 949px) {
     .submit_user {
       left: 50%;
       transform: translateX(-50%);
-      bottom: 0%; } }
+      bottom: 17%; } }
 
 .headeruser {
   background: #395075;
@@ -1905,7 +1906,7 @@ html {
     position: relative;
     margin: 30px 0;
     width: 100%;
-    background: #45618C;
+    background: #45618c;
     border-radius: 8px; }
     @media (min-width: 949px) {
       .userDevis__cards {
@@ -1916,8 +1917,8 @@ html {
         margin: 5px; } }
     .userDevis__cards-inner {
       padding: 20px;
-      color: #FFF;
-      font-family: "nunito",sans-serif;
+      color: #fff;
+      font-family: "nunito", sans-serif;
       font-size: 12px; }
   .userDevis__mission__principal {
     display: flex;
@@ -1938,9 +1939,11 @@ html {
     margin-top: 10px; }
   .userDevis__mission-price {
     font-size: 24px;
-    color: #49B6CE; }
+    color: #49b6ce; }
 
 .--userDevis {
+  position: absolute;
+  z-index: 1000;
   margin: 50px 60px; }
 
 .profil {

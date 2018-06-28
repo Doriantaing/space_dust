@@ -1,174 +1,174 @@
 
 .services {
-    text-align: center;
-    height: 80%;
-    @include for-size(tablet-landscape-up) {
-      position: relative;
-    }
-    &__text {
-      margin-bottom: 20px;
-      text-align: justify;
-      color: $blue-darken;
-      font-size: 14px;
-    }
-    &__text-box {
-      text-align: center;
-      @include for-size(tablet-landscape-up) {
-        position: absolute;
-        height: 40px;
-        width: 450px;
-        &--leftTop {
-          top: 35%;
-          left: -4%;
-          .title-4 {
-            text-align: right;
-          }
-          .services__text {
-            text-align: right;
-          }
-        }
-        &--leftBottom {
-          bottom: 15.55%;
-          left: 0.5%;
-          .title-4 {
-            text-align: right;
-          }
-          .services__text {
-            text-align: right;
-          }
-        }
-        &--rightTop {
-          top: 26%;
-          right: 1%;
-          .title-4 {
-            text-align: left;
-          }
-          .services__text {
-            text-align: left;
-          }
-        }
-        &--rightBottom {
-          bottom: 24.7%;
-          right: -3.5%;
-          .title-4 {
-            text-align: left;
-          }
-          .services__text {
-            text-align: left;
-          }
-        }
-      }
-    }
-    .title-3 {
-      margin-bottom: 20px;
-    }
-    .title-4 {
-      margin-bottom: 10px;
-    }
-    &__text-container {
-      margin-top: -50px;
-    }
-    &__img-box {
-      width: 120px;
-      height: 120px;
-      margin: 100px auto;
-      @include for-size(tablet-landscape-up) {
-        margin: 200px auto;
-        height: 160px;
-        width: 160px;
-      }
-    }
-    &__img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: contain;
-      object-fit: contain;
-    }
-    .inline-dots {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -ms-flex-line-pack: center;
-      align-content: center;
-      @include for-size(tablet-landscape-up) {
-        display: none;
-      }
-      & li {
-        display: block;
-        width: 3px;
-        height: 3px;
-        border-radius: 50%;
-        background: $dark-blue;
-        &:last-child {
-          height: 9px;
-          width: 9px;
-          margin-bottom: 10px;
-        }
-        &:not(:last-child) {
-          margin-bottom: 5px;
-        }
-      }
-    }
-  }
-  
-  .dots {
-    position: relative;
-    &--center {
-      @include on-circle($item-count: 16, $circle-size: 187px, $item-size: 4px);
-      margin: 50px auto 0;
-      border: solid 5px transparent;
-      top: -65%;
-      left: 19%;
-      & .dots--little {
-        position: absolute;
-        border-radius: 50%;
-        background: $bg-dots;
-        -webkit-transition: 0.15s;
-        transition: 0.15s;
-      }
-      @include for-size(tablet-landscape-up) {
-        @include on-circle($item-count: 16, $circle-size: 250px, $item-size: 5px);
-        top: -60%;
-        left: 39%;
-      }
-    }
-    .dots--bigger {
-      @include on-circle($item-count: 16, $circle-size: 233px, $item-size: 3px);
-      margin: 50px auto 0;
-      border: solid 5px transparent;
-      -webkit-transform: rotate(10deg);
-      transform: rotate(10deg);
-      & .dots--big {
-        position: absolute;
-        top: 3%;
-        left: 55.5%;
-        border-radius: 50%;
-        background: rgba($bg-dots, 0.5);
-        -webkit-transition: 0.15s;
-        transition: 0.15s;
-      }
-      @include for-size(tablet-landscape-up) {
-        @include on-circle($item-count: 16, $circle-size: 350px, $item-size: 4px);
-        top: 4%;
-        left: 30.5%;
-      }
-    }
-  }
-  
+  text-align: center;
+  height: 80%;
   @include for-size(tablet-landscape-up) {
-    .selected {
-      width: 8px !important;
-      height: 8px !important;
-      background-color: $color-key !important;
+    position: relative;
+  }
+  &__text {
+    margin-bottom: 20px;
+    text-align: justify;
+    color: $blue-darken;
+    font-size: 14px;
+  }
+  &__text-box {
+    text-align: center;
+    @include for-size(tablet-landscape-up) {
+      position: absolute;
+      height: 40px;
+      width: 450px;
+      &--leftTop {
+        top: 35%;
+        left: -4%;
+        .title-4 {
+          text-align: right;
+        }
+        .services__text {
+          text-align: right;
+        }
+      }
+      &--leftBottom {
+        bottom: 15.55%;
+        left: 0.5%;
+        .title-4 {
+          text-align: right;
+        }
+        .services__text {
+          text-align: right;
+        }
+      }
+      &--rightTop {
+        top: 26%;
+        right: 1%;
+        .title-4 {
+          text-align: left;
+        }
+        .services__text {
+          text-align: left;
+        }
+      }
+      &--rightBottom {
+        bottom: 24.7%;
+        right: -3.5%;
+        .title-4 {
+          text-align: left;
+        }
+        .services__text {
+          text-align: left;
+        }
+      }
     }
   }
+  .title-3 {
+    margin-bottom: 20px;
+  }
+  .title-4 {
+    margin-bottom: 10px;
+  }
+  &__text-container {
+    margin-top: -50px;
+  }
+  &__img-box {
+    width: 120px;
+    height: 120px;
+    margin: 100px auto;
+    @include for-size(tablet-landscape-up) {
+      margin: 200px auto;
+      height: 160px;
+      width: 160px;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  .inline-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    @include for-size(tablet-landscape-up) {
+      display: none;
+    }
+    & li {
+      display: block;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: $dark-blue;
+      &:last-child {
+        height: 9px;
+        width: 9px;
+        margin-bottom: 10px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.dots {
+  position: relative;
+  &--center {
+    @include on-circle($item-count: 16, $circle-size: 187px, $item-size: 4px);
+    margin: 50px auto 0;
+    border: solid 5px transparent;
+    top: -65%;
+    left: 19%;
+    & .dots--little {
+      position: absolute;
+      border-radius: 50%;
+      background: $bg-dots;
+      -webkit-transition: 0.15s;
+      transition: 0.15s;
+    }
+    @include for-size(tablet-landscape-up) {
+      @include on-circle($item-count: 16, $circle-size: 250px, $item-size: 5px);
+      top: -60%;
+      left: 39%;
+    }
+  }
+  .dots--bigger {
+    @include on-circle($item-count: 16, $circle-size: 233px, $item-size: 3px);
+    margin: 50px auto 0;
+    border: solid 5px transparent;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    & .dots--big {
+      position: absolute;
+      top: 3%;
+      left: 55.5%;
+      border-radius: 50%;
+      background: rgba($bg-dots, 0.5);
+      -webkit-transition: 0.15s;
+      transition: 0.15s;
+    }
+    @include for-size(tablet-landscape-up) {
+      @include on-circle($item-count: 16, $circle-size: 350px, $item-size: 4px);
+      top: 4%;
+      left: 30.5%;
+    }
+  }
+}
+
+@include for-size(tablet-landscape-up) {
+  .selected {
+    width: 8px !important;
+    height: 8px !important;
+    background-color: $color-key !important;
+  }
+}
