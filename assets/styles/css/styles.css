@@ -277,6 +277,12 @@ html {
       .devis__firstStepFlex {
         display: flex;
         flex-direction: column; } }
+    .devis__firstStepSelectContainer {
+      position: relative;
+      width: 100%; }
+      @media (min-width: 600px) {
+        .devis__firstStepSelectContainer {
+          width: 120%; } }
     .devis__firstStepSelect {
       border: none;
       font-family: 'Nunito';
@@ -284,8 +290,21 @@ html {
       color: #193558;
       font-size: 14px;
       border-bottom: 2px solid #193558;
-      width: 100%;
-      padding: 5px; }
+      padding: 5px;
+      background: #fff;
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+      outline: none; }
+    .devis__firstStepSelectContainer:before {
+      content: "\f063";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background: red;
+      pointer-events: none; }
     .devis__firstStepInput {
       margin: 35px 0;
       font-size: 14px;

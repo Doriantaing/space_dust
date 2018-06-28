@@ -79,6 +79,13 @@
                 flex-direction: column;
             }
         }
+        &SelectContainer{
+            position: relative;
+            width: 100%;
+            @include for-size(tablet-portrait-up) {
+                width: 120%;
+            }
+        }
         &Select {
             border: none;
             font-family: 'Nunito';
@@ -86,8 +93,22 @@
             color: $dark-blue;
             font-size: 14px;
             border-bottom: 2px solid $dark-blue;
-            width: 100%;
             padding: 5px;
+            background: #fff;
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+            outline: none;
+        }
+        &SelectContainer:before {
+            content: "\f063";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: red;
+            pointer-events: none;
         }
         &Input {
             margin: 35px 0;
@@ -174,7 +195,7 @@
             color: $dark-blue;
             font-size: 14px;
         }
-        &Link:hover{
+        &Link:hover {
             border-bottom: 2px solid $dark-blue;
         }
         &Form {
@@ -229,8 +250,8 @@
         }
         &Info {
             margin: 20px 0;
-            &Title{
-                @include for-size(tablet-portrait-up){
+            &Title {
+                @include for-size(tablet-portrait-up) {
                     margin-bottom: 20px;
                 }
             }
@@ -241,7 +262,7 @@
                 border-radius: 10px;
                 font-weight: 200;
                 line-height: 20px;
-                @include for-size(tablet-portrait-up){
+                @include for-size(tablet-portrait-up) {
                     line-height: 40px;
                     width: 20vw;
                 }
@@ -251,7 +272,7 @@
             }
             &Img {
                 width: 50%;
-                @include for-size(tablet-portrait-up){
+                @include for-size(tablet-portrait-up) {
                     display: none;
                 }
             }

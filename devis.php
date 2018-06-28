@@ -31,13 +31,15 @@ include_once 'php/header.php';
                         <div class="devis__firstStepFormContainer">
 
                             <div class="devis__firstStepFlex">
-
-                                <select class="devis__firstStepSelect" id="firstValue">
-                                    <option value="volvo">Type d’infrastructure</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="mercedes">Mercedes</option>
-                                    <option value="audi">Audi</option>
-                                </select>
+                                <div class="devis__firstStepSelectContainer">
+                                 <select class="devis__firstStepSelect" id="firstValue">
+                                      <option value="default" disabled>Type d’infrastructure</option>
+                                      <option value="saab">Saab</option>
+                                      <option value="mercedes">Mercedes</option>
+                                      <option value="audi">Audi</option>  
+                                      <i class="fas fa-arrow-down devis__firstStepSelectArrow"></i>
+                                  </select>
+                                </div>
 
                                 <input type="text" id="firstValue" placeholder="Nom de l’infrastructure" class="devis__firstStepInput">
                             </div>
