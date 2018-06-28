@@ -1,7 +1,8 @@
 <?php 
 
-require_once 'php/mail.php';
 
+
+require_once 'php/mail.php';
 
 ?>
 
@@ -50,7 +51,7 @@ require_once 'php/mail.php';
 
 
             <div class="sendMail__imgContainer">
-                <img src="assets/img/Illustration-Logo.png" alt="" class="sendMail__img">
+                <img src="assets/img/SpaceDuster-rond.png" alt="" class="sendMail__img">
             </div>
         </div>
     </section>

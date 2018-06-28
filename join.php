@@ -32,7 +32,7 @@ include_once 'php/header.php';
 
                     <h4 class="joinOffers__boxSummaryAvailability">Disponibilité : ASAP</h4>
 
-                    <button class="joinOffers__boxSummaryButton smBtn">Postuler</button>
+                    <button class="joinOffers__boxSummaryButton btnHoverDark smBtn">Postuler</button>
                  </div>
               </div>
               <div class="joinOffers__boxContainer">
@@ -48,12 +48,16 @@ include_once 'php/header.php';
 
              <h4 class="joinOffers__boxSummaryAvailability">Disponibilité : ASAP</h4>
 
-             <button class="joinOffers__boxSummaryButton smBtn">Postuler</button>
+             <button class="joinOffers__boxSummaryButton smBtn btnHoverDark">Postuler</button>
             </div>
+
               </div>
-          </div>
-      </div>
-  </section>
+            </div>
+                       <div class="joinOffers__spontaneous">
+                        <a class=" --spontaneous btnHoverDark smBtn">Candidature Spontanée</a>
+                       </div>
+           </div>
+         </section>
 
 
   <section class="joinForm">
@@ -99,12 +103,12 @@ include_once 'php/header.php';
                 </div> 
             </div>
 
-            <input type="submit" value="Postuler" class="joinForm__formInputSubmit">
+            <input type="submit" value="Postuler" class="joinForm__formInputSubmit btnHoverLight">
         </form>
       </div>
 
-      <p class="join__promo">retrouver toutes nos offres sur <a href="#">wearehumble.space</a></p>
-      <img class="join__humble" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-9/36404742_10156430944744770_762536198903169024_n.png?_nc_cat=0&_nc_eui2=AeH1jD2S4KcTCxEcStHvqqFwXwE9bTe11KvVdiCVh8Und8p37PssqgQulcdlBS5j3jaA5eSno2rlRipPuxIh7ZDL1rNj7Hmn-m4iMiOb12xBnw&oh=4dae9ef1a1415c1f66f89f03c5862f9f&oe=5BB69C3F" alt="logo humble">
+      <!-- <p class="join__promo">retrouver toutes nos offres sur <a href="#">wearehumble.space</a></p>
+      <img class="join__humble" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.15752-9/36404742_10156430944744770_762536198903169024_n.png?_nc_cat=0&_nc_eui2=AeH1jD2S4KcTCxEcStHvqqFwXwE9bTe11KvVdiCVh8Und8p37PssqgQulcdlBS5j3jaA5eSno2rlRipPuxIh7ZDL1rNj7Hmn-m4iMiOb12xBnw&oh=4dae9ef1a1415c1f66f89f03c5862f9f&oe=5BB69C3F" alt="logo humble"> -->
     </section>
 
     

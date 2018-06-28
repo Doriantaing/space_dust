@@ -89,6 +89,20 @@ html {
   width: 100vw;
   height: 100vh; }
 
+.btnHoverDark {
+  transition: 0.5s; }
+
+.btnHoverDark:hover {
+  background: #49b6ce;
+  transition: 0.5s; }
+
+.btnHoverLight {
+  transition: 0.5s; }
+
+.btnHoverLight:hover {
+  background: #193558;
+  transition: 0.5s; }
+
 .header {
   background: #fff; }
   @media (min-width: 949px) {
@@ -547,6 +561,19 @@ html {
     display: none; }
   .devis .--stepsActive {
     display: block; }
+  .devis .btnHoverBorder {
+    transition: 0.5s; }
+  .devis .btnHoverBorder:hover {
+    transition: 0.5s;
+    background: #49b6ce;
+    border: none;
+    color: #fff; }
+  .devis .btnHoverBackground {
+    transition: 0.5s; }
+  .devis .btnHoverBackground:hover {
+    transition: 0.5s;
+    background: transparent;
+    color: #49b6ce; }
 
 .sendMail {
   font-family: 'Nunito';
@@ -639,7 +666,7 @@ html {
       left: 50%;
       transform: translate(-50%);
       background: #49b6ce;
-      border: 1px solid #49b6ce;
+      border: none;
       border-radius: 30px;
       padding: 10px 20px;
       color: #fff;
@@ -708,7 +735,7 @@ html {
       left: 50%;
       transform: translate(-50%);
       background: #49b6ce;
-      border: 1px solid #49b6ce;
+      border: none;
       border-radius: 30px;
       width: 200px;
       padding: 10px 0;
@@ -1189,18 +1216,9 @@ html {
   @media (min-width: 949px) {
     .join {
       height: 100vh;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center; } }
   .join .title-3 {
     display: inline-block;
@@ -1227,43 +1245,20 @@ html {
         top: -25%;
         right: 3%; } }
   .join__text-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center; }
     @media (min-width: 949px) {
       .join__text-container {
         width: 100%;
         margin: 0 auto;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
         justify-content: space-between; } }
     .join__text-container .join__text-box {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
       flex-direction: column;
       margin-bottom: 50px; }
       @media (min-width: 949px) {
@@ -1284,15 +1279,6 @@ html {
         background: #193558;
         border-radius: 50%;
         margin-bottom: 10px; }
-  .join__promo {
-    text-align: center;
-    font-size: 18px; }
-    .join__promo a {
-      color: currentColor; }
-  .join__humble {
-    display: block;
-    margin: 5px auto 0 auto;
-    width: 10%; }
 
 .joinOffers {
   color: #193558; }
@@ -1343,32 +1329,39 @@ html {
     font-size: 14px;
     font-weight: 400;
     margin: 20px 0; }
+  .joinOffers__spontaneous {
+    text-align: center;
+    padding-bottom: 20px; }
+    .joinOffers__spontaneous .--spontaneous {
+      border: none; }
+      @media (min-width: 600px) {
+        .joinOffers__spontaneous .--spontaneous {
+          display: inline-block;
+          margin: 20px auto 0 auto; } }
 
 .joinForm {
+  display: none;
   color: #193558;
   margin: 50px 20px; }
+  .joinForm__return {
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    text-transform: uppercase; }
+    @media (min-width: 600px) {
+      .joinForm__return {
+        margin-left: 20px; } }
   .joinForm__container {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center; }
   .joinForm__title {
     font-size: 24px;
     font-weight: bold; }
   .joinForm__subTitle {
     font-size: 14px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 10px; }
   .joinForm__text {
@@ -1382,65 +1375,44 @@ html {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 80px;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      position: relative;
-      display: none;
-      color: #193558;
-      margin: 50px 20px; }
-      .joinForm__formContainer__return {
-        border: none;
-        background: #fff;
-        cursor: pointer;
-        text-transform: uppercase; }
-        @media (min-width: 600px) {
-          .joinForm__formContainer__return {
-            margin-left: 20px; } }
-      .joinForm__formContainer__container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-      .joinForm__formContainerInputs {
-        position: relative; }
-      .joinForm__formContainerInput {
-        border: none;
-        border-bottom: 2px solid #193558;
-        padding: 5px;
-        margin-bottom: 35px;
-        margin-right: 35px;
-        font-size: 14px;
-        font-weight: 200;
-        width: 100%;
-        color: #173456;
-        letter-spacing: 1px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        background-color: transparent;
-        z-index: 1; }
-        @media (min-width: 600px) {
-          .joinForm__formContainerInput {
-            width: 200px; } }
-      .joinForm__formContainerLabel {
-        position: absolute;
-        top: 5px;
-        left: 0;
-        z-index: -1; }
-      .joinForm__formContainerInputSubmit {
-        margin-top: 50px;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translate(-50%);
-        transform: translate(-50%);
-        background: #49b6ce;
-        border: 1px solid #49b6ce;
-        border-radius: 30px;
-        width: 200px;
-        padding: 10px 0;
-        color: #fff;
-        cursor: pointer; }
+      position: relative; }
+    .joinForm__formInputs {
+      position: relative; }
+    .joinForm__formInput {
+      border: none;
+      border-bottom: 2px solid #193558;
+      padding: 5px;
+      margin-bottom: 35px;
+      margin-right: 35px;
+      font-size: 14px;
+      font-weight: 200;
+      width: 100%;
+      color: #173456;
+      letter-spacing: 1px;
+      box-sizing: border-box;
+      background-color: transparent;
+      z-index: 1; }
+      @media (min-width: 600px) {
+        .joinForm__formInput {
+          width: 200px; } }
+    .joinForm__formLabel {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      z-index: -1; }
+    .joinForm__formInputSubmit {
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      background: #49b6ce;
+      border: 1px solid #49b6ce;
+      border-radius: 30px;
+      width: 200px;
+      padding: 10px 0;
+      color: #fff;
+      cursor: pointer; }
 
 .footer {
   height: 100vh;

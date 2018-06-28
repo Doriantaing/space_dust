@@ -3,13 +3,10 @@ session_start();
 
  $_SESSION['user']['id'] = $_GET['id'];
 require_once '../php/connect.php';
-
   if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
     header('Location: ../index.php?error=ErrorData');
-
     exit;
   }
-
   $req = "SELECT 
   `user_id`, 
   `user_name`, 
@@ -25,20 +22,16 @@ require_once '../php/connect.php';
    `user_id` = :id
    LIMIT 1
    ;";
-
 $stmt = $con->prepare($req);
 $stmt->bindValue(':mail', $_SESSION['user']['mail']);
 $stmt->bindValue(':id', $_GET['id']);
 $stmt->execute();
 $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 // var_dump($row);
 if ($row === false) {
     header("Location: ../index.php?error=nodatatodetails");
     exit;
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -199,10 +192,11 @@ if ($row === false) {
             <form action="">
               <div class="devis__firstStepFlex">
                 <select class="devis__firstStepSelect" id="firstValue">
-                  <option value="volvo">Type d’infrastructure</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
+                <option value="default" selected disabled>Type d’infrastructure</option>
+                <option value="planetes">Planètes</option>
+                <option value="station">Station spatiale</option>
+                <option value="satellite">Satellite</option> 
+                <option value="autres">Autres</option> 
                 </select>
                 <input type="text" id="firstValue" placeholder="Nom de l’infrastructure" class="devis__firstStepInput">
               </div>
@@ -220,7 +214,7 @@ if ($row === false) {
                 </div>
                   <input type="text" id="firstValue" placeholder="Pourcentage de déchets à recycler" class="devis__firstStepInputPercent" disabled>
               </div>              
-              <input type="submit" value="envoyer" class="smBtn submit_user">          
+              <input type="submit" value="Envoyer" class="smBtn submit_user">          
             </form>
           
         </div>
@@ -295,5 +289,6 @@ if ($row === false) {
   <script src="../assets/js/index.js"></script>
 
 </body>
+
 
 </html>

@@ -20,3 +20,10 @@ joinReturn.addEventListener('click',function(){
     joinJobs.style.display = 'block';
     joinForms.style.display = 'none';
 })
+
+
+var joinSpontaneous = document.querySelector('.--spontaneous');
+joinSpontaneous.addEventListener('click',function(){
+    joinJobs.style.display = 'none';
+    joinForms.style.display = 'block';
+})
