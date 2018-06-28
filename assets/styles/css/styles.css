@@ -775,7 +775,8 @@ html {
       .argument__slogan {
         font-size: 45px;
         width: 50%;
-        left: 29.5%; } }
+        left: 29%;
+        top: 25%; } }
   .argument__text-box {
     text-align: center; }
     @media (min-width: 949px) {
@@ -1515,7 +1516,7 @@ html {
       .modal__content form .devis__firstStepFlex .devis__firstStepCheckBox {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-betweenz;
         align-items: baseline; }
         .modal__content form .devis__firstStepFlex .devis__firstStepCheckBox *:not(:last-child) {
           margin-right: 5px; } }
