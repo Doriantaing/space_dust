@@ -38,7 +38,7 @@ require_once "php/mail.php";
                     <a href="devis.php" class="menu__item">Devis</a>
                     <a href="join.php" class="menu__item">Recrutement</a>
                     <div class="menu__imgContainer">
-                        <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
+                        <img src="assets/img/SpaceDuster-rond.png" alt="logo" title="logo">
                     </div>
                 </div>
 

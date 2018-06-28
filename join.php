@@ -31,7 +31,7 @@ include_once 'php/header.php';
 
                     <h4 class="joinOffers__boxSummaryAvailability">Disponibilité : ASAP</h4>
 
-                    <button class="joinOffers__boxSummaryButton smBtn">Postuler</button>
+                    <button class="joinOffers__boxSummaryButton btnHoverDark smBtn">Postuler</button>
                  </div>
               </div>
               <div class="joinOffers__boxContainer">
@@ -47,10 +47,14 @@ include_once 'php/header.php';
 
              <h4 class="joinOffers__boxSummaryAvailability">Disponibilité : ASAP</h4>
 
-             <button class="joinOffers__boxSummaryButton smBtn">Postuler</button>
+             <button class="joinOffers__boxSummaryButton smBtn btnHoverDark">Postuler</button>
             </div>
+
               </div>
-          </div>
+            </div>
+                       <div class="joinOffers__spontaneous">
+                        <a class=" --spontaneous btnHoverDark smBtn">Candidature Spontanée</a>
+                       </div>
       </div>
   </section>
 
@@ -98,7 +102,7 @@ include_once 'php/header.php';
                 </div> 
             </div>
 
-            <input type="submit" value="Postuler" class="joinForm__formInputSubmit">
+            <input type="submit" value="Postuler" class="joinForm__formInputSubmit btnHoverLight">
         </form>
       </div>
     </section>

@@ -365,4 +365,18 @@
     .--stepsActive {
         display: block;
     }
+    .btnHoverBorder{
+        transition: 0.5s;
+    }
+    .btnHoverBorder:hover{
+        transition: 0.5s;
+        background: $light-blue;
+    }
+    .btnHoverBackground{
+        transition: 0.5s;
+    }
+    .btnHoverBackground:hover{
+        transition: 0.5s;
+        background: transparent;
+    }
 }

@@ -90,7 +90,7 @@ if (isset($empty)) {
                 <input class="login__formInput" type="password" name="password">
                 <label class="login__formLabel">Mot de passe</label>
                 </div>
-                <input type="submit" value="Connexion" class="login__formInputSubmit">
+                <input type="submit" value="Connexion" class="login__formInputSubmit btnHoverLight">
             </div>
          </form>
         </div>
@@ -144,7 +144,7 @@ if (isset($empty)) {
                 
             </div>
 
-            <input type="submit" value="S'inscrire" class="register__formInputSubmit">
+            <input type="submit" value="S'inscrire" class="register__formInputSubmit btnHoverLight">
         </form>
       </div>
     </section>

@@ -72,7 +72,7 @@ include_once 'php/header.php';
                         </div>
 
                         
-                            <input type="submit" value="Suivant" class="devis__stepNext --center" data-submit="first">
+                            <input type="submit" value="Suivant" class="devis__stepNext --center btnHoverDark" data-submit="first">
 
                     </form>
 
@@ -101,7 +101,7 @@ include_once 'php/header.php';
 
 
 
-                            <input type="submit" value="Suivant" class="devis__stepNext --center" data-submit="second">
+                            <input type="submit" value="Suivant" class="devis__stepNext --center btnHoverDark" data-submit="second">
                     </form>
                 </div>
 
@@ -145,8 +145,8 @@ include_once 'php/header.php';
                             <p class="devis__thirdStepSummaryPrice">Prix : 2 255 000 0000 ¥</p>
 
                             <div class="devis__thirdStepSummaryButtons">
-                                <button class="devis__thirdStepSummaryButton">Modifier</button>
-                                <input type="submit" class="devis__thirdStepSummaryButtonSend" value="Valider" form="send">
+                                <button class="devis__thirdStepSummaryButton btnHoverBorder">Modifier</button>
+                                <input type="submit" class="devis__thirdStepSummaryButtonSend btnHoverBackground" value="Valider" form="send">
                             </div>
 
 
