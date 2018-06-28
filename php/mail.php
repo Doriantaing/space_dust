@@ -154,7 +154,6 @@ width: 100%;
 margin: auto;
 }
 .header {
-  height: 275px;
   width: 100%;
   background: linear-gradient(to top right, rgba(78, 101, 135, 1) 0%, rgba(53, 73, 112, 1) 100%);
   margin: 0;
@@ -162,6 +161,7 @@ margin: auto;
     
 
 .headerText {
+  padding-bottom: 20px;
   text-align: center;
   font-size: 34px;
   color: #FFF;
@@ -410,7 +410,6 @@ width: 100%;
 margin: auto;
 }
 .header {
-  height: 275px;
   width: 100%;
   background: linear-gradient(to top right, rgba(78, 101, 135, 1) 0%, rgba(53, 73, 112, 1) 100%);
   margin: 0;
@@ -418,6 +417,7 @@ margin: auto;
     
 
 .headerText {
+  padding-bottom: 20px;
   text-align: center;
   font-size: 34px;
   color: #FFF;
@@ -646,7 +646,6 @@ width: 100%;
 margin: auto;
 }
 .header {
-  height: 275px;
   width: 100%;
   background: linear-gradient(to top right, rgba(78, 101, 135, 1) 0%, rgba(53, 73, 112, 1) 100%);
   margin: 0;
@@ -654,6 +653,7 @@ margin: auto;
     
 
 .headerText {
+  padding-bottom: 20px;
   text-align: center;
   font-size: 34px;
   color: #FFF;
@@ -742,9 +742,9 @@ width: 100%;
     <div class="imgContainer">
         <img src="https://image.noelshack.com/fichiers/2018/26/4/1530191870-logocomplet.png" alt="Logo"/>
     </div>
-    <h1 class="headerText">Merci de t"etre inscrit avec nous, <span class="username">'. $name . ' ' .$firstname .' </span>!</h1>
+    <h1 class="headerText">Merci de t\'être inscrit avec nous, <span class="username">'. $name . ' ' .$firstname .' </span>!</h1>
     </header>
-    <p class="contentText">N"hesite pas à venir nous voir</p>
+    <p class="contentText">N\'hesite pas à revenir nous voir</p>
     <div class="imgContainer">
         <img src="https://image.noelshack.com/fichiers/2018/26/4/1530191875-spaceduster-rond.png" alt="Logo"/>
     </div>

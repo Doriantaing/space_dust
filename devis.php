@@ -55,7 +55,7 @@ include_once 'php/header.php';
                             <div class="devis__firstStepCleaning">
                                 <p class="devis__firstStepCleaningTitle">Définir un rayon de nettoyage</p>
                                 <div class="devis__firstStepCleaningContainer">
-                                    <input type="text" id="firstValue" placeholder="150km" class="devis__firstStepInput">
+                                    <input type="text" id="firstValue" placeholder="150km" class="devis__firstStepInput --cleaningNumber">
                                     <div class="devis__firstStepCleaningCircle"></div>
                                 </div>
                             </div>
