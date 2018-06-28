@@ -565,12 +565,15 @@ html {
     transition: 0.5s; }
   .devis .btnHoverBorder:hover {
     transition: 0.5s;
-    background: #49b6ce; }
+    background: #49b6ce;
+    border: none;
+    color: #fff; }
   .devis .btnHoverBackground {
     transition: 0.5s; }
   .devis .btnHoverBackground:hover {
     transition: 0.5s;
-    background: transparent; }
+    background: transparent;
+    color: #49b6ce; }
 
 .sendMail {
   font-family: 'Nunito';

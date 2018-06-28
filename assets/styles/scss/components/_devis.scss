@@ -371,6 +371,8 @@
     .btnHoverBorder:hover{
         transition: 0.5s;
         background: $light-blue;
+        border: none;
+        color: #fff;
     }
     .btnHoverBackground{
         transition: 0.5s;
@@ -378,5 +380,6 @@
     .btnHoverBackground:hover{
         transition: 0.5s;
         background: transparent;
+        color: $light-blue;
     }
 }

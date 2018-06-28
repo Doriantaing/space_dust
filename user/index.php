@@ -1,17 +1,11 @@
 <?php
 session_start();
  $_SESSION['user']['id'] = $_GET['id'];
-
-
 require_once '../php/connect.php';
-
-
   if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
     header('Location: ../index.php?error=ErrorData');
     exit;
   }
-
-
   $req = "SELECT 
   `user_id`, 
   `user_name`, 
@@ -33,8 +27,6 @@ $stmt->bindValue(':id', $_GET['id']);
 $stmt->execute();
 $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // var_dump($row);
-
-
 if ($row === false) {
     header("Location: ../index.php?error=nodatatodetails");
     exit;
