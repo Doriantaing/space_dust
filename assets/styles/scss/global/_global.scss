@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800");
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -15,6 +16,7 @@ html {
   z-index: 100;
   position: relative;
 }
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -23,6 +25,14 @@ html {
 //title
 .title-3 {
   font-size: 24px;
+  text-align: center;
+}
+
+.title-4 {
+  font: {
+    size: 17px;
+    weight: 700;
+  }
   text-align: center;
 }
 

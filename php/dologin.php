@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 session_start();
 
@@ -45,4 +45,4 @@ if(password_verify($_POST['password'], $row[0]['user_password'])){
   exit;
 }
 
-?>
+?> 
