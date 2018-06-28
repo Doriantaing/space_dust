@@ -1,42 +1,42 @@
-<?php
-session_start();
+ <?php
+// session_start();
 
-$_SESSION['user']['id'] = $_GET['id'];
-require_once '../php/connect.php';
+//  $_SESSION['user']['id'] = $_GET['id'];
+// require_once '../php/connect.php';
 
-  if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
-    header('Location: ../index.php?error=ErrorData');
+//   if (!isset($_SESSION['user']['mail']) || !isset($_GET['id'])){
+//     header('Location: ../index.php?error=ErrorData');
 
-    exit;
-  }
+//     exit;
+//   }
 
-  $req = "SELECT 
-  `user_id`, 
-  `user_name`, 
-  `user_firstname`,
-  `company`,
-  `user_mail`,
-  `user_password`,
-  `adress`
-   FROM
-   `space_dust` . `user`
-  WHERE 
-   `user_mail` = :mail AND
-   `user_id` = :id
-   LIMIT 1
-   ;";
+//   $req = "SELECT 
+//   `user_id`, 
+//   `user_name`, 
+//   `user_firstname`,
+//   `company`,
+//   `user_mail`,
+//   `user_password`,
+//   `adress`
+//    FROM
+//    `space_dust` . `user`
+//   WHERE 
+//    `user_mail` = :mail AND
+//    `user_id` = :id
+//    LIMIT 1
+//    ;";
 
-$stmt = $con->prepare($req);
-$stmt->bindValue(':mail', $_SESSION['user']['mail']);
-$stmt->bindValue(':id', $_GET['id']);
-$stmt->execute();
-$row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $stmt = $con->prepare($req);
+// $stmt->bindValue(':mail', $_SESSION['user']['mail']);
+// $stmt->bindValue(':id', $_GET['id']);
+// $stmt->execute();
+// $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// var_dump($row);
-if ($row === false) {
-    header("Location: ../index.php?error=nodatatodetails");
-    exit;
-}
+// // var_dump($row);
+// if ($row === false) {
+//     header("Location: ../index.php?error=nodatatodetails");
+//     exit;
+// }
 
 
 ?>
@@ -58,7 +58,7 @@ if ($row === false) {
   <header class="headeruser">
     <div class="headeruser__inner">
       <div class="headeruser__menu">
-        <div class="headeruser__username"><?= $row[0]['user_name'] . ' ' . $row[0]['user_firstname']?></div>
+         <div class="headeruser__username"><?= $row[0]['user_name'] . ' ' . $row[0]['user_firstname']?></div>
         <a href="../php/logout.php" class="headeruser__logout">Déconnexion</a>
       </div>
       <div class="headeruser__logo-imgContainer">
@@ -141,7 +141,7 @@ if ($row === false) {
 
     </section>
 
-    <section id="client2" ontouchstart="p2start(event)" ontouchmove="p2move(event)" ontouchend="p2end(event)" class="page userDevis">
+    <section id="client2" class="page userDevis">
       <div class="userDevis__inner">
         <h3 class="userDevis__title userTitle">Tous les devis</h3>
         <div class="userDevis__cards">
@@ -191,10 +191,40 @@ if ($row === false) {
         </div>
       </div>
       <div class="smBtn --userDevis">Faire un devis</div>
-
     </section>
 
-
+      <div class="modal">
+        <div class="modal__overlay"></div>
+          <div class="modal__content">
+            <form action="">
+              <div class="devis__firstStepFlex">
+                <select class="devis__firstStepSelect" id="firstValue">
+                  <option value="volvo">Type d’infrastructure</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <input type="text" id="firstValue" placeholder="Nom de l’infrastructure" class="devis__firstStepInput">
+              </div>
+              <div class="devis__firstStepCleaning">
+                <p class="devis__firstStepCleaningTitle">Définir un rayon de nettoyage</p>
+                <div class="devis__firstStepCleaningContainer">
+                  <input type="text" id="firstValue" placeholder="150km" class="devis__firstStepInput">
+                    <div class="devis__firstStepCleaningCircle"></div>
+                </div>
+              </div>
+              <div class="devis__firstStepFlex">
+                <div class="devis__firstStepCheckBox">
+                  <input type="checkbox">
+                  <label for="check">Recycler les déchets ramassés</label>
+                </div>
+                  <input type="text" id="firstValue" placeholder="Pourcentage de déchets à recycler" class="devis__firstStepInputPercent" disabled>
+              </div>              
+              <input type="submit" value="Envoyer" class="smBtn submit_user">          
+            </form>
+          
+        </div>
+      </div>
 
     <section id="client3" ontouchstart="p3start(event)" ontouchmove="p3move(event)" ontouchend="p3end(event)" class="page profil">
       <div class="profil__inner">
@@ -260,8 +290,9 @@ if ($row === false) {
   </div>
   <script src="../assets/js/countdown.js"></script>
   <script src="../assets/js/charts.js"></script>
-  <script src="../assets/js/index.js"></script>
   <script src="../assets/js/swipe.js"></script>
+  <script src="../assets/js/devis.js"></script>
+  <script src="../assets/js/index.js"></script>
 
 </body>
 

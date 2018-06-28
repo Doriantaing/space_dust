@@ -30,10 +30,10 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 var_dump($row);
 
-// if ($row === false) {
-//   header("Location: index.php?error=nodatatodetails");
-//   exit;
-// }
+if ($row === false) {
+  header("Location: index.php?error=nodatatodetails");
+  exit;
+}
 ?>
 
 
