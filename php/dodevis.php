@@ -7,14 +7,14 @@ $_SESSION['user']['firstname'] = $_POST['firstname'];
 $_SESSION['user']['company'] = $_POST['company'];
 $_SESSION['user']['mail'] = $_POST['mail'];
 $_SESSION['user']['adress'] = $_POST['adress'];
-$_SESSION['user']['company'] = $_POST['company'];
-$_SESSION['user']['mail'] = $_POST['mail'];
-$_SESSION['user']['adress'] = $_POST['adress'];
 $_SESSION['user']['password'] = password_hash($_POST['password'] , PASSWORD_DEFAULT);
 
-require_once "connect.php";
+
 // Check if values are not empty
-if (!isset($_POST['firstname'])||
+
+
+if (!isset($_POST['name']) ||
+    !isset($_POST['firstname'])||
     !isset($_POST['company']) ||
     !isset($_POST['mail']) ||
     !isset($_POST['adress']) ||
@@ -23,32 +23,8 @@ if (!isset($_POST['firstname'])||
     exit;
 }
 
-// If there is values from the page devis do this sql request
-if (isset($_POST['structure']) || 
-    isset($_POST['nameStructure']) || 
-    isset($_POST['rayon'])) {
 
-$devis = "INSERT INTO `space_dust` . `devis` 
-(`devis_id` , `structure` , `structure_name` , `rayon` , `recyclable`) 
-VALUES 
-(NULL , :structure , :nameStructure , :rayon , :recyclable)
-;";
-        
-        
-        
-$stmt = $con->prepare($devis);
-$stmt -> bindValue(':structure' , $_POST['structure']);
-$stmt -> bindValue(':nameStructure' , $_POST['nameStructure']);
-$stmt -> bindValue(':rayon' , $_POST['rayon']);
-$stmt -> bindValue(':recyclable' , $_POST['recyclable']);
-$stmt->execute();
-           
-}
-
-// var_dump($_POST);
-
-
-
+require_once "connect.php";
 
 // SQL Request
 
@@ -71,4 +47,3 @@ $stmt->execute();
 
 
 header('Location: ../checkDevis.php?page=devis');
-
