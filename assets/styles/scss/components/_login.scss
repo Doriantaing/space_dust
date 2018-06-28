@@ -45,6 +45,7 @@
             box-sizing: border-box;
             background-color: transparent;
             z-index: 1;
+            outline: none;
             @include for-size(tablet-portrait-up) {
                 width: 100%;
             }
@@ -124,6 +125,7 @@
             box-sizing: border-box;
             background-color: transparent;
             z-index: 1;
+            outline: none;
             @include for-size(tablet-portrait-up) {
                 width: 100%;
             }
@@ -148,4 +150,15 @@
             cursor: pointer;
         }
     }
+}
+
+.errorContainer{
+    width: 100%;
+    background: $light-blue;
+}
+.errorText{
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    
 }

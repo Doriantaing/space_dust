@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="space_dust@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="space_dust">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="arthur"/>
+    <schema id="4" parent="1" name="chat"/>
+    <schema id="5" parent="1" name="db_WP"/>
+    <schema id="6" parent="1" name="dope"/>
+    <schema id="7" parent="1" name="entrainement"/>
+    <schema id="8" parent="1" name="information_schema"/>
+    <schema id="9" parent="1" name="Kandt"/>
+    <schema id="10" parent="1" name="lens"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="partiel_20180614"/>
+    <schema id="13" parent="1" name="performance_schema"/>
+    <schema id="14" parent="1" name="roadr"/>
+    <schema id="15" parent="1" name="SI3D"/>
+    <schema id="16" parent="1" name="subarachi"/>
+    <schema id="17" parent="1" name="sys"/>
+    <table id="18" parent="2" name="devis"/>
+    <table id="19" parent="2" name="join"/>
+    <table id="20" parent="2" name="user"/>
+    <column id="21" parent="18" name="devis_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="18" name="planet">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="18" name="altitud">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="18" name="perimeter">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="18" name="recyclable">
+      <Position>5</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="18" name="begin">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="27" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>devis_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="19" name="join_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="19" name="join_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="19" name="join_firstname">
+      <Position>3</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="19" name="join_mail">
+      <Position>4</Position>
+      <DataType>varchar(300)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="19" name="join_job">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="19" name="cv">
+      <Position>6</Position>
+      <DataType>tinyblob|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="19" name="motivation">
+      <Position>7</Position>
+      <DataType>varchar(5000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="19" name="join_phone">
+      <Position>8</Position>
+      <DataType>int(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="19" name="join_age">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="37" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>join_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="20" name="user_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="20" name="user_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="20" name="user_firstname">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="20" name="company">
+      <Position>4</Position>
+      <DataType>varchar(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="20" name="user_mail">
+      <Position>5</Position>
+      <DataType>varchar(300)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="20" name="user_password">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="20" name="user_phone">
+      <Position>7</Position>
+      <DataType>int(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="20" name="adress">
+      <Position>8</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="20" name="adress2">
+      <Position>9</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="20" name="ZIP">
+      <Position>10</Position>
+      <DataType>int(8)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="20" name="city">
+      <Position>11</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="20" name="country">
+      <Position>12</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="20" name="state">
+      <Position>13</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="51" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>user_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
