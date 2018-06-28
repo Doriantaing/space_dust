@@ -6,7 +6,9 @@ for (let i = 0; i < input.length; i++) {
          moveLabel();
      })
      input[i].addEventListener('blur',function(){
-         removeLabel();
+         if (input[i].value === '') {
+            removeLabel();
+        }
      })
 }
 
@@ -25,3 +27,5 @@ function removeLabel(){
        label[i].style.fontSize= '14px';               
     }
 }
+
+

@@ -1,6 +1,7 @@
 <?php
 
 $error = $_GET['error'];
+$empty = $_GET['empty'];
 
 ?>
 <!DOCTYPE html>
@@ -24,6 +25,16 @@ if (isset($error)) {
 ?>
 <div class="errorContainer">
 <p class="errorText">Mauvais e-mail ou Mot de passe</p>
+</div>
+<?php
+   }
+  ?>
+
+<?php 
+if (isset($empty)) {
+?>
+<div class="errorContainer">
+<p class="errorText">Champs Vide</p>
 </div>
 <?php
    }

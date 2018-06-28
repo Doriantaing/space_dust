@@ -3,10 +3,6 @@
 require_once 'php/mail.php';
 
 
-  if (!$mail->send()){
-    header('Location: ../join.php');
-  }
-  
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +21,7 @@ require_once 'php/mail.php';
 
 <header class="header">
             <div class="header__inner">
-                <a href="login.php" class="header__button lgButton">Retour à l'accueil</a>
+                <a href="login.php" class="header__button lgButton">Retour a l'accueil</a>
                 <div class="header__burger">
                     <div class="header__burger-round round1"></div>
                     <div class="header__burger-round round2"></div>
@@ -37,7 +33,7 @@ require_once 'php/mail.php';
                 <div class="menu__containerItem">
                     <div class="menu__item">Accueil</div>
                     <div class="menu__item">Devis</div>
-                    <div class="menu__item"></div>
+                    <div class="menu__item">Recrutement</div>
                     <div class="menu__imgContainer">
                         <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
                     </div>

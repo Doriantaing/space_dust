@@ -13,7 +13,7 @@ $_SESSION['user']['mail'] = $_POST['mail'];
 
 
 if (empty($_POST['mail']) || empty($_POST['password'])) {
-    header('Location: ../index.php');
+    header('Location: ../login.php?empty=noData');
     exit;
 }
 
@@ -38,11 +38,11 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if(password_verify($_POST['password'], $row[0]['user_password'])){
   header('Location: ../user/index.php?id='.$row[0]['user_id']);
-echo 'ouiiii';
+  echo 'ouiiii';
 } else{
   header('Location: ../login.php?error=wrongData');
-echo 'nonnn';
-    exit;
+  echo 'nonnn';
+  exit;
 }
 
 ?>

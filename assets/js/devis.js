@@ -175,7 +175,7 @@ inputCheck.addEventListener('click', function () {
 // send all items from localstorage to input form #send
 
 var formSend = document.querySelectorAll('#send input');
-var nbrCounter = 4;
+var nbrCounter = 0;
 
 
 function sendData() {

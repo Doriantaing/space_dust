@@ -83,10 +83,89 @@
     }
 }
 
+
+
+
+
+///////// Page Recrutement 
+
+.joinOffers{
+    color: $dark-blue;
+
+   &__title{
+       margin-top: 50px;
+       text-align: center;
+       font-size: 24px;
+       font-weight: bold;
+   }
+   &__box{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       @include for-size(tablet-portrait-up){
+           flex-direction: row;
+       }
+       &Container{
+           width: 300px;
+           height: 400px;
+           margin: 50px 0 30px 0;
+           padding: 20px 20px; 
+           box-shadow: 0 6px 10px rgba(0, 0, 0, .4);
+           @include for-size(tablet-portrait-up){
+               margin: 100px 50px;
+        }
+       }
+       &Title{
+           font-size: 20px;
+           font-weight: 600;
+           text-align: center;
+       }
+   }
+   &__boxSummary{
+       &Container{
+           position: relative;
+           padding: 10px 0;
+       }
+       &Title{
+           font-size: 14px;
+           font-weight: 400;
+           margin: 10px 0;
+       }
+       &Text{
+           font-size: 12px;
+           line-height: 35px;
+       }
+       &Button{
+           position: absolute;
+           left: 50%;
+           transform: translate(-50%);
+           border: none;
+           margin-top: 20px;
+           padding: 10px 20px;
+       }
+       &Availability{
+        font-size: 14px;
+        font-weight: 400;
+        margin: 20px 0;
+       }
+   }
+}
+
 /////////form
 .joinForm {
+    display: none;
     color: $dark-blue;
     margin: 50px 20px;
+    &__return{
+        border: none;
+        background: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        @include for-size(tablet-portrait-up){
+            margin-left: 20px;
+        }
+    }
     &__container {
         position: relative;
         display: flex;

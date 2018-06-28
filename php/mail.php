@@ -22,6 +22,8 @@ $mail->SetFrom('doriantaing77@hotmail.fr', 'Space Dust');
 $mail->Subject = 'Nouvel adhérent';
 
 
+// $mail->AddEmbeddedImage('../assets/img/Illustration-Logo.png','mon_logo', 'logo.png');
+if ($_GET['page'] === 'devis') {
 $mail->Body = ' 
 <head>
 <style>
@@ -291,8 +293,106 @@ width: 100%;
     <a href="https://spacedust.romainmetayer.com"><button class="button">Retourner sur le site</button></a>
 </div>
 
-</body>'*/
 
+.informations {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.informationsImgContainer {
+  width: 49%;
+}
+
+.informationsImgContainer img {
+  width: 100%;
+}
+
+.informationsContent {
+  background: #173456;
+  width: 49%;
+  padding: 10px;
+  height: 100%;
+  color: white;
+}
+
+.informationItem {
+  margin: 15px;
+}
+
+.button {
+  text-transform: uppercase;
+  display: block;
+  margin: 40px auto;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+  background: #173456;
+  ;
+  color: #FFF;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+}
+
+.devis {
+  width: 400px;
+  margin: auto;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+}
+
+.devisNumber {
+  font-weight: bold;
+}
+
+.devisOthers {
+  margin-top: 20px;
+}
+
+.devisItems {
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.devisPrice {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.footerImgContainer {
+  width: 35px;
+  margin: 20px auto;
+}
+
+.footerImgContainer img {
+  width: 100%;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body>
+<header class="header">
+<h1 class="headerText">Merci <span class="username">'. $firstname .' </span>!</h1>
+</header>
+<section class="content">
+
+<div class="contentText">
+<h4>Merci pour votre candidature</h4>
+</div>
+</div>
+</section>
+</body>
+
+'
+
+;
+}
 $mail->AddAddress(''.$email.'');
 
 $mail->send();

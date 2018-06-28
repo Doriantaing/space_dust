@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 $_SESSION['user']['name'] = $_POST['name'];
 $_SESSION['user']['firstname'] = $_POST['firstname'];
 $_SESSION['user']['age'] = $_POST['age'];
@@ -13,18 +12,17 @@ $_SESSION['user']['phone'] = $_POST['phone'];
 // Check if values are not empty
 
 
-if (!isset($_POST['name']) ||
-    !isset($_POST['firstname'])||
-    !isset($_POST['age']) ||
-    !isset($_POST['job']) ||
-    !isset($_POST['phone'])) {
-     header('Location: ../join.php');
+if (empty($_POST['name']) ||
+    empty($_POST['firstname'])||
+    empty($_POST['age']) ||
+    empty($_POST['job']) ||
+    empty($_POST['phone'])) {
+     header('Location: ../join.php?empty=noData');
     exit;
 }
 
 
 require_once "connect.php";
-require_once "mail.php";
 
 // SQL Request
 
@@ -46,7 +44,7 @@ $stmt -> bindValue(':phone' , $_POST['phone']);
 $stmt->execute();
 
 
-header('Location: ../checkJoin.php');
+header('Location: ../checkJoin.php?page=recrutement');
 
 
 
