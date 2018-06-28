@@ -26,8 +26,7 @@
                 <div class="menu__containerItem">
                 <a href="index.php" class="menu__item">Accueil</a>
                     <a href="devis.php" class="menu__item">Devis</a>
-                    <a href="join.php" class="menu__item">Jobs</a>
-                    <a href="#" class="menu__item">Ma bite</a>
+                    <a href="join.php" class="menu__item">Recrutement</a>
                     <div class="menu__imgContainer">
                         <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
                     </div>
@@ -50,12 +49,17 @@
         <form action="php/dologin.php" method="post" class="login__form">
 
             <div class="login__formContainer">
-                <!-- <label for="name">E-mail</label> -->
-                <input type="text" name="mail" placeholder="E-mail" class="login__formInput">
+               
+            
+                <div class="login__formInputs">
+                <input class="login__formInput" type="text" name="mail">
+                <label class="login__formLabel">E-mail</label>
+                </div>
 
-                <!-- <label for="password">Mot de Passe</label> -->
-                <input type="password" name="password" placeholder="Mot de Passe" class="login__formInput">
-
+                <div class="login__formInputs">
+                <input class="login__formInput" type="password" name="password">
+                <label class="login__formLabel">Mot de passe</label>
+                </div>
                 <input type="submit" value="Connexion" class="login__formInputSubmit">
             </div>
          </form>
@@ -74,22 +78,39 @@
         <form action="php/doregister.php" method="post" class="register__form">
 
             <div class="register__formContainer">
-                <!-- <label for="name">E-mail</label> -->
-                <input type="text" name="name" placeholder="Nom" class="register__formInput">
-
-                <input type="text" name="firstname" placeholder="Prenom" class="register__formInput">
-
-                <!-- <label for="password">Mot de Passe</label> -->
-                <input type="password" name="password" placeholder="Mot de Passe" class="register__formInput">
                 
+                
+
+                <div class="register__formInputs">
+                <input class="register__formInput" type="text" name="name">
+                <label class="register__formLabel">Nom</label>
+                </div>
+
+
+                <div class="register__formInputs">
+                <input class="register__formInput" type="text" name="firstname">
+                <label class="register__formLabel">Prénom</label>
+                </div>
+
+                <div class="register__formInputs">
+                <input class="register__formInput" type="password" name="password">
+                <label class="register__formLabel">Mot de passe</label>
+                </div>
 
                
-                <input type="text" name="company" placeholder="Nom de l'entreprise" class="register__formInput">
+                <div class="register__formInputs">
+                <input class="register__formInput" type="text" name="company">
+                <label class="register__formLabel">Nom de l'entreprise</label>
+                </div>
+                <div class="register__formInputs">
+                <input class="register__formInput" type="text" name="mail">
+                <label class="register__formLabel">E-mail</label>
+                </div>
 
-                <input type="text" name="mail" placeholder="E-mail" class="register__formInput">
-                
-                <input type="text" name="adress" placeholder="Adresse" class="register__formInput">
-                
+                 <div class="register__formInputs">
+                <input class="register__formInput" type="text" name="adress">
+                <label class="register__formLabel">Adresse</label>
+                </div>
                 
             </div>
 
@@ -104,6 +125,7 @@
   <script src="assets/js/countUp.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="assets/js/input.js"></script>
 <script>
 
 // When you click on Inscrivez vous change to Register Page

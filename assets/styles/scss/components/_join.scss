@@ -7,9 +7,18 @@
   overflow: hidden;
   @include for-size(tablet-landscape-up) {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .title-3 {
@@ -40,20 +49,43 @@
     }
   }
   &__text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     @include for-size(tablet-landscape-up) {
       width: 100%;
       margin: $margin-center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
     }
     .join__text-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       margin-bottom: 50px;
       @include for-size(tablet-landscape-up) {
@@ -84,15 +116,23 @@
 }
 
 /////////form
-
 .joinForm {
   color: $dark-blue;
   margin: 50px 20px;
   &__container {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   &__title {
@@ -101,6 +141,8 @@
   }
   &__subTitle {
     font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
   }
@@ -117,7 +159,13 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 80px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      position: relative;
+    }
+    &Inputs {
+      position: relative;
     }
     &Input {
       border: none;
@@ -128,14 +176,27 @@
       font-size: 14px;
       font-weight: 200;
       width: 100%;
+      color: #173456;
+      letter-spacing: 1px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-color: transparent;
+      z-index: 1;
       @include for-size(tablet-portrait-up) {
         width: 200px;
       }
+    }
+    &Label {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      z-index: -1;
     }
     &InputSubmit {
       margin-top: 50px;
       position: absolute;
       left: 50%;
+      -webkit-transform: translate(-50%);
       transform: translate(-50%);
       background: $light-blue;
       border: 1px solid $light-blue;

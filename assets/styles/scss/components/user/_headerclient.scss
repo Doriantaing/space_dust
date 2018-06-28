@@ -3,6 +3,7 @@
   width: 100vw;
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.5px;
   color: #FFF;
   @include for-size(tablet-landscape-up){
     position: absolute;
@@ -35,6 +36,8 @@
   }
   &__logout{
     cursor: pointer;
+    color: #fff;
+    text-decoration: none;
     @include for-size(tablet-landscape-up){
       position: fixed;
       right: 5%;

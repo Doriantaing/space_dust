@@ -28,7 +28,10 @@
     }
     &__form{
         margin: 50px 20px;
-        &Input{
+        &Inputs {
+            position: relative;
+        }
+        &Input {
             border: none;
             border-bottom: 2px solid $dark-blue;
             padding: 5px;
@@ -37,6 +40,20 @@
             font-size: 14px;
             font-weight: 200;
             width: 100%;
+            color: #173456;
+            letter-spacing: 1px;
+            box-sizing: border-box;
+            background-color: transparent;
+            z-index: 1;
+            @include for-size(tablet-portrait-up) {
+                width: 100%;
+            }
+        }
+        &Label{
+            position: absolute;
+            top: 5px;
+            left: 0;
+            z-index: -1;
         }
         &InputSubmit{
             position: absolute;
@@ -49,7 +66,7 @@
             color: #fff;
             cursor: pointer;
             letter-spacing: 1px;
-            margin-bottom: 40px;
+            margin-top: 70px;
         }
     }    
 }
@@ -90,18 +107,32 @@
             grid-gap: 40px;
             align-items: center;
         }
-        &Input{
+        &Inputs {
+            position: relative;
+        }
+        &Input {
             border: none;
             border-bottom: 2px solid $dark-blue;
             padding: 5px;
-            margin-bottom: 35px;
+            margin-bottom: 50px;
             margin-right: 35px;
             font-size: 14px;
             font-weight: 200;
             width: 100%;
-            @include for-size(tablet-portrait-up){
-                width: 200px;
+            color: #173456;
+            letter-spacing: 1px;
+            box-sizing: border-box;
+            background-color: transparent;
+            z-index: 1;
+            @include for-size(tablet-portrait-up) {
+                width: 100%;
             }
+        }
+        &Label{
+            position: absolute;
+            top: 5px;
+            left: 0;
+            z-index: -1;
         }
         &InputSubmit{
             margin-top: 50px;

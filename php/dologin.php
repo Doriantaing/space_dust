@@ -1,11 +1,16 @@
-<?php
+ <?php
 
 session_start();
 
-$_SESSION['user']['mail'] = $_POST['mail'];
-$_SESSION['user']['password'] = $_POST['password'];
 
-// var_dump($_POST);
+
+// var_dump($_SESSION);
+// echo $_SESSION;
+$_SESSION['user']['mail'] = $_POST['mail'];
+
+
+
+
 
 if (empty($_POST['mail']) || empty($_POST['password'])) {
     header('Location: ../index.php');
@@ -22,21 +27,22 @@ $check = "SELECT
      FROM
      `space_dust` . `user`
      WHERE
-     user_mail = :mail
+    user_mail = :mail
      LIMIT 1
      ;";
 $stmt = $con->prepare($check);
-$stmt->bindValue('mail', $_POST['mail'], PDO::PARAM_STR);
+$stmt->bindValue(':mail', $_POST['mail'], PDO::PARAM_STR);
 $stmt->execute();
 $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-if($row === [] && password_verify($_POST['password'], $row['user_password'])){
-    header('Location: ../index.php?error=nodata');
+if(password_verify($_POST['password'], $row[0]['user_password'])){
+  header('Location: ../user/index.php?id='.$row[0]['user_id']);
+echo 'ouiiii';
+} else{
+  header('Location: ../index.php?error=nodata');
+echo 'nonnn';
     exit;
 }
 
-
-header('Location: ../user/index.php?id='.$row[0]['user_id']);
-
-?>
+?> 

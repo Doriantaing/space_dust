@@ -25,6 +25,14 @@
     top: 20%;
     left: 3%;
     width: 100%;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(17%, #fff),
+      color-stop(17%, $dark-blue),
+      to($dark-blue)
+    );
     background-image: linear-gradient(
       to right,
       #fff 17%,

@@ -37,8 +37,7 @@ require_once 'php/mail.php';
                 <div class="menu__containerItem">
                     <div class="menu__item">Accueil</div>
                     <div class="menu__item">Devis</div>
-                    <div class="menu__item">item3</div>
-                    <div class="menu__item">item4</div>
+                    <div class="menu__item"></div>
                     <div class="menu__imgContainer">
                         <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
                     </div>
