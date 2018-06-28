@@ -53,7 +53,7 @@ include_once 'php/header.php';
     </section>
 
     
-    <script src="assets/js/countUp.js"></script>
+  
     <script src="assets/js/menu.js"></script>
     <script src="./assets/js/index.js"></script>
     <script src="assets/js/input.js"></script>
