@@ -48,7 +48,7 @@
             </section>
             <section class="argument u-bottom-50">
                 <div class="argument__round"></div>
-                <h3 class="argument__slogan">Un titre qui montre qu'on nique la concurrence</h3>
+                <h3 class="argument__slogan">Pour un infini plus propre</h3>
                 <div class="argument__text-box">
                     <p class="argument__text">Une approche environneentale</p>
                     <p class="argument__text">Des actions pour la préservation de l’espace</p>
@@ -188,30 +188,29 @@
         <section class="join">
             <img src="./assets/img/traitlogo.png" alt="petit dessin" class="join__logo-line">
             <div class="container">
-                <h3 class="title-3">Nous recrutons</h3>
+                <h3 class="title-3">Nous recyclons</h3>
                 <div class="join__text-container">
                     <div class="join__text-box">
-                        <img src="./assets/img/new-file.png" alt="new file logo">
-                        <span class="join-box-title">Envoyez votre candidature</span>
+                        <img src="./assets/img/circular-question-mark-button.png" alt="new file logo">
+                        <span class="join-box-title">Pourquoi recycler ?</span>
                         <span class="span-dots"></span>
                         <p class="join__text">
-                            Préparez votre candidature depuis notre formulaire de recrutement
+De nos jours, de plus en plus de services ont besoin d’espaces propres pour fonctionner. De plus, la pollution de l’espace a un impact important sur nos vies.                        </p>
+                    </div>
+                    <div class="join__text-box">
+                        <img src="./assets/img/recycle-sign.png" alt="new file logo">
+                        <span class="join-box-title">Recyclez vos déchets</span>
+                        <span class="span-dots"></span>
+                        <p class="join__text">
+                            Grâce à notre formulaire de devis, contribuez à la préservation de l’espace en recylant vos déchets.
                         </p>
                     </div>
                     <div class="join__text-box">
-                        <img src="./assets/img/form.png" alt="new file logo">
-                        <span class="join-box-title">Nous lisons votre candidature</span>
+                        <img src="./assets/img/factory.png" alt="new file logo">
+                        <span class="join-box-title">Nous recyclons vos déchets</span>
                         <span class="span-dots"></span>
                         <p class="join__text">
-                            Nous prenons soigneusement connaissance de votre profil
-                        </p>
-                    </div>
-                    <div class="join__text-box">
-                        <img src="./assets/img/check-form.png" alt="new file logo">
-                        <span class="join-box-title">Nous vous donnons une réponse</span>
-                        <span class="span-dots"></span>
-                        <p class="join__text">
-                            Nous vous répondons dans un délai d’un mois, que ce soit positif ou négatif
+                            Ne vous souciez plus du recyclage, nous recyclons vos déchets à l’intérieur de notre station totalement dédiée aux déchets ramassés.
                         </p>
                     </div>
                 </div>
