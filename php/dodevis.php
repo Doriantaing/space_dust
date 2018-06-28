@@ -1,7 +1,6 @@
- <?php
+<?php
 session_start();
 
-var_dump($_POST);
 
 $_SESSION['user']['name'] = $_POST['name'];
 $_SESSION['user']['firstname'] = $_POST['firstname'];
@@ -17,9 +16,7 @@ $_SESSION['user']['password'] = password_hash($_POST['password'] , PASSWORD_DEFA
 
 require_once "connect.php";
 // Check if values are not empty
-
-if (!isset($_POST['name']) ||
-    !isset($_POST['firstname'])||
+if (!isset($_POST['firstname'])||
     !isset($_POST['company']) ||
     !isset($_POST['mail']) ||
     !isset($_POST['adress']) ||
@@ -50,14 +47,14 @@ $stmt->execute();
            
 }
 
+// var_dump($_POST);
 
 
 
 
 // SQL Request
 
-$requete = "INSERT INTO 
-`space_dust` . `user` 
+$requete = "INSERT INTO `space_dust` . `user` 
 (`user_id` , `user_name` , `user_firstname` , `company` , `user_mail` , `user_password` , `adress`) 
 VALUES 
 (NULL , :login , :firstname , :company , :mail , :password , :adress)
@@ -75,8 +72,4 @@ $stmt -> bindValue(':adress' , $_POST['adress']);
 $stmt->execute();
 
 
-
-
-header('Location: ../checkRegister.php?page=register');
-
-
+header('Location: ../checkDevis.php?page=devis');

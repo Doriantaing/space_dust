@@ -1,8 +1,16 @@
 <?php
+$empty = $_GET['empty'];
 
+if (isset($empty)) {
+?> <div class="errorContainer">
+    <p class="errorText">Vous avez oublié de remplir des champs</p>
+    </div>
+<?php
+}
 include_once 'php/header.php';
-
 ?>
+
+
 
 
     <section class="devis">
@@ -30,7 +38,48 @@ include_once 'php/header.php';
                     <form action="" method="POST" class="devis__firstStepForm">
                         <div class="devis__firstStepFormContainer">
 
+
        
+
+                            <div class="devis__firstStepFlex">
+                                <div class="devis__firstStepSelectContainer">
+                                 <select class="devis__firstStepSelect" id="firstValue" required>
+                                      <option value="default" selected disabled>Type d’infrastructure</option>
+                                      <option value="planetes">Planètes</option>
+                                      <option value="station">Station spatiale</option>
+                                      <option value="satellite">Satellite</option> 
+                                      <option value="autres">Autres</option> 
+                                  </select>
+                                </div>
+
+                                <input type="text" id="firstValue" placeholder="Nom de l’infrastructure" class="devis__firstStepInput">
+                            </div>
+
+                            <div class="devis__firstStepCleaning">
+                                <p class="devis__firstStepCleaningTitle">Définir un rayon de nettoyage</p>
+                                <div class="devis__firstStepCleaningContainer">
+                                    <input type="text" id="firstValue" placeholder="150km" class="devis__firstStepInput">
+                                    <div class="devis__firstStepCleaningCircle"></div>
+                                </div>
+                            </div>
+
+                            <div class="devis__firstStepFlex">
+                                <div class="devis__firstStepCheckBox">
+                                    <input type="checkbox">
+                                    <label for="check">Recycler les déchets ramassés</label>
+                                </div>
+
+
+                                <input type="text" id="firstValue" placeholder="Pourcentage de déchets à recycler" class="devis__firstStepInputPercent" disabled>
+                            </div>
+                        </div>
+
+                        
+                            <input type="submit" value="Suivant" class="devis__stepNext --center" data-submit="first">
+
+                    </form>
+
+
 
                 </div>
 
@@ -56,9 +105,7 @@ include_once 'php/header.php';
 
 
 
-                        <div class="--center">
-                            <input type="submit" value="Suivant" class="devis__stepNext" data-submit="second">
-                        </div>
+                            <input type="submit" value="Suivant" class="devis__stepNext --center" data-submit="second">
                     </form>
                 </div>
 
@@ -70,7 +117,7 @@ include_once 'php/header.php';
                     <div class="devis__thirdStepContainer">
                         <div class="devis__thirdStepInfo">
                             <div class="devis__thirdStepInfoContainer">
-
+                                <div class="devis__thirdStepInfoHeader">
                                 <h4 class="devis__thirdStepInfoTitle">Informations personnelles</h4>
 
                                 <ul class="devis__thirdStepInfoList">
@@ -80,16 +127,17 @@ include_once 'php/header.php';
                                     <li>E-mail : </li>
                                     <li>Adresse : </li>
                                 </ul>
+                                </div>
 
                                 <div class="devis__thirdStepInfoImg">
-                                    <img src="assets/img/Illustration-Logo.png" alt="" class="devis__thirdStepInfoImg">
+                                    <img src="assets/img/spaceDuster.png" alt="" class="devis__thirdStepInfoImg">
                                 </div>
                             </div>
                         </div>
 
                         <div class="devis__thirdStepSummary">
                             <h4 class="devis__thirdStepSummaryTitle">Devis n°8342</h4>
-                            <p class="devis__thirdStepSummarySubTitle">fait le 23/06/2018</p>
+                            <p class="devis__thirdStepSummarySubTitle">fait le 29/06/2018</p>
 
                             <ul class="devis__thirdStepSummaryList">
                                 <li class="devis__thirdStepSummaryItems">Type d’infrastructure : </li>
@@ -105,7 +153,12 @@ include_once 'php/header.php';
                                 <input type="submit" class="devis__thirdStepSummaryButtonSend" value="Valider" form="send">
                             </div>
 
-                            <form action="php/doregister.php" id="send" method="POST">
+
+                            <form action="php/dodevis.php" id="send" method="POST">
+                                <input type="text" name="structure" value="">
+                                <input type="text" name="nameStructure" value="">
+                                <input type="text" name="rayon" value="">
+                                <input type="text" name="recyclable" value="">
                                 <input type="text" name="name" value="">
                                 <input type="text" name="firstname" value="">
                                 <input type="text" name="company" value="">
@@ -113,6 +166,7 @@ include_once 'php/header.php';
                                 <input type="text" name="adress" value="">
                                 <input type="text" name="password" value="">
                             </form>
+
                         </div>
                     </div>
                 </div>

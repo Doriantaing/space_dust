@@ -250,7 +250,7 @@ html {
   font-size: 14px;
   background: #fff; }
   .devis__container {
-    padding: 50px 20px; }
+    padding: 20px 20px; }
     @media (min-width: 600px) {
       .devis__container {
         padding-left: 100px; } }
@@ -311,6 +311,12 @@ html {
       .devis__firstStepFlex {
         display: flex;
         flex-direction: column; } }
+    .devis__firstStepSelectContainer {
+      position: relative;
+      width: 100%; }
+      @media (min-width: 600px) {
+        .devis__firstStepSelectContainer {
+          width: 120%; } }
     .devis__firstStepSelect {
       border: none;
       font-family: 'Nunito';
@@ -318,8 +324,27 @@ html {
       color: #193558;
       font-size: 14px;
       border-bottom: 2px solid #193558;
-      width: 100%;
-      padding: 5px; }
+      padding: 5px;
+      background: #fff;
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+      outline: none;
+      width: 100%; }
+    .devis__firstStepSelectContainer:before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f107";
+      font-weight: 900;
+      position: absolute;
+      top: -8px;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #193558;
+      font-size: 18px;
+      pointer-events: none; }
     .devis__firstStepInput {
       margin: 35px 0;
       font-size: 14px;
@@ -428,16 +453,21 @@ html {
   .devis__thirdStepTitle {
     font-size: 18px;
     font-weight: 200;
-    margin: 30px 0 35px 0; }
+    margin: 15px 0 10px 0; }
   .devis__thirdStepSubTitle {
     margin: 20px 0;
     font-size: 14px;
     font-weight: bold; }
   .devis__thirdStepInfo {
     margin: 20px 0; }
-    @media (min-width: 600px) {
-      .devis__thirdStepInfoTitle {
-        margin-bottom: 20px; } }
+    .devis__thirdStepInfoContainer {
+      display: flex;
+      align-items: center; }
+    .devis__thirdStepInfoTitle {
+      margin-bottom: 5px; }
+      @media (min-width: 600px) {
+        .devis__thirdStepInfoTitle {
+          margin-bottom: 20px; } }
     .devis__thirdStepInfoList {
       background: #193558;
       color: #fff;
@@ -457,8 +487,7 @@ html {
         .devis__thirdStepInfoImg {
           display: none; } }
   .devis__thirdStepSummary {
-    margin: 50px 0;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
     padding: 20px; }
     @media (min-width: 600px) {
       .devis__thirdStepSummary {
@@ -506,6 +535,9 @@ html {
   .devis .--currentStep {
     opacity: 1; }
   .devis .--center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -592,7 +624,8 @@ html {
       letter-spacing: 1px;
       box-sizing: border-box;
       background-color: transparent;
-      z-index: 1; }
+      z-index: 1;
+      outline: none; }
       @media (min-width: 600px) {
         .login__formInput {
           width: 100%; } }
@@ -659,7 +692,8 @@ html {
       letter-spacing: 1px;
       box-sizing: border-box;
       background-color: transparent;
-      z-index: 1; }
+      z-index: 1;
+      outline: none; }
       @media (min-width: 600px) {
         .register__formInput {
           width: 100%; } }
@@ -680,6 +714,15 @@ html {
       padding: 10px 0;
       color: #fff;
       cursor: pointer; }
+
+.errorContainer {
+  width: 100%;
+  background: #49b6ce; }
+
+.errorText {
+  text-align: center;
+  color: #fff;
+  padding: 10px 0; }
 
 .home__logo-box {
   width: 140px;
@@ -1241,9 +1284,68 @@ html {
         border-radius: 50%;
         margin-bottom: 10px; }
 
+.joinOffers {
+  color: #193558; }
+  .joinOffers__title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold; }
+  .joinOffers__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 600px) {
+      .joinOffers__box {
+        flex-direction: row; } }
+    .joinOffers__boxContainer {
+      width: 300px;
+      height: 400px;
+      margin: 50px 0 30px 0;
+      padding: 20px 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); }
+      @media (min-width: 600px) {
+        .joinOffers__boxContainer {
+          margin: 100px 50px; } }
+    .joinOffers__boxTitle {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center; }
+  .joinOffers__boxSummaryContainer {
+    position: relative;
+    padding: 10px 0; }
+  .joinOffers__boxSummaryTitle {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0; }
+  .joinOffers__boxSummaryText {
+    font-size: 12px;
+    line-height: 35px; }
+  .joinOffers__boxSummaryButton {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px; }
+  .joinOffers__boxSummaryAvailability {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 0; }
+
 .joinForm {
+  display: none;
   color: #193558;
   margin: 50px 20px; }
+  .joinForm__return {
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    text-transform: uppercase; }
+    @media (min-width: 600px) {
+      .joinForm__return {
+        margin-left: 20px; } }
   .joinForm__container {
     position: relative;
     display: -webkit-box;
@@ -1716,7 +1818,7 @@ html {
     @media (min-width: 1200px) {
       .suivi__stats {
         width: 50%;
-        height: 59%; } }
+        height: 70%; } }
     .suivi__stats-circle {
       width: 50%;
       height: 50%;
@@ -1729,6 +1831,11 @@ html {
         width: auto !important;
         height: 100% !important;
         transform: translateX(-25%); }
+    @media (min-width: 949px) {
+      .suivi__stats-inner {
+        position: relative;
+        height: 100%;
+        width: 100%; } }
   .suivi__legends {
     width: 20%;
     text-align: center;
@@ -1768,6 +1875,10 @@ html {
     background: linear-gradient(#ff3743 0%, #f15555 100%); }
   .suivi .inner-blue {
     background: linear-gradient(#55b7f1 0%, #1177fc 100%); }
+
+.chartjs-render-monitor {
+  width: 100% !important;
+  height: 100% !important; }
 
 .userTitle {
   font-family: "nunito",sans-serif;
