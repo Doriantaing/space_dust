@@ -35,7 +35,7 @@ require_once 'php/mail.php';
                     <div class="menu__item">Devis</div>
                     <div class="menu__item">Recrutement</div>
                     <div class="menu__imgContainer">
-                        <img src="assets/img/Illustration-Logo.png" alt="logo" title="logo">
+                        <img src="assets/img/SpaceDuster-rond.png.png" alt="logo" title="logo">
                     </div>
                 </div>
 

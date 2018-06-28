@@ -150,7 +150,7 @@ include_once 'php/header.php';
                             </div>
 
 
-                            <form action="php/doregister.php" id="send" method="POST">
+                            <form action="php/dodevis.php" id="send" method="POST">
                                 <input type="text" name="structure" value="">
                                 <input type="text" name="nameStructure" value="">
                                 <input type="text" name="rayon" value="">

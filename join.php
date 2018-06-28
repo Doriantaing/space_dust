@@ -89,7 +89,7 @@ include_once 'php/header.php';
 
                 <div class="joinForm__formInputs">
                 <input class="joinForm__formInput" type="text" name="job">
-                <label class="joinForm__formLabel">Poste Actuelle</label>
+                <label class="joinForm__formLabel">Poste</label>
                   </div>
 
                 <div class="joinForm__formInputs">

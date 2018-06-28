@@ -8,8 +8,10 @@ $_SESSION['user']['company'] = $_POST['company'];
 $_SESSION['user']['mail'] = $_POST['mail'];
 $_SESSION['user']['adress'] = $_POST['adress'];
 $_SESSION['user']['company'] = $_POST['company'];
-$_SESSION['user']['mail'] = $_POST['mail'];
-$_SESSION['user']['adress'] = $_POST['adress'];
+$_SESSION['user']['structure'] = $_POST['structure'];
+$_SESSION['user']['nameStructure'] = $_POST['nameStructure'];
+$_SESSION['user']['rayon'] = $_POST['structure'];
+$_SESSION['user']['recyclable'] = $_POST['recyclable'];
 $_SESSION['user']['password'] = password_hash($_POST['password'] , PASSWORD_DEFAULT);
 
 require_once "connect.php";
@@ -45,7 +47,6 @@ $stmt->execute();
            
 }
 
-// var_dump($_POST);
 
 
 
@@ -70,6 +71,6 @@ $stmt -> bindValue(':adress' , $_POST['adress']);
 $stmt->execute();
 
 
-header('Location: ../checkDevis.php?page=devis');
+header('Location: ../checkRegister.php?page=register');
 
 
