@@ -1564,7 +1564,7 @@ html {
     @media (min-width: 1200px) {
       .suivi__stats {
         width: 50%;
-        height: 59%; } }
+        height: 70%; } }
     .suivi__stats-circle {
       width: 50%;
       height: 50%;
@@ -1577,6 +1577,11 @@ html {
         width: auto !important;
         height: 100% !important;
         transform: translateX(-25%); }
+    @media (min-width: 949px) {
+      .suivi__stats-inner {
+        position: relative;
+        height: 100%;
+        width: 100%; } }
   .suivi__legends {
     width: 20%;
     text-align: center;
@@ -1616,6 +1621,10 @@ html {
     background: linear-gradient(#ff3743 0%, #f15555 100%); }
   .suivi .inner-blue {
     background: linear-gradient(#55b7f1 0%, #1177fc 100%); }
+
+.chartjs-render-monitor {
+  width: 100% !important;
+  height: 100% !important; }
 
 .userTitle {
   font-family: "nunito",sans-serif;

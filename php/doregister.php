@@ -46,5 +46,6 @@ $stmt -> bindValue(':adress' , $_POST['adress']);
 $stmt->execute();
 
 
+//var_dump ($requete);
 header('Location: ../checkDevis.php');
 

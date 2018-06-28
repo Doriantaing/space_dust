@@ -102,7 +102,9 @@ if ($row === false) {
             </div>
             <h3 class="suivi__title userTitle">Les déchets collectés</h3>
             <div class="suivi__stats">
-              <canvas id="lineCharts"></canvas>
+                <div class="suivi__stats-inner">
+                    <canvas id="lineCharts"></canvas>
+                </div>
             </div>
           </div>
           <div class="suivi__desktop-waste">

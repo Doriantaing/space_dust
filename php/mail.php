@@ -9,6 +9,7 @@ $firstname = $_SESSION['user']['firstname'];
 $email = $_SESSION['user']['mail'];
 $company = $_SESSION['user']['company'];
 $adress = $_SESSION['user']['adress'];
+$date = date("d.m.y");
 
 $mail = new PHPMailer(true);
 
@@ -274,7 +275,7 @@ body {
 <p class="contentText">Votre Devis</p>
 <div class="devis">
   <div class="devisNumber devisItems">Devis n°<span class="serial">876543</span></div>
-  <div class="devisDate">fait le <span class="date">23/06/2018</span></div>
+  <div class="devisDate">fait le <span class="date">' . $date .  '</span></div>
   <div class="devisOthers">
     <li class="devisItems">Type d’infrastructure</li>
     <li class="devisItems">Nom de l’infrastructure</li>
