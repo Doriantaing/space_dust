@@ -1,6 +1,6 @@
-
 // Forsize
 @import "./mixins/forsize";
+@import "./mixins/circle";
 // Global
 @import "./global/reset";
 @import "./global/variables";
@@ -8,7 +8,9 @@
 
 // Components
 @import "./components/header";
-
+@import "./components/devis";
+@import "./components/sendMail";
+@import "./components/login";
 @import "./components/home";
 @import "./components/argument";
 @import "./components/numbers";
@@ -16,9 +18,16 @@
 @import "./components/services";
 @import "./components/join";
 @import "./components/footer";
+@import "./components/modal";
 
-@import "./components/headerclient";
-@import "./components/suivi";
-@import "./components/devis";
-@import "./components/profil";
+// Components User
 
+@import "./components/user/headerclient";
+@import "./components/user/suivi";
+@import "./components/user/userDevis";
+@import "./components/user/profil";
+
+
+body {
+  overflow-x: hidden;
+}

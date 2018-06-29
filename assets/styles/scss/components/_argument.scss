@@ -1,8 +1,9 @@
 .argument {
+  @include for-size(tablet-landscape-up) {
+    margin-top: 100px;
+  }
   position: relative;
   &__round {
-    // position: absolute;
-    // position: relative;
     width: 170px;
     height: 170px;
     border-radius: 50%;
@@ -10,26 +11,52 @@
     margin-left: -100px;
     z-index: -100;
     overflow: hidden;
+    @include for-size(tablet-landscape-up) {
+      display: block;
+      width: 310.5px;
+      height: 310.5px;
+      margin-left: 200px;
+    }
   }
   &__slogan {
     position: absolute;
     font-size: 24px;
     color: transparent;
     top: 20%;
-    left: 5%;
+    left: 3%;
     width: 100%;
-    // mix-blend-mode: difference;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(17%, #fff),
+      color-stop(17%, $dark-blue),
+      to($dark-blue)
+    );
     background-image: linear-gradient(
       to right,
-      #fff 18%,
-      $dark-blue 18%,
+      #fff 17%,
+      $dark-blue 17%,
       $dark-blue 100%
     );
     -webkit-background-clip: text;
+    @include for-size(tablet-landscape-up) {
+      font-size: 45px;
+      width: 50%;
+      left: 29%;
+      top: 25%;
+    }
   }
-
   &__text-box {
     text-align: center;
+    @include for-size(tablet-landscape-up) {
+      margin-top: -5%;
+      width: 60%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      text-align: left;
+    }
   }
   &__text {
     font-size: 18px;
