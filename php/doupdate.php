@@ -10,7 +10,7 @@ if (!isset($_POST['name']) || !isset($_POST['firstname']) || !isset($_POST['pass
 require_once "../php/connect.php";
 
 $req = "UPDATE 
-  `space_dust` . `user` 
+  `romainmecvromain` . `user` 
 SET 
   `user_name` = :name,
   `user_firstname` = :firstname,

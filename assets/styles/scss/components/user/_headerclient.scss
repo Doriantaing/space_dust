@@ -153,8 +153,9 @@
 
 }
 .contentClient{
+  overflow-x: hidden;
   position: relative;
-  height: 100vh;
+  height:120vh;
   width: 100vw;
   background: -webkit-linear-gradient(bottom left, #354158 0%, #3d5b89 100%);
   background: -o-linear-gradient(bottom left, #354158 0%, #3d5b89 100%);

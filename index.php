@@ -13,16 +13,17 @@ include_once 'php/header.php';
                     <span class="home__title--darken">La première agence de nettoyage</span>
                     <span class="home__title--lighten">de l'espace</span>
                 </h2>
+                <section class="argument u-bottom-50">
+                    <div class="argument__round"></div>
+                    <h3 class="argument__slogan">Pour un infini plus propre</h3>
+                    <div class="argument__text-box">
+                        <p class="argument__text">Une approche environnementale</p>
+                        <p class="argument__text">Des actions pour la préservation de l’espace</p>
+                        <p class="argument__text">Un travail mené avec les plus grandes industries de l’espace</p>
+                    </div>
+                </section>
             </section>
-            <section class="argument u-bottom-50">
-                <div class="argument__round"></div>
-                <h3 class="argument__slogan">Pour un infini plus propre</h3>
-                <div class="argument__text-box">
-                    <p class="argument__text">Une approche environneentale</p>
-                    <p class="argument__text">Des actions pour la préservation de l’espace</p>
-                    <p class="argument__text">Un travail mené avec les plus grandes industries de l’espace</p>
-                </div>
-            </section>
+
             <section class="numbers u-bottom-50">
                 <div class="numbers__logo-box">
                     <img src="./assets/img/SPACE-DUST-B.png" alt="logo space dust letter" class="numbers__logo">

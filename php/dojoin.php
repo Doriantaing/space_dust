@@ -26,7 +26,7 @@ require_once "connect.php";
 
 // SQL Request
 
-$requete = "INSERT INTO `space_dust` . `join` 
+$requete = "INSERT INTO `romainmecvromain` . `join` 
 (`join_id` , `join_name` , `join_firstname` , `join_mail` , `join_age` , `join_job` , `join_phone`) 
 VALUES 
 (NULL , :name , :firstname  , :mail , :age , :job , :phone)

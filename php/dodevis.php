@@ -22,7 +22,7 @@ if (isset($_POST['structure']) ||
     isset($_POST['nameStructure']) || 
     isset($_POST['rayon'])) {
 
-$devis = "INSERT INTO `space_dust` . `devis` 
+$devis = "INSERT INTO `romainmecvromain` . `devis` 
 (`devis_id` , `structure` , `structure_name` , `rayon` , `recyclable`) 
 VALUES 
 (NULL , :structure , :nameStructure , :rayon , :recyclable)
@@ -46,7 +46,7 @@ $stmt->execute();
 
 // SQL Request
 
-$requete = "INSERT INTO `space_dust` . `user` 
+$requete = "INSERT INTO `romainmecvromain` . `user` 
 (`user_id` , `user_name` , `user_firstname` , `company` , `user_mail` , `user_password` , `adress`) 
 VALUES 
 (NULL , :login , :firstname , :company , :mail , :password , :adress)

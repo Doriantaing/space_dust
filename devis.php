@@ -39,7 +39,7 @@ include_once 'php/header.php';
                         <div class="devis__firstStepFormContainer">
 
 
-       
+
 
                             <div class="devis__firstStepFlex">
                                 <div class="devis__firstStepSelectContainer">
@@ -47,8 +47,8 @@ include_once 'php/header.php';
                                       <option value="default" selected disabled>Type d’infrastructure</option>
                                       <option value="planetes">Planètes</option>
                                       <option value="station">Station spatiale</option>
-                                      <option value="satellite">Satellite</option> 
-                                      <option value="autres">Autres</option> 
+                                      <option value="satellite">Satellite</option>
+                                      <option value="autres">Autres</option>
                                   </select>
                                 </div>
 
@@ -74,7 +74,7 @@ include_once 'php/header.php';
                             </div>
                         </div>
 
-                        
+
                             <input type="submit" value="Suivant" class="devis__stepNext --center btnHoverDark" data-submit="first">
 
                     </form>
@@ -146,7 +146,7 @@ include_once 'php/header.php';
                                 <li class="devis__thirdStepSummaryItems">Recyclage des déchets à : </li>
                             </ul>
 
-                            <p class="devis__thirdStepSummaryPrice">Prix : 2 255 000 0000 ¥</p>
+                            <p class="devis__thirdStepSummaryPrice">Prix : 255 000 0000 €</p>
 
                             <div class="devis__thirdStepSummaryButtons">
                                 <button class="devis__thirdStepSummaryButton btnHoverBorder">Modifier</button>

@@ -27,6 +27,7 @@
     }
   }
   &__form{
+    padding-bottom: 40px;
     @include for-size(tablet-landscape-up){
       width: 100%;
     }

@@ -2,6 +2,7 @@
 .services {
   text-align: center;
   height: 80%;
+  margin-bottom: 150px;
   @include for-size(tablet-landscape-up) {
     position: relative;
   }
@@ -143,6 +144,7 @@
     }
   }
   .dots--bigger {
+    z-index: -1;
     @include on-circle($item-count: 16, $circle-size: 233px, $item-size: 3px);
     margin: 50px auto 0;
     border: solid 5px transparent;

@@ -3,7 +3,7 @@
   position: absolute;
   left: 100%;
   top: 0;
-  height: 100vh;
+  height: 67vh;
   width: 100vw;
   @include for-size(tablet-landscape-up) {
     width: 100%;
@@ -73,5 +73,5 @@
 .--userDevis {
   position: absolute;
   z-index: 1000;
-  margin: 50px 60px;
+  margin: 30px 70px;
 }

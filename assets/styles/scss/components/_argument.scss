@@ -1,6 +1,6 @@
 .argument {
   @include for-size(tablet-landscape-up) {
-    margin-bottom: 260px;
+    margin-top: 100px;
   }
   position: relative;
   &__round {
@@ -13,8 +13,8 @@
     overflow: hidden;
     @include for-size(tablet-landscape-up) {
       display: block;
-      width: 240px;
-      height: 240px;
+      width: 310.5px;
+      height: 310.5px;
       margin-left: 200px;
     }
   }
@@ -51,6 +51,11 @@
     text-align: center;
     @include for-size(tablet-landscape-up) {
       margin-top: -5%;
+      width: 60%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      text-align: left;
     }
   }
   &__text {

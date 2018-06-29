@@ -7,16 +7,29 @@ var tabs = document.querySelectorAll(".headeruser__tabs-item");
 var pages = document.querySelectorAll(".page");
 
 var startingX;
+var startingY;
+var y;
 
 function p1start(e) {
   startingX = e.touches[0].clientX;
+  startingY = e.touches[0].clientY;
 }
 
 function p1move(e) {
   var touch = e.touches[0];
   var change = startingX - touch.clientX;
-  if (change < 0) {
+  y = startingX - touch.clientY;
+  var half = screen.width / 5;
+
+  console.log("y:" + y + "half:" + half);
+    console.log("x:" + change + "half:" + half);
+
+
+    if (change < 0) {
     return;
+  }
+  if (y < -half && change < 50){
+      return;
   }
   p1.style.left = "-" + change + "px";
   p2.style.display = "block";
@@ -51,6 +64,9 @@ function p2start(e) {
 function p2move(e) {
   var touch = e.touches[0];
   var change = touch.clientX - startingX;
+    var half = screen.width / 5;
+
+
   if (change < 0) {
     p3.style.display = "block";
     p3.style.left = change + screen.width + "px";
@@ -63,7 +79,7 @@ function p2move(e) {
 }
 
 function p2end(e) {
-  var change = e.changedTouches[0].clientX - startingX;
+    var change = e.changedTouches[0].clientX - startingX;
   var half = screen.width / 5;
   if (change < half) {
     p1.style.left = "-200%";
@@ -92,7 +108,13 @@ function p3start(e) {
 function p3move(e) {
   var touch = e.touches[0];
   var change = touch.clientX - startingX;
-  if (change < 0) {
+    y = startingX - touch.clientY;
+    var half = screen.width / 5;
+    if (y < -half && change < 50){
+        return;
+    }
+
+    if (change < 0) {
     return;
   }
   p2.style.display = "block";

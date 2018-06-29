@@ -1,5 +1,8 @@
 
 .home {
+  @include for-size(tablet-landscape-up) {
+    height: 100vh;
+  }
   &__logo-box {
     width: 140px;
     height: 144px;

@@ -16,6 +16,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
+button, input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0; }
+
+input[type=checkbox] {
+  -moz-appearance: checkbox;
+  -webkit-appearance: checkbox; }
+
 body {
   line-height: 1; }
 
@@ -344,7 +356,8 @@ html {
       -moz-appearance: button;
       appearance: button;
       outline: none;
-      width: 100%; }
+      width: 100%;
+      border-radius: 0; }
     .devis__firstStepSelectContainer:before {
       font-family: "Font Awesome 5 Free";
       content: "\f107";
@@ -751,6 +764,9 @@ html {
   color: #fff;
   padding: 10px 0; }
 
+@media (min-width: 949px) {
+  .home {
+    height: 100vh; } }
 .home__logo-box {
   width: 140px;
   height: 144px;
@@ -773,7 +789,7 @@ html {
   position: relative; }
   @media (min-width: 949px) {
     .argument {
-      margin-bottom: 260px; } }
+      margin-top: 100px; } }
   .argument__round {
     width: 170px;
     height: 170px;
@@ -785,8 +801,8 @@ html {
     @media (min-width: 949px) {
       .argument__round {
         display: block;
-        width: 240px;
-        height: 240px;
+        width: 310.5px;
+        height: 310.5px;
         margin-left: 200px; } }
   .argument__slogan {
     position: absolute;
@@ -808,7 +824,12 @@ html {
     text-align: center; }
     @media (min-width: 949px) {
       .argument__text-box {
-        margin-top: -5%; } }
+        margin-top: -5%;
+        width: 60%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: left; } }
   .argument__text {
     font-size: 18px; }
     .argument__text:not(:last-child) {
@@ -890,7 +911,8 @@ html {
 
 .services {
   text-align: center;
-  height: 80%; }
+  height: 80%;
+  margin-bottom: 150px; }
   @media (min-width: 949px) {
     .services {
       position: relative; } }
@@ -1094,6 +1116,7 @@ html {
           .dots--center > *:nth-of-type(16) {
             transform: rotate(337.5deg) translate(125px) rotate(-337.5deg); } }
   .dots .dots--bigger {
+    z-index: -1;
     position: absolute;
     width: 233px;
     height: 233px;
@@ -1208,7 +1231,7 @@ html {
     background-color: #50b7ce !important; } }
 .join {
   width: 100vw;
-  height: 110vh;
+  padding-bottom: 50px;
   background-color: #f0f1f4;
   text-align: center;
   position: relative;
@@ -1300,7 +1323,7 @@ html {
       height: 400px;
       margin: 50px 0 30px 0;
       padding: 20px 20px;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); }
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); }
       @media (min-width: 600px) {
         .joinOffers__boxContainer {
           margin: 100px 50px; } }
@@ -1331,7 +1354,7 @@ html {
     margin: 20px 0; }
   .joinOffers__spontaneous {
     text-align: center;
-    padding-bottom: 20px; }
+    padding-bottom: 50px; }
     .joinOffers__spontaneous .--spontaneous {
       border: none; }
       @media (min-width: 600px) {
@@ -1665,8 +1688,9 @@ html {
     width: 111%; } }
 
 .contentClient {
+  overflow-x: hidden;
   position: relative;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   background: -webkit-linear-gradient(bottom left, #354158 0%, #3d5b89 100%);
   background: -o-linear-gradient(bottom left, #354158 0%, #3d5b89 100%);
@@ -1677,18 +1701,16 @@ html {
       left: 20%; } }
 
 .suivi {
-  overflow-x: hidden;
   position: absolute;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   font-family: "nunito",sans-serif; }
   @media (min-width: 949px) {
     .suivi {
       width: 100%; } }
   .suivi__inner {
-    padding-bottom: 50px;
     width: 90%;
     margin: auto; }
     @media (min-width: 949px) {
@@ -1884,7 +1906,7 @@ html {
   position: absolute;
   left: 100%;
   top: 0;
-  height: 100vh;
+  height: 67vh;
   width: 100vw; }
   @media (min-width: 949px) {
     .userDevis {
@@ -1944,7 +1966,7 @@ html {
 .--userDevis {
   position: absolute;
   z-index: 1000;
-  margin: 50px 60px; }
+  margin: 30px 70px; }
 
 .profil {
   display: none;
@@ -1972,14 +1994,16 @@ html {
     @media (min-width: 949px) {
       .profil__username {
         text-align: left; } }
-  @media (min-width: 949px) {
-    .profil__form {
-      width: 100%; } }
-  @media (min-width: 1200px) {
-    .profil__form {
-      display: flex;
-      justify-content: space-between;
-      width: 90%; } }
+  .profil__form {
+    padding-bottom: 40px; }
+    @media (min-width: 949px) {
+      .profil__form {
+        width: 100%; } }
+    @media (min-width: 1200px) {
+      .profil__form {
+        display: flex;
+        justify-content: space-between;
+        width: 90%; } }
   @media (min-width: 1200px) {
     .profil__form-flex {
       width: 49%;

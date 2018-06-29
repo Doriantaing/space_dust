@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
  $_SESSION['user']['id'] = $_GET['id'];
@@ -16,7 +17,7 @@ require_once '../php/connect.php';
   `user_password`,
   `adress`
    FROM
-   `space_dust` . `user`
+   `romainmecvromain` . `user`
   WHERE 
    `user_mail` = :mail AND
    `user_id` = :id
@@ -32,6 +33,7 @@ if ($row === false) {
     header("Location: ../index.php?error=nodatatodetails");
     exit;
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -162,21 +164,6 @@ if ($row === false) {
               <div class="userDevis__mission-waste">
                 <p class="userDevis__details-item">Déchets ramassés : <span class="userDevis__mission-pickedup">12 333 tonnes</span></p>
                 <p class="userDevis__details-item">Déchets recyclés : <span class="userDevis__mission-recycled">15 987 tonnes</span></p>
-              </div>
-              <p class="userDevis__mission-price">21M</p>
-            </div>
-          </div>
-        </div>
-        <div class="userDevis__cards">
-          <div class="userDevis__cards-inner">
-            <div class="userDevis__mission__principal">
-              <h4 class="userDevis__mission-title">Mission 2</h4>
-              <p class="userDevis__mission-date">fait le <span class="userDevis__mission-date-replaced">00/00/0000</span></p>
-            </div>
-            <div class="userDevis__mission__details">
-              <div class="userDevis__mission-waste">
-                <p class="userDevis__details-item">Déchets ramassés: <span class="userDevis__mission-pickedup">12 333 tonnes</span></p>
-                <p class="userDevis__details-item">Déchets recyclés: <span class="userDevis__mission-recycled">15 987 tonnes</span></p>
               </div>
               <p class="userDevis__mission-price">21M</p>
             </div>
